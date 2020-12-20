@@ -115,6 +115,80 @@ img.emoji {
 .et_pb_gutters3.et_pb_footer_columns4 .footer-widget {
      width: 82%; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+     box-shadow: 13px 2px 14px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    border: none;
+    margin-top: 23px;
+}
+
+.card img {
+  border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+  border-radius: 0px 0px 15px 15px;
+}
+
+/* Horizontal line */
+hr {
+  background: rgb(255,255,255);
+  height: 5px;
+  width: 10%;
+  padding: 2px;
+  border-radius: 50px;
+  background-repeat:repeat-x; 
+}
+
+/* Buttons Style */
+
+.btn-primary {
+  transition: all 300ms ease-in;
+  background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: 1px solid rgba(2,0,36,1);
+}
+
+.btn-primary:hover {
+  transition: all 300ms ease-out;
+  background: rgb(2,0,36);
+  background: linear-gradient(-90deg, rgba(2,0,36,1) 0%, rgba(74,0,224,1) 40%);
+  border: 1px solid rgba(2,0,36,1);
+}
+/* Responsive */
+
+@media screen and (max-width: 980px) {
+  #cards-columns {
+  height: auto;
+}
+  
+@media screen and (max-width: 720px) {
+  #cards-columns {
+  height: 100%;
+}
+}
+}
+
+.card:hover{
+     margin-top: 0px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#cards-columns{
+      padding-bottom: 30px
+}
 </style></head>
 <body data-rsssl=1 class="page-template-default page page-id-1160 et_pb_button_helper_class et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_smooth_scroll et_no_sidebar et_divi_theme et-db et_minified_js et_minified_css">
 <div id="page-container">
@@ -563,6 +637,63 @@ img.emoji {
 </article> 
 </div> 
 <span class="et_pb_scroll_top et-pb-icon"></span>
+<section id="cards-columns">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6 my-2">
+        <div class="card">
+  <img class="card-img-top" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3752&q=80" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><div class="text-center">Coding Skills</div> </h5>
+    <p class="card-text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi vero fugiat, vel ipsa dicta quidem beatae dignissimos quis perspiciatis iste, atque, eius facilis iusto velit inventore distinctio laudantium blanditiis unde?</p>
+   <a class="et_pb_button et_pb_more_button et_pb_button_one" href="">Explore How</a>
+          </div>
+          
+          
+      </div>
+    </div>
+      
+      <div class="col-lg-3 col-md-6 col-sm-6 my-2">
+        <div class="card">
+  <img class="card-img-top" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3543&q=80" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><div class="text-center">Programming Skills</div> </h5>
+    <p class="card-text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi vero fugiat, vel ipsa dicta quidem beatae dignissimos quis perspiciatis iste, atque, eius facilis iusto velit inventore distinctio laudantium blanditiis unde?</p>
+   <a class="et_pb_button et_pb_more_button et_pb_button_one" href="">Explore How</a>
+          </div>
+          
+          
+      </div>
+    </div>
+      
+      <div class="col-lg-3 col-md-6 col-sm-6 my-2">
+        <div class="card">
+  <img class="card-img-top" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3750&q=80" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><div class="text-center">Co-Working</div> </h5>
+    <p class="card-text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi vero fugiat, vel ipsa dicta quidem beatae dignissimos quis perspiciatis iste, atque, eius facilis iusto velit inventore distinctio laudantium blanditiis unde?</p>
+   <a class="et_pb_button et_pb_more_button et_pb_button_one" href="">Explore How</a>
+          </div>
+          
+          
+      </div>
+    </div>
+      
+      <div class="col-lg-3 col-md-6 col-sm-6 my-2">
+        <div class="card">
+  <img class="card-img-top" src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3750&q=80" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><div class="text-center">Freebie</div> </h5>
+    <p class="card-text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi vero fugiat, vel ipsa dicta quidem beatae dignissimos quis perspiciatis iste, atque, eius facilis iusto velit inventore distinctio laudantium blanditiis unde?</p>
+<a class="et_pb_button et_pb_more_button et_pb_button_one" href="">Explore How</a>
+          </div>
+          
+          
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
 <footer class="footer-section">
         <div class="container">
             <div class="footer-cta pt-5 pb-5">
