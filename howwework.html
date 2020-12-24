@@ -10,8 +10,12 @@
   </script>
 
 <title>Restaurant Constancy</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="" />
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
 <link rel="canonical" href="index.html" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
@@ -21,6 +25,7 @@
 <meta property="og:site_name" content="hospitality" />
 <meta property="article:modified_time" content="2020-11-24T18:29:07+00:00" />
 <meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel='dns-prefetch' href='http://www.google.com/' />
 <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
 <link rel='dns-prefetch' href='http://s.w.org/' />
@@ -50,6 +55,9 @@ var et_core_api_spam_recaptcha = {"site_key":"6LepqboZAAAAACV8dkpDQdb8p3RyJNJUDB
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
 <link rel='shortlink' href='index.html' />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed2eb0.json?url=https%3A%2F%2Fplaygroundhospitality.com%2F" />
 <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed5710?url=https%3A%2F%2Fplaygroundhospitality.com%2F&amp;format=xml" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link rel="shortcut icon" href="#" /><script>
@@ -68,6 +76,17 @@ var et_core_api_spam_recaptcha = {"site_key":"6LepqboZAAAAACV8dkpDQdb8p3RyJNJUDB
     ga('create', 'UA-91833751-1', 'auto');
     ga('send', 'pageview');
     </script> <link rel="stylesheet" id="et-core-unified-1157-cached-inline-styles" href="wp-content/et-cache/1157/et-core-unified-1157-1606242552.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" /><style type="text/css">
+      @media (min-width: 360px) {
+  .modal-content {
+   background: transparent;
+    border: 0px;
+}
+  .form{width:340px;height:440px;background:#e6e6e6;border-radius:8px;box-shadow:0 0 40px -10px #000;margin:calc(50vh - 220px) auto;padding:20px 30px;max-width:calc(100vw - 40px);box-sizing:border-box;font-family:'Montserrat',sans-serif;position:relative}
+h2{margin:10px 0;padding-bottom:10px;width:180px;color:#78788c;border-bottom:3px solid #78788c}
+input{width:100%;padding:10px;box-sizing:border-box;background:none;outline:none;resize:none;border:0;font-family:'Montserrat',sans-serif;transition:all .3s;border-bottom:2px solid #bebed2}
+input:focus{border-bottom:2px solid #78788c}
+
+  }
 img.wp-smiley,
 img.emoji {
     display: inline !important;
@@ -115,86 +134,103 @@ img.emoji {
      width: 82%; 
 }
 
-.contact-fome{
-    max-width: 550px;
-    margin: 0 auto;
-    background: rgba(0,0,0,0.8);
-    padding: 30px;
-    border-radius: 5px;
-    display: flex;
-    box-shadow: 0 0 10px rgba(0,0,0,0.8);
-}
-.input-class{
-    display: flex;
-    flex-direction: column;
-    margin-right: 4%;
-}
-.input-class, .msg{
-    width: 48%;
-}
-.input-class .input, .msg textarea{
-    margin: 10px 0;
-    background: transparent;
-    border: 0;
-    border-bottom: 2px solid #41B5E6;
-    padding: 10px;
-    color: aqua;
-    width: 100%;
-}
-.msg textarea{
-    height: 200px;
-}
-::-webkit-input-placeholder{
-    color: aquamarine;
-}
-::-moz-input-placeholder{
-    color: aquamarine;
-}
-.button{
    
-}
-.btn{
-    background: #39b7dd;
-    text-align: center;
-    padding: 15px;
-    border-radius:  5px;
-    color: #fff;
-    cursor: pointer;
-    text-transform: uppercase;
-    display: block;
-    width: 100%;
-    box-shadow: 3px 3px 3px #888888;
-}
-.msg button:hover{
-    background-color: orange;
-    color: black;
-}
-@media screen and (max-width: 600px){
-    .contact-fome{
-        flex-direction: column;
-    }
-    .msg text-area{
-        height: 80px;
-    }
-    .input-class, .msg{
-        width: 100%;
-    }
-}
 .modal-content {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-    pointer-events: auto;
-    background-color: transparent; 
-    background-clip: padding-box;
+   background: transparent;
     border: 0px;
-    border-radius: .3rem;
-    outline: 0;
 }
-</style></head>
+.form{width:340px;height:440px;background:#e6e6e6;border-radius:8px;box-shadow:0 0 40px -10px #000;margin:calc(50vh - 220px) auto;padding:20px 30px;max-width:calc(100vw - 40px);box-sizing:border-box;font-family:'Montserrat',sans-serif;position:relative}
+h2{margin:10px 0;padding-bottom:10px;width:fit-content;color:#78788c;border-bottom:3px solid #78788c}
+input{width:100%;padding:10px;box-sizing:border-box;background:none;outline:none;resize:none;border:0;font-family:'Montserrat',sans-serif;transition:all .3s;border-bottom:2px solid #bebed2}
+input:focus{border-bottom:2px solid #78788c}
+
+
+
+
+
+.card {
+     box-shadow: 13px 2px 14px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    border: none;
+    margin-top: 23px;
+}
+
+.card img {
+  border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+  border-radius: 0px 0px 15px 15px;
+}
+
+/* Horizontal line */
+hr {
+  background: rgb(255,255,255);
+  height: 5px;
+  width: 10%;
+  padding: 2px;
+  border-radius: 50px;
+  background-repeat:repeat-x; 
+}
+
+/* Buttons Style */
+
+.btn-primary {
+  transition: all 300ms ease-in;
+  background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: 1px solid rgba(2,0,36,1);
+}
+
+.btn-primary:hover {
+  transition: all 300ms ease-out;
+  background: rgb(2,0,36);
+  background: linear-gradient(-90deg, rgba(2,0,36,1) 0%, rgba(74,0,224,1) 40%);
+  border: 1px solid rgba(2,0,36,1);
+}
+/* Responsive */
+
+@media screen and (max-width: 980px) {
+  #cards-columns {
+  height: auto;
+}
+  
+@media screen and (max-width: 720px) {
+  #cards-columns {
+  height: 100%;
+}
+}
+}
+
+.card:hover{
+     margin-top: 0px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#cards-columns{
+      padding-bottom: 30px
+}
+.et_pb_section_1.et_pb_section {
+    padding-top:0px; 
+    padding-bottom:0px;
+}
+
+@media only screen and (min-width: 1350px){
+.et_pb_section {
+    padding: 0 0;
+}
+}
+@media (min-width: 981px){
+.et_pb_section {
+    padding: 0 0; 
+}
+}
+.white-btn{
+  color: #ffffff;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="style.scss">
+</head>
 <body data-rsssl=1 class="home page-template-default page page-id-1157 et_pb_button_helper_class et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_smooth_scroll et_no_sidebar et_divi_theme et-db et_minified_js et_minified_css">
 <div id="page-container">
 <header id="main-header" data-height-onload="66">
@@ -213,7 +249,7 @@ img.emoji {
 <a href="index.html">What We Do</a>
  <div class="dropdown-content">
   <a href="conceptdesign.html">Concept Design</a>
-      <a href="operationstrategy.html">operation strategy</a>
+      <a href="operationstrategy.html">Operation Strategy</a>
       <a href="restaurantassessment.html">Restaurant Assessment</a>
       <a href="#">Business Strategy</a>
       <a href="#">Menu Development and Design</a>
@@ -230,7 +266,7 @@ img.emoji {
 </a></li>
 <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="howwework.html">HOW WE WORK?
 </a></li>
-<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="">BLOGS</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="blogs.html">BLOGS</a></li>
 <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13"><a href="contact.html">CONTACT</a></li>
 </ul> </nav>
 <div id="et_mobile_nav_menu">
@@ -248,10 +284,9 @@ img.emoji {
 </div>
 </div>
 </header> 
-
 <div id="et-main-area">
 <div id="main-content">
-<article id="post-8" class="post-8 page type-page status-publish hentry">
+<article id="post-1157" class="post-1157 page type-page status-publish hentry">
 <div class="entry-content">
 <div id="et-boc" class="et-boc">
 <div class="et-l et-l--post">
@@ -261,108 +296,382 @@ img.emoji {
 <div class="et_pb_fullwidth_header_container left">
 <div class="header-content-container center">
 <div class="header-content">
-<h2 class="et_pb_module_header">How We Are!</h2>
-<span class="et_pb_fullwidth_header_subhead"> </span>
-<div class="et_pb_header_content_wrapper"></div>
+<h1 class="et_pb_module_header">Think beyond the walls of your restaurant.</h1>
+<div class="et_pb_header_content_wrapper"><p><span style="font-size: 20px;">Playground Hospitality helps separate you from the crowd. </span></p></div>
+<a class="et_pb_button et_pb_more_button et_pb_button_one" href="">Explore How</a>
 </div>
 </div>
 </div>
 <div class="et_pb_fullwidth_header_overlay"></div>
 <div class="et_pb_fullwidth_header_scroll"></div>
 </section>
-</div> <div class="et_pb_section et_pb_section_1 et_pb_with_background et_section_regular">
+</div>
+</div>
+<div class="et_pb_section et_pb_section_1 et_section_regular">
 <div class="et_pb_row et_pb_row_0">
-<div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
-<div class="et_pb_module et_pb_code et_pb_code_0">
-<div class="et_pb_code_inner"><style>
-         .sei_CustomCaseStudiesDisplay {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-         .sei_CustomCaseStudiesDisplay article {
-  display: flex;
-  width: 30%;
-  margin: 0 0 3em;
-  background: #fff;
-  flex-flow: column;
-  border: 1px solid #d8d8d8;
-}
-         .sei_CustomCaseStudiesDisplay article .image_area {
-         margin-right: 2em;
-         background: #fff;
-         background-position: center;
-         width: 100%;
-         height: 25vh;
-         background-repeat: no-repeat;
-         border-bottom: 1px solid #d8d8d8;
-         background-size: contain;
-  }
-         .sei_CustomCaseStudiesDisplay article .description {width: 100%;padding: 15px;}
-         .sei_CustomCaseStudiesDisplay article img {}
-
-         .sei_CustomCaseStudiesDisplay article h3 {
-         margin: 0 0 15px;
-  line-height: 1em;
-  }
-         .sei_CustomCaseStudiesDisplay article .excerpt {
-  margin: 0 0 1em 0;
-}
-         .sei_CustomCaseStudiesDisplay article .read_more {
-             transition: ease all 250ms;
-             color: #541ba1;
-             font-weight: 600;
-             font-size: 1.2em;
-         }
-         .sei_CustomCaseStudiesDisplay article .read_more:hover {
-             color: #02d002;
-         }
-         
-         @media (max-width: 1000px) {
-               .sei_CustomCaseStudiesDisplay article {
-                  width: 47%;
-                  margin: 0 0 3em 0;
-                }
-         }
-         
-          @media (max-width: 768px) {
-               .sei_CustomCaseStudiesDisplay article {
-                  width: 100%;
-                  max-width: 320px;
-                  margin: 0 0 2em 0;
-                }
-                .sei_CustomCaseStudiesDisplay {
-                    justify-content: center;
-                }
-         }
-         
-         
-         </style><div class="sei_CustomCaseStudiesDisplay"><article class="post_id_1143"><div class="image_area" style="background-image: url(../wp-content/uploads/2020/07/Hyatt-McCormick-Place-Logo-1.png); background-size: 90% auto;"></div><div class="description"><h3>Hyatt</h3><p class="excerpt">We developed three new food & beverage concepts for Hyatt McCormack Place; a fast casual restaurant, a casual fine dining restaurant, and a new in-door / outdoor upscale bar.</p></div></article><article class="post_id_760"><div class="image_area" style="background-image: url(../wp-content/uploads/2020/08/WRmain-logo.png); background-size: 90% auto;"></div><div class="description"><h3>Camp Social</h3><p class="excerpt">A New Twist on Family Dining: Refurbish waterpark restaurant to create on-trend dining experience. </p><a class="read_more" href="../case-study/camp-social/index.html">More Info</a></div></article><article class="post_id_914"><div class="image_area" style="background-image: url(../wp-content/uploads/2020/08/Terra-Costiera.jpg); background-size: cover;"></div><div class="description"><h3>Terra Costiera</h3><p class="excerpt">Red Sauce Refresh: Reimagine Italian concept to capitalize on industry trends.</p><a class="read_more" href="../case-study/terra-costiera/index.html">More Info</a></div></article><article class="post_id_761"><div class="image_area" style="background-image: url(../wp-content/uploads/2020/07/seesaw-logo.jpg); "></div><div class="description"><h3>SeeSaw</h3><p class="excerpt">Meet the Modern Cafeteria: Deliver next-generation restaurant quality food in a casual concept.</p><a class="read_more" href="../case-study/seesaw/index.html">More Info</a></div></article><article class="post_id_759"><div class="image_area" style="background-image: url(../wp-content/uploads/2020/07/kingsseafood-website.jpg); "></div><div class="description"><h3>Kings Restaurant Group</h3><p class="excerpt">We assessed and provided recommendations for Kings Restaurant Group, resulting in a successful concept redesign.</p></div></article><article class="post_id_758"><div class="image_area" style="background-image: url(../wp-content/uploads/2020/07/Zagames_RGB-768x435.png); "></div><div class="description"><h3>Zagame</h3><p class="excerpt">We evaluated Zagame’s concepts in Australia for potential expansion into the US market. </p></div></article><article class="post_id_757"><div class="image_area" style="background-image: url(../wp-content/uploads/2020/07/maestros-logo.png); "></div><div class="description"><h3>Mastro&#8217;s Restaurants</h3><p class="excerpt">We developed a real estate strategy and plan for the regional expansion of Mastro Restaurants.</p></div></article><article class="post_id_751"><div class="image_area" style="background-image: url(../wp-content/uploads/2020/07/Updated_Goose_Island_logo.png); background-size: auto 90%;"></div><div class="description"><h3>Goose Island</h3><p class="excerpt">We refined operations, cut food costs, improved gross margins and refreshed the menu for Goose Island Brewery.</p></div></article><article class="post_id_750"><div class="image_area" style="background-image: url(../wp-content/uploads/2020/07/WeberGrill.png); "></div><div class="description"><h3>Weber Grill Restaurant</h3><p class="excerpt">We partnered with 3Sixty Dining Intelligence to reposition and refresh the brand, and update the menu for four Weber Grill locations.</p></div></article></div></div>
+<div class="et_pb_column et_pb_column_1_3 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><h2>About Us</h2></div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_2_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_1 et_animated  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p><span style="font-weight: 400;">Playground Hospitality creates successful new dining concepts, improves existing operations and extends the life span of established restaurants.</span></p>
+<p><span style="font-weight: 400;">Our collaborative approach was shaped over decades developing and operating highly successful dining concepts. We pair top creative talent to your project through our extensive network of industry leaders.</span></p></div>
 </div> 
 </div> 
 </div> 
-</div> <div class="et_pb_section et_pb_section_3 et_animated et_pb_fullwidth_section et_section_regular">
-<section class="et_pb_module et_pb_fullwidth_header et_pb_fullwidth_header_1 et_hover_enabled et_pb_text_align_left et_pb_bg_layout_dark">
-<div class="et_pb_fullwidth_header_container left">
-<div class="header-content-container center">
-<div class="header-content">
-<h2 class="et_pb_module_header">Let's Play!</h2>
-<span class="et_pb_fullwidth_header_subhead">You're welcome in our sandbox.</span>
-<div class="et_pb_header_content_wrapper"></div>
-<a class="et_pb_button et_pb_more_button et_pb_button_one" href="../contact/index.html">Contact Us</a>
-</div>
-</div>
-</div>
-<div class="et_pb_fullwidth_header_overlay"></div>
-<div class="et_pb_fullwidth_header_scroll"></div>
+</div> 
+<section id="cards-columns">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6 my-2">
+        <div class="card">
+  <img class="card-img-top" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3752&q=80" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><div class="text-center">Coding Skills</div> </h5>
+    <p class="card-text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi vero fugiat, vel ipsa dicta quidem beatae dignissimos quis perspiciatis iste, atque, eius facilis iusto velit inventore distinctio laudantium blanditiis unde?</p>
+   <a class="et_pb_button et_pb_more_button et_pb_button_one" href="">Explore How</a>
+          </div>
+          
+          
+      </div>
+    </div>
+      
+      <div class="col-lg-3 col-md-6 col-sm-6 my-2">
+        <div class="card">
+  <img class="card-img-top" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3543&q=80" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><div class="text-center">Programming Skills</div> </h5>
+    <p class="card-text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi vero fugiat, vel ipsa dicta quidem beatae dignissimos quis perspiciatis iste, atque, eius facilis iusto velit inventore distinctio laudantium blanditiis unde?</p>
+   <a class="et_pb_button et_pb_more_button et_pb_button_one" href="">Explore How</a>
+          </div>
+          
+          
+      </div>
+    </div>
+      
+      <div class="col-lg-3 col-md-6 col-sm-6 my-2">
+        <div class="card">
+  <img class="card-img-top" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3750&q=80" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><div class="text-center">Co-Working</div> </h5>
+    <p class="card-text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi vero fugiat, vel ipsa dicta quidem beatae dignissimos quis perspiciatis iste, atque, eius facilis iusto velit inventore distinctio laudantium blanditiis unde?</p>
+   <a class="et_pb_button et_pb_more_button et_pb_button_one" href="">Explore How</a>
+          </div>
+          
+          
+      </div>
+    </div>
+      
+      <div class="col-lg-3 col-md-6 col-sm-6 my-2">
+        <div class="card">
+  <img class="card-img-top" src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3750&q=80" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><div class="text-center">Freebie</div> </h5>
+    <p class="card-text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi vero fugiat, vel ipsa dicta quidem beatae dignissimos quis perspiciatis iste, atque, eius facilis iusto velit inventore distinctio laudantium blanditiis unde?</p>
+<a class="et_pb_button et_pb_more_button et_pb_button_one" href="">Explore How</a>
+          </div>
+          
+          
+      </div>
+    </div>
+  </div>
+  </div>
 </section>
-</div>  </div>
+
+<div class="et_pb_section et_pb_section_1 et_section_regular">
+<div class="et_pb_row et_pb_row_0">
+<div class="et_pb_column et_pb_column_1_3 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><h2>Our Mission</h2></div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_2_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_1 et_animated  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p><span style="font-weight: 400;">Playground Hospitality creates successful new dining concepts, improves existing operations and extends the life span of established restaurants.</span></p>
+<p><span style="font-weight: 400;">Our collaborative approach was shaped over decades developing and operating highly successful dining concepts. We pair top creative talent to your project through our extensive network of industry leaders.</span></p></div>
+</div> 
+</div> 
+</div> 
+</div> 
+
+
+
+
+<div class="et_pb_section et_pb_section_1 et_section_regular">
+<div class="et_pb_row et_pb_row_0">
+<div class="et_pb_column et_pb_column_1_3 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><h2>Our Vision</h2></div>
+</div> 
+</div> <div class="et_pb_column et_pb_column_2_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_1 et_animated  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_text_inner"><p><span style="font-weight: 400;">Playground Hospitality creates successful new dining concepts, improves existing operations and extends the life span of established restaurants.</span></p>
+<p><span style="font-weight: 400;">Our collaborative approach was shaped over decades developing and operating highly successful dining concepts. We pair top creative talent to your project through our extensive network of industry leaders.</span></p></div>
+</div> 
+</div> 
+</div> 
+</div> 
+
+
+
+
+
+
+
+
+
+
+<div class="et_pb_row et_pb_row_8">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_23  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner"><h2>Concept Design</h2></div>
+</div> <div class="et_pb_module et_pb_text et_pb_text_24 et_animated  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner"><p><span style="font-weight: 400;">Playground Hospitality concepts reflect your brand personality through food, atmosphere and service. </span></p>
+<p><span style="font-weight: 400;">Our restaurants stand out and drive repeat guests in a competitive market.</span></p></div>
+</div> <div class="et_pb_button_module_wrapper et_pb_button_10_wrapper  et_pb_module ">
+<a class="et_pb_button et_pb_button_10 et_hover_enabled et_pb_bg_layout_light" href="" style="color: white;">Explore With Us</a>
+</div>
+</div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_3 et_animated et-waypoint">
+<span class="et_pb_image_wrap has-box-shadow-overlay"><div class="box-shadow-overlay"></div><img loading="lazy" src="wp-content/uploads/2020/07/pablo-merchan-montes-MXovqM130UI-unsplash-683x1024.jpg" alt="" title="pablo-merchan-montes-MXovqM130UI-unsplash" height="auto" width="auto" /></span>
+</div>
+</div> 
+</div> 
+
+
+
+
+
+<div class="et_pb_row et_pb_row_8">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_3 et_animated et-waypoint">
+<span class="et_pb_image_wrap has-box-shadow-overlay">
+  <div class="box-shadow-overlay"></div>
+  <img loading="lazy" src="wp-content/uploads/2020/07/pablo-merchan-montes-MXovqM130UI-unsplash-683x1024.jpg" alt="" title="pablo-merchan-montes-MXovqM130UI-unsplash" height="auto" width="auto" /></span>
+</div>
+</div> 
+
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_23  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner">
+  <h2>Operation Strategy</h2>
+</div>
+</div> 
+<div class="et_pb_module et_pb_text et_pb_text_24 et_animated  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner">
+  <p><span style="font-weight: 400;">
+  Playground Hospitality concepts reflect your brand personality through food, atmosphere and service. </span></p>
+  <p><span style="font-weight: 400;">Our restaurants stand out and drive repeat guests in a competitive market.</span></p>
+</div>
+</div>
+<div class="et_pb_button_module_wrapper et_pb_button_10_wrapper  et_pb_module ">
+ <a class="et_pb_button et_pb_more_button et_pb_button_one" href="" style="color: white;">Explore With Us</a>
 </div>
 </div>
 </div> 
-</article> 
+
+
+
+
+
+
+<div class="et_pb_row et_pb_row_8">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_23  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner"><h2>Restaurant Assessment</h2></div>
+</div> <div class="et_pb_module et_pb_text et_pb_text_24 et_animated  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner"><p><span style="font-weight: 400;">Playground Hospitality concepts reflect your brand personality through food, atmosphere and service. </span></p>
+<p><span style="font-weight: 400;">Our restaurants stand out and drive repeat guests in a competitive market.</span></p></div>
+</div> <div class="et_pb_button_module_wrapper et_pb_button_10_wrapper  et_pb_module ">
+<a class="et_pb_button et_pb_button_10 et_hover_enabled et_pb_bg_layout_light" href="" style="color: white;">Explore With Us</a>
+</div>
+</div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_3 et_animated et-waypoint">
+<span class="et_pb_image_wrap has-box-shadow-overlay"><div class="box-shadow-overlay"></div><img loading="lazy" src="wp-content/uploads/2020/07/pablo-merchan-montes-MXovqM130UI-unsplash-683x1024.jpg" alt="" title="pablo-merchan-montes-MXovqM130UI-unsplash" height="auto" width="auto" /></span>
+</div>
 </div> 
-<span class="et_pb_scroll_top et-pb-icon"></span>
+</div> 
+
+
+
+
+
+<div class="et_pb_row et_pb_row_8">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_3 et_animated et-waypoint">
+<span class="et_pb_image_wrap has-box-shadow-overlay">
+  <div class="box-shadow-overlay"></div>
+  <img loading="lazy" src="wp-content/uploads/2020/07/pablo-merchan-montes-MXovqM130UI-unsplash-683x1024.jpg" alt="" title="pablo-merchan-montes-MXovqM130UI-unsplash" height="auto" width="auto" /></span>
+</div>
+</div> 
+
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_23  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner">
+  <h2>Menu Development and Design</h2>
+</div>
+</div> 
+<div class="et_pb_module et_pb_text et_pb_text_24 et_animated  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner">
+  <p><span style="font-weight: 400;">
+  Playground Hospitality concepts reflect your brand personality through food, atmosphere and service. </span></p>
+  <p><span style="font-weight: 400;">Our restaurants stand out and drive repeat guests in a competitive market.</span></p>
+</div>
+</div>
+<div class="et_pb_button_module_wrapper et_pb_button_10_wrapper  et_pb_module ">
+ <a class="et_pb_button et_pb_more_button et_pb_button_one" href="" style="color: white;">Explore With Us</a>
+</div>
+</div>
+</div> 
+<div class="et_pb_row et_pb_row_8">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_23  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner"><h2>Bar and Kitchen organization</h2></div>
+</div> <div class="et_pb_module et_pb_text et_pb_text_24 et_animated  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner"><p><span style="font-weight: 400;">Playground Hospitality concepts reflect your brand personality through food, atmosphere and service. </span></p>
+<p><span style="font-weight: 400;">Our restaurants stand out and drive repeat guests in a competitive market.</span></p></div>
+</div> <div class="et_pb_button_module_wrapper et_pb_button_10_wrapper  et_pb_module ">
+<a class="et_pb_button et_pb_button_10 et_hover_enabled et_pb_bg_layout_light" href="" style="color: white;">Explore With Us</a>
+</div>
+</div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_3 et_animated et-waypoint">
+<span class="et_pb_image_wrap has-box-shadow-overlay"><div class="box-shadow-overlay"></div><img loading="lazy" src="wp-content/uploads/2020/07/pablo-merchan-montes-MXovqM130UI-unsplash-683x1024.jpg" alt="" title="pablo-merchan-montes-MXovqM130UI-unsplash" height="auto" width="auto" /></span>
+</div>
+</div> 
+</div> 
+
+
+
+
+
+<div class="et_pb_row et_pb_row_8">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_3 et_animated et-waypoint">
+<span class="et_pb_image_wrap has-box-shadow-overlay">
+  <div class="box-shadow-overlay"></div>
+  <img loading="lazy" src="wp-content/uploads/2020/07/pablo-merchan-montes-MXovqM130UI-unsplash-683x1024.jpg" alt="" title="pablo-merchan-montes-MXovqM130UI-unsplash" height="auto" width="auto" /></span>
+</div>
+</div> 
+
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_23  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner">
+  <h2>Digital Marketing</h2>
+</div>
+</div> 
+<div class="et_pb_module et_pb_text et_pb_text_24 et_animated  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner">
+  <p><span style="font-weight: 400;">
+  Playground Hospitality concepts reflect your brand personality through food, atmosphere and service. </span></p>
+  <p><span style="font-weight: 400;">Our restaurants stand out and drive repeat guests in a competitive market.</span></p>
+</div>
+</div>
+<div class="et_pb_button_module_wrapper et_pb_button_10_wrapper  et_pb_module ">
+ <a class="et_pb_button et_pb_more_button et_pb_button_one" href="" style="color: white;">Explore With Us</a>
+</div>
+</div>
+</div> 
+<div class="et_pb_row et_pb_row_8">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_23  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner"><h2>Training</h2></div>
+</div> <div class="et_pb_module et_pb_text et_pb_text_24 et_animated  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner"><p><span style="font-weight: 400;">Playground Hospitality concepts reflect your brand personality through food, atmosphere and service. </span></p>
+<p><span style="font-weight: 400;">Our restaurants stand out and drive repeat guests in a competitive market.</span></p></div>
+</div> <div class="et_pb_button_module_wrapper et_pb_button_10_wrapper  et_pb_module ">
+<a class="et_pb_button et_pb_button_10 et_hover_enabled et_pb_bg_layout_light" href="" style="color: white;">Explore With Us</a>
+</div>
+</div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_3 et_animated et-waypoint">
+<span class="et_pb_image_wrap has-box-shadow-overlay"><div class="box-shadow-overlay"></div><img loading="lazy" src="wp-content/uploads/2020/07/pablo-merchan-montes-MXovqM130UI-unsplash-683x1024.jpg" alt="" title="pablo-merchan-montes-MXovqM130UI-unsplash" height="auto" width="auto" /></span>
+</div>
+</div> 
+</div> 
+
+
+
+
+
+<div class="et_pb_row et_pb_row_8">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_3 et_animated et-waypoint">
+<span class="et_pb_image_wrap has-box-shadow-overlay">
+  <div class="box-shadow-overlay"></div>
+  <img loading="lazy" src="wp-content/uploads/2020/07/pablo-merchan-montes-MXovqM130UI-unsplash-683x1024.jpg" alt="" title="pablo-merchan-montes-MXovqM130UI-unsplash" height="auto" width="auto" /></span>
+</div>
+</div> 
+
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_23  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner">
+  <h2>Hiring</h2>
+</div>
+</div> 
+<div class="et_pb_module et_pb_text et_pb_text_24 et_animated  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner">
+  <p><span style="font-weight: 400;">
+  Playground Hospitality concepts reflect your brand personality through food, atmosphere and service. </span></p>
+  <p><span style="font-weight: 400;">Our restaurants stand out and drive repeat guests in a competitive market.</span></p>
+</div>
+</div>
+<div class="et_pb_button_module_wrapper et_pb_button_10_wrapper  et_pb_module ">
+ <a class="et_pb_button et_pb_more_button et_pb_button_one" href="" style="color: white;">Explore With Us</a>
+</div>
+</div>
+</div> 
+<div class="et_pb_row et_pb_row_8">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_23  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner"><h2>Licensing</h2></div>
+</div> <div class="et_pb_module et_pb_text et_pb_text_24 et_animated  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner"><p><span style="font-weight: 400;">Playground Hospitality concepts reflect your brand personality through food, atmosphere and service. </span></p>
+<p><span style="font-weight: 400;">Our restaurants stand out and drive repeat guests in a competitive market.</span></p></div>
+</div> <div class="et_pb_button_module_wrapper et_pb_button_10_wrapper  et_pb_module ">
+<a class="et_pb_button et_pb_button_10 et_hover_enabled et_pb_bg_layout_light" href="" style="color: white;">Explore With Us</a>
+</div>
+</div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_3 et_animated et-waypoint">
+<span class="et_pb_image_wrap has-box-shadow-overlay"><div class="box-shadow-overlay"></div><img loading="lazy" src="wp-content/uploads/2020/07/pablo-merchan-montes-MXovqM130UI-unsplash-683x1024.jpg" alt="" title="pablo-merchan-montes-MXovqM130UI-unsplash" height="auto" width="auto" /></span>
+</div>
+</div> 
+</div> 
+
+
+
+
+
+<div class="et_pb_row et_pb_row_8">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_image et_pb_image_3 et_animated et-waypoint">
+<span class="et_pb_image_wrap has-box-shadow-overlay">
+  <div class="box-shadow-overlay"></div>
+  <img loading="lazy" src="wp-content/uploads/2020/07/pablo-merchan-montes-MXovqM130UI-unsplash-683x1024.jpg" alt="" title="pablo-merchan-montes-MXovqM130UI-unsplash" height="auto" width="auto" /></span>
+</div>
+</div> 
+
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_text et_pb_text_23  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner">
+  <h2>Craveable and Consistent</h2>
+</div>
+</div> 
+<div class="et_pb_module et_pb_text et_pb_text_24 et_animated  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="et_pb_text_inner">
+  <p><span style="font-weight: 400;">
+  Playground Hospitality concepts reflect your brand personality through food, atmosphere and service. </span></p>
+  <p><span style="font-weight: 400;">Our restaurants stand out and drive repeat guests in a competitive market.</span></p>
+</div>
+</div>
+<div class="et_pb_button_module_wrapper et_pb_button_10_wrapper  et_pb_module ">
+ <a class="et_pb_button et_pb_more_button et_pb_button_one" href="" style="color: white;">Explore With Us</a>
+</div>
+</div>
+</div> 
+
+
+
+
+
 
 <footer class="footer-section">
         <div class="container">
@@ -477,8 +786,12 @@ img.emoji {
             </div>
         </div>
     </footer>
+
+    
 </div> 
+</div>
 </div> 
+
 <script type="text/javascript">
         var et_animation_data = [{"class":"et_pb_section_0","style":"slideTop","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"2%","starting_opacity":"100%","speed_curve":"ease-in-out"},{"class":"et_pb_text_1","style":"flipLeft","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"20%","starting_opacity":"100%","speed_curve":"ease-in-out"},{"class":"et_pb_text_3","style":"flip","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"20%","starting_opacity":"100%","speed_curve":"ease-in-out"},{"class":"et_pb_text_4","style":"flip","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"20%","starting_opacity":"100%","speed_curve":"ease-in-out"},{"class":"et_pb_text_6","style":"flip","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"20%","starting_opacity":"100%","speed_curve":"ease-in-out"},{"class":"et_pb_text_7","style":"flip","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"20%","starting_opacity":"100%","speed_curve":"ease-in-out"},{"class":"et_pb_text_9","style":"flip","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"20%","starting_opacity":"100%","speed_curve":"ease-in-out"},{"class":"et_pb_text_10","style":"flip","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"20%","starting_opacity":"100%","speed_curve":"ease-in-out"},{"class":"et_pb_text_12","style":"flip","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"20%","starting_opacity":"100%","speed_curve":"ease-in-out"},{"class":"et_pb_text_13","style":"flip","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"20%","starting_opacity":"100%","speed_curve":"ease-in-out"},{"class":"et_pb_text_19","style":"fade","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_team_member_0","style":"bounceRight","repeat":"once","duration":"1000ms","delay":"250ms","intensity":"50%","starting_opacity":"0%","speed_curve":"ease-in-out"},{"class":"et_pb_image_2","style":"slideRight","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"8%","starting_opacity":"100%","speed_curve":"ease-in-out"},{"class":"et_pb_text_22","style":"flipLeft","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"20%","starting_opacity":"100%","speed_curve":"ease-in-out"},{"class":"et_pb_text_24","style":"flipLeft","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"20%","starting_opacity":"100%","speed_curve":"ease-in-out"},{"class":"et_pb_image_3","style":"slideLeft","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"8%","starting_opacity":"100%","speed_curve":"ease-in-out"},{"class":"et_pb_section_9","style":"zoom","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"6%","starting_opacity":"100%","speed_curve":"ease-in-out"},{"class":"et_pb_section_11","style":"slideBottom","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"6%","starting_opacity":"100%","speed_curve":"ease-in-out"},{"class":"et_pb_section_12","style":"slideBottom","repeat":"once","duration":"1000ms","delay":"0ms","intensity":"6%","starting_opacity":"100%","speed_curve":"ease-in-out"}];
         </script>
@@ -495,5 +808,16 @@ var et_pb_sticky_elements = [];
 <script type='text/javascript' src='wp-content/themes/Divi/js/custom.unified1dc6.js?ver=4.6.5' id='divi-custom-script-js'></script>
 <script type='text/javascript' src='wp-content/themes/Divi/core/admin/js/common1dc6.js?ver=4.6.5' id='et-core-common-js'></script>
 <script type='text/javascript' src='wp-includes/js/wp-embed.min5697.js?ver=5.5.3' id='wp-embed-js'></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $('.bd-example-modal-lg').modal('toggle');
+    $(window).on('load',function(){
+        $('.bd-example-modal-lg').modal('show');
+    });
+</script>
+
 </body>
 </html>
