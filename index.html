@@ -25,6 +25,7 @@
 <meta property="og:site_name" content="hospitality" />
 <meta property="article:modified_time" content="2020-11-24T18:29:07+00:00" />
 <meta name="twitter:card" content="summary_large_image" />
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel='dns-prefetch' href='http://www.google.com/' />
 <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
@@ -60,6 +61,7 @@ var et_core_api_spam_recaptcha = {"site_key":"6LepqboZAAAAACV8dkpDQdb8p3RyJNJUDB
   <link href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed2eb0.json?url=https%3A%2F%2Fplaygroundhospitality.com%2F" />
 <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed5710?url=https%3A%2F%2Fplaygroundhospitality.com%2F&amp;format=xml" />
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><link rel="shortcut icon" href="#" /><script>
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -235,6 +237,45 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 .mb-30{
   margin-bottom: 30px;
 }
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+  margin-top:16px;
+}
+.divfloat{
+        position: fixed;
+    width: 108px;
+    height: 30px;
+    bottom: 53px;
+    right: 100px;
+    background-color: #040404;
+    color: #ffffff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 19px;
+    /* box-shadow: 2px 2px 3px #999; */
+z-index: 100;
+      animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 </style>
 <link rel="stylesheet" type="text/css" href="style.scss">
 </head>
@@ -252,7 +293,7 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 <nav id="top-menu-nav">
 <ul id="top-menu" class="nav">
 <li id="menu-item-1196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1196">
-  <a href="index.html">What We Do</a>
+  <a href="index.html">WHAT WE DO?</a>
 </li>
 
 <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="whoweare.html">WHO WE ARE?
@@ -328,7 +369,7 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 <div class="et_pb_text_inner"><p><span style="font-weight: 400;">Playground Hospitality concepts reflect your brand personality through food, atmosphere and service. </span></p>
 <p><span style="font-weight: 400;">Our restaurants stand out and drive repeat guests in a competitive market.</span></p></div>
 </div> <div class="et_pb_button_module_wrapper et_pb_button_10_wrapper  et_pb_module ">
-<a class="et_pb_button et_pb_button_10 et_hover_enabled et_pb_bg_layout_light" href="" style="color: white;">Explore With Us</a>
+<a class="et_pb_button et_pb_button_10 et_hover_enabled et_pb_bg_layout_light" href="conceptdesign.html" style="color: white;">Explore With Us</a>
 </div>
 </div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
 <div class="et_pb_module et_pb_image et_pb_image_3 et_animated et-waypoint">
@@ -574,108 +615,61 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 
 <footer class="footer-section">
         <div class="container" style="padding-top: 0px;">
-           <!--  <div class="footer-cta pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="cta-text">
-                                <h4>Find us</h4>
-                                <span>1010 Avenue, sw 54321, chandigarh</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-phone"></i>
-                            <div class="cta-text">
-                                <h4>Call us</h4>
-                                <span>9876543210 0</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="far fa-envelope-open"></i>
-                            <div class="cta-text">
-                                <h4>Mail us</h4>
-                                <span>mail@info.com</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+     
             <div class="footer-content pt-5 pb-5">
                 <div class="row">
                   <div  class="col-xl-12 col-lg-12 mb-30"> 
-                    <h4 style="text-align: center;color: white;">Interested in Working Together? Click Here to Connect</h4>
+                    <p style="text-align: center;color: white;font-size: 20px;">Interested in Working Together? <a href=""> Click Here </a>  to Connect</p>
                   </div>
-                    <div class="col-xl-4 col-lg-4 mb-25">
+                    <div class="col-xl-2 col-lg-2 mb-25">
                         <div class="footer-widget">
-                             <div class="footer-social-icon mb-30">
+                            <div class="footer-logo">
+                            <a href="index.html"><img src="assets/img/fullredicon.png" class="img-fluid" alt="logo" style="width: 80%;"></a>
+                            </div>
+                                  
+                        </div>
+                    </div>
+                        
+   <div class="col-xl-4 col-lg-4 mb-25">
+                     
+                                <div class="footer-text" style="display: grid;position: absolute;bottom: 45px;"> 
+                              <a href="#"> <i class="fas fa-phone"></i> <span>+91 9105210529</span></a>
+                              <a href="#">  <i class="far fa-envelope-open"></i>   <span>Hello@for-restaurantconsultancy.com</span></a>
+
+                            </div>
+                   
+                    </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget" >
+                        
+                                   <div class="footer-social-icon " style="position: absolute;bottom: 45px;">
                                
                                 <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
                                 
                                 <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
                             </div>
-                            <div class="footer-logo">
-                                <a href="index.html"><img src="assets/img/fullredicon.png" class="img-fluid" alt="logo" style="width: 34%;"></a>
-                            </div>
-                            <div class="footer-text" style="display: grid;" > 
-                              <a href="#"> <i class="fas fa-phone"></i> <span>98765432100</span></a>
-                              <a href="#">  <i class="far fa-envelope-open"></i>   <span>mail@info.com</span></a>
-                                 <ul>
-                                <li></li>
-                                <li> </li>
-                              </ul>
-                            </div>
-                           
+
                         </div>
                     </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Useful Links</h3>
-                            </div>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">services</a></li>
-                                <li><a href="#">portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Our Services</a></li>
-                                <li><a href="#">Expert Team</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Latest News</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                        <div class="footer-widget">
-                            <div class="footer-widget-heading">
-                                <h3>Subscribe</h3>
-                            </div>
-                            <div class="footer-text mb-25">
-                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                            </div>
-                            <div class="subscribe-form">
-                                <form action="#">
-                                    <input type="text" placeholder="Email Address">
-                                    <button><i class="fab fa-telegram-plane"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                   
                         <div class="col-xl-12 col-lg-12 text-center text-lg-center">
                         <div class="copyright-text">
-                            <p>Copyright &copy; For Restaurant Consultancy  2020, All Right Reserved Developed by SoftEzi<a href=""></a></p>
+                            <p>Copyright &copy; 2020, All Right Reserved For Restaurant Consultancy </p>
+                            <p>Developed by <a href="http://www.softezi.in/">SoftEzi</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+<a href="" class="float" target="_blank">
+<i class="fab fa-whatsapp my-float"></i>
+</a>
+<div class="divfloat">
+  <p>Lets Chat!</p>
+</div>
+<a href="" class="float" target="_blank" style="bottom: 110px;">
+<i class="fas fa-phone my-float"></i>
+</a>
     </footer>
  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
