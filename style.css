@@ -44,6 +44,9 @@ z-index: 100;
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
+.footer-social-icon a {
+  margin-right: 0px; 
+}
   }
 img.wp-smiley,
 img.emoji {
@@ -264,4 +267,8 @@ z-index: 100;
     font-size: 19px;
     margin-left: 104px;
 }
+
+}
+.footer-social-icon a {
+  margin-right: 0px; 
 }
