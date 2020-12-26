@@ -47,6 +47,21 @@ z-index: 100;
 .footer-social-icon a {
   margin-right: 0px; 
 }
+}
+ @media (max-width: 580px) {
+.et_pb_image_3 .et_pb_image_wrap, .et_pb_image_3 img {
+    width: 100%;
+    display: contents;
+}
+.et_pb_row_8.et_pb_row {
+    margin-bottom: 30px!important;
+  }
+.et_pb_text_23 h2 {
+    width: 100%;
+}
+.footer-logo img {
+    max-width: 23%;
+}
   }
 img.wp-smiley,
 img.emoji {
