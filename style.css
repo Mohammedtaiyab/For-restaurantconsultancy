@@ -47,6 +47,42 @@ z-index: 100;
 .footer-social-icon a {
   margin-right: 0px; 
 }
+
+select {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -webkit-appearance: none;
+    background-color: #eee;
+    width: 100%;
+    border-width: 0;
+    border-radius: 0;
+    color: #999;
+    font-size: 14px;
+    padding: 16px;
+  }
+  .modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 4rem;
+}
+.mycheckbox{
+  display: flex;
+
+}
+.mycheckbox input{
+  width: auto;
+}
+.mycheckbox label{
+      padding: 0px 7px;
+    color: white;
+    margin-top: -4px;
+    font-size: smaller;
+}
+.modal-content {
+   background:  #003b4d;
+    border: 0px;
+}
 }
  @media (max-width: 580px) {
 .et_pb_image_3 .et_pb_image_wrap, .et_pb_image_3 img {
@@ -112,7 +148,7 @@ img.emoji {
 
    
 .modal-content {
-   background: transparent;
+   background: #003b4d;
     border: 0px;
 }
 .form{width:340px;height:440px;background:#e6e6e6;border-radius:8px;box-shadow:0 0 40px -10px #000;margin:calc(50vh - 220px) auto;padding:20px 30px;max-width:calc(100vw - 40px);box-sizing:border-box;font-family:'Montserrat',sans-serif;position:relative}
@@ -286,4 +322,24 @@ z-index: 100;
 }
 .footer-social-icon a {
   margin-right: 0px; 
+}
+
+.modal-body {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 4rem;
+}
+.mycheckbox{
+  display: flex;
+
+}
+.mycheckbox input{
+  width: auto;
+}
+.mycheckbox label{
+      padding: 0px 7px;
+    color: white;
+    margin-top: -4px;
+    font-size: smaller;
 }
