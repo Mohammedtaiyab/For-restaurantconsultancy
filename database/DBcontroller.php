@@ -2,10 +2,10 @@
 class DBcontroller
 {
 	
-	protected $host ='localhost';
-	protected $user='Mohammed';
-	protected $password="Mohammed@53";
-	protected $database="for-rest-db";
+		protected $host ='localhost';
+	protected $user='u613418722_forrestaurant';
+	protected $password="SoftEzi@123";
+	protected $database="u613418722_forrestaurant";
 
 	public $con=null;
 public function __construct(){
