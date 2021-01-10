@@ -67,7 +67,7 @@ require ('include/sidebar.php');
                 </span>
             </span>
         </div>
-        <img id='img-upload' src='assets/images/services/<?php echo $service[0]['Image']; ?>' style="width: 100%;">
+        <img id='img-upload' src='../assets/img/pages/<?php echo $service[0]['Image']; ?>' style="width: 100%;">
     </div>
 									</div>
 									</form>
