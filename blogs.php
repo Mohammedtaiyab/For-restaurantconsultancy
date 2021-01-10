@@ -24,7 +24,7 @@ require ('include/header.php');
 
 <article class="sei_post_excerpt post_id_1212">
 <a class="post_thumbnail_link" href='blog.php?id=<?php  echo $page['ID'];?>'>
-<div class="col_one" style="background-image: url(assets/img/<?php echo $page['Image'];?>); background-size:90% auto; "></div>
+<div class="col_one" style="background-image: url(assets/img/pages/<?php echo $page['Image'];?>); background-size:90% auto; "></div>
 </a>
 <div class="col_two">
 <div class="meta_date">

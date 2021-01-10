@@ -11,7 +11,7 @@ $indexhead=$header->getData($x['filename']);
 <div class="et-l et-l--post">
 <div class="et_builder_inner_content et_pb_gutters3">
 <div class="et_pb_section et_pb_section_0 et_animated et_pb_fullwidth_section et_section_regular">
-<section class="et_pb_module et_pb_fullwidth_header et_pb_fullwidth_header_0 et_hover_enabled et_pb_text_align_left et_pb_bg_layout_dark"style=" background-image: linear-gradient(90deg,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%),url(assets/img/<?php echo $indexhead[0]['Bg_image']; ?>);
+<section class="et_pb_module et_pb_fullwidth_header et_pb_fullwidth_header_0 et_hover_enabled et_pb_text_align_left et_pb_bg_layout_dark"style=" background-image: linear-gradient(90deg,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%),url(assets/img/pages/<?php echo $indexhead[0]['Bg_image']; ?>);
 }" >
 <div class="et_pb_fullwidth_header_container left">
 <div class="header-content-container center">

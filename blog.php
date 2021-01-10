@@ -33,7 +33,7 @@ echo date("d-M-Y", strtotime($page['Addon']));?></span> | <a href="" rel="catego
 <div class="et_pb_row_inner et_pb_row_inner_2_tb_body">
 <div class="et_pb_column et_pb_column_4_4 et_pb_column_inner et_pb_column_inner_2_tb_body et-last-child">
 <div class="et_pb_module et_pb_image et_pb_image_1_tb_body">
-<span class="et_pb_image_wrap "><img loading="lazy" src='assets/img/<?php echo $page['Image'];?>' alt="" title="" height="auto" width="auto" class="wp-image-1213" /></span>
+<span class="et_pb_image_wrap "><img loading="lazy" src='assets/img/pages/<?php echo $page['Image'];?>' alt="" title="" height="auto" width="auto" class="wp-image-1213" /></span>
 </div>
 </div> 
 </div> 
