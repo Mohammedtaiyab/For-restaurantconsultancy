@@ -9,7 +9,7 @@ if(isset($_POST['header'])){
 	if(!empty($filename)){
 				$ext = pathinfo($filename, PATHINFO_EXTENSION);
 				$new_filename = rand(10,10000)."_".$page.'.'.$ext;
-				move_uploaded_file($_FILES['bgimage']['tmp_name'], 'assets/images/bg-images/'.$new_filename);	
+				move_uploaded_file($_FILES['bgimage']['tmp_name'], '../assets/img/pages/'.$new_filename);	
 			}
 			else{
 				$new_filename = '';
@@ -34,7 +34,7 @@ if(isset($_POST['updatedesc'])){
 	if(!empty($filename)){
 				$ext = pathinfo($filename, PATHINFO_EXTENSION);
 				$new_filename = rand(10,10000)."_".$url.'.'.$ext;
-				move_uploaded_file($_FILES['image']['tmp_name'], 'assets/images/services/'.$new_filename);	
+				move_uploaded_file($_FILES['image']['tmp_name'], '../assets/img/pages/'.$new_filename);	
 			}
 			else{
 				$new_filename = '';
@@ -58,7 +58,7 @@ if(isset($_POST['sersec'])){
 	if(!empty($filename)){
 				$ext = pathinfo($filename, PATHINFO_EXTENSION);
 				$new_filename = rand(10,10000)."_IMG".'.'.$ext;
-				move_uploaded_file($_FILES['bgimage']['tmp_name'], 'assets/images/services/'.$new_filename);	
+				move_uploaded_file($_FILES['bgimage']['tmp_name'], '../assets/img/pages/'.$new_filename);	
 			}
 			else{
 				$new_filename = '';
@@ -74,7 +74,7 @@ if(isset($_POST['Updatesersec'])){
 	if(!empty($filename)){
 				$ext = pathinfo($filename, PATHINFO_EXTENSION);
 				$new_filename = rand(10,10000)."_IMG".'.'.$ext;
-				move_uploaded_file($_FILES['image']['tmp_name'], 'assets/images/services/'.$new_filename);	
+				move_uploaded_file($_FILES['image']['tmp_name'], '../assets/img/pages/'.$new_filename);	
 			}
 			else{
 				$new_filename = '';
@@ -90,7 +90,7 @@ if(isset($_POST['aboutus'])){
 	if(!empty($filename)){
 				$ext = pathinfo($filename, PATHINFO_EXTENSION);
 				$new_filename = rand(10,10000)."_".$id.'.'.$ext;
-				move_uploaded_file($_FILES['image']['tmp_name'], 'assets/images/aboutus/'.$new_filename);	
+				move_uploaded_file($_FILES['image']['tmp_name'], '../assets/img/pages/'.$new_filename);	
 			}
 			else{
 				$new_filename = '';
@@ -105,7 +105,7 @@ if(isset($_POST['employee'])){
 	if(!empty($filename)){
 				$ext = pathinfo($filename, PATHINFO_EXTENSION);
 				$new_filename = rand(10,10000)."_Emp".'.'.$ext;
-				move_uploaded_file($_FILES['image']['tmp_name'], 'assets/images/aboutus/'.$new_filename);	
+				move_uploaded_file($_FILES['image']['tmp_name'], '../assets/img/pages/'.$new_filename);	
 			}
 			else{
 				$new_filename = '';
@@ -128,7 +128,7 @@ if(isset($_POST['blog'])){
 	if(!empty($filename)){
 				$ext = pathinfo($filename, PATHINFO_EXTENSION);
 				$new_filename = rand(10,10000)."_Blog".'.'.$ext;
-				move_uploaded_file($_FILES['blogimage']['tmp_name'], 'assets/images/blogs/'.$new_filename);	
+				move_uploaded_file($_FILES['blogimage']['tmp_name'], '../assets/img/pages/'.$new_filename);	
 			}
 			else{
 				$new_filename = '';
@@ -148,7 +148,7 @@ if(isset($_POST['head'])){
 	$keywords=$_POST['keywords'];
 	$filename = $_FILES['file']['name'];
 	if(!empty($filename)){
-				move_uploaded_file($_FILES['file']['tmp_name'], 'assets/images/aboutus/'.$filename);	
+				move_uploaded_file($_FILES['file']['tmp_name'], '../assets/img/pages/'.$filename);	
 			}
 	$updatehead=$header->updatehead($id,$title,$description,$keywords,$robots,$script);
 	header('Location: head.php');

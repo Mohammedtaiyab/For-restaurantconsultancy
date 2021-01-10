@@ -39,7 +39,21 @@
           s.parentNode.insertBefore(ga, s);
         })();
       </script>
-
+<script type="text/javascript">
+$(function(){
+  $(document).on('click', '.paragraph', function(){
+    $('#paragraph').modal('show');
+  var id = $(this).data('id');
+    // getRow(id);
+    $('#para').html(id);
+  });
+    $(document).on('click', '.image', function(){
+    $('#image').modal('show');
+  var link = $(this).data('id');
+   $("#img").attr("src","../assets/img/pages/"+link);
+  });
+});
+</script>
 <script type='text/javascript'>
 //<![CDATA[
 var sc_project=10206578; 
