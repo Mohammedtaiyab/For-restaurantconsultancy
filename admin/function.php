@@ -17,10 +17,11 @@ if(isset($_POST['header'])){
 	$updateheader=$header->update($page,$title,$paragraph,$url,$new_filename);
 	header('Location: header.php');
 }
-if(isset($_POST['section'])){
+if(isset($_POST['sectionupdate'])){
 	$id=$_POST['id'];
+	$section=$_POST['section'];
 	$paragraph=$_POST['paragraph'];
-	$updatesection=$sections->update($paragraph,$id);
+	$updatesection=$sections->update($section,$paragraph,$id);
 	header('Location: sections.php');
 }
 
@@ -43,13 +44,18 @@ if(isset($_POST['updatedesc'])){
 	header('Location: services.php?id='.$id);
 }
 
+
 if(isset($_POST['updatesection'])){
 	$id=$_POST['id'];
-	$title=$_POST['titlesection'];
-	$paragraph=$_POST['longdesc'];
-	$updateservice=$services->updatesect($id,$title,$paragraph);
-	header('Location: services.php?id='.$id);
+	$section=$_POST['section'];
+	$paragraph=$_POST['paragraph'];
+	$updatesection=$sections->update($section,$paragraph,$id);
+	header('Location: sections.php');
 }
+
+
+
+
 if(isset($_POST['sersec'])){
 	$id=$_POST['id'];
 	$title=$_POST['title'];
@@ -137,6 +143,29 @@ if(isset($_POST['blog'])){
 		$category=$_POST['newcat'];
 	}
 	$updateservice=$blogs->addblog($title,$paragraph,$new_filename,$category,$tags);
+	header('Location: blog.php');
+}
+
+if(isset($_POST['updateblog'])){
+	$id=$_POST['id'];
+	$title=$_POST['title'];
+	$paragraph=$_POST['paragraph'];
+	$filename = $_FILES['blogimage']['name'];
+	$category=$_POST['category'];
+	$tags=$_POST['tags'];
+		if ($category=="Add") {
+		$category=$_POST['newcat'];
+	}
+	if(!empty($filename)){
+				$ext = pathinfo($filename, PATHINFO_EXTENSION);
+				$new_filename = rand(10,10000)."_Blog".'.'.$ext;
+				move_uploaded_file($_FILES['blogimage']['tmp_name'], '../assets/img/pages/'.$new_filename);	
+			}
+			else{
+				$new_filename = '';
+			}
+
+	$updateservice=$blogs->updateblog($id,$title,$paragraph,$new_filename,$category,$tags);
 	header('Location: blog.php');
 }
 if(isset($_POST['head'])){

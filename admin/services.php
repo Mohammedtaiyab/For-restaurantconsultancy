@@ -5,6 +5,7 @@ require ('include/sidebar.php');
 if(isset($_GET['id'])){
 	$id=$_GET['id'];
 	$service=$services->getDataid($id);
+	$currentpage=$service[0]['Page'];
 }
 ?>
 
@@ -35,7 +36,7 @@ if(isset($_GET['id'])){
                             <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                                 <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Description</a>
                                 <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Section</a>
-                                   <a class="nav-item nav-link" id="nav-section-tab" data-toggle="tab" href="#nav-section" role="tab" aria-controls="nav-profile" aria-selected="false">Service Blocks</a>
+                                   
                                 <a class="nav-item nav-link" id="nav-service-tab" data-toggle="tab" href="#nav-service" role="tab" aria-controls="nav-contact" aria-selected="false">Service Cards</a>
                             </div>
                         </nav>
@@ -106,20 +107,22 @@ if(isset($_GET['id'])){
 							</div>
 							<hr/>
 							
-
+<?php 
+$about=$sections->getData($currentpage);
+?>
 						<form action="function.php" method="POST" enctype="multipart/form-data">
-											<input type="hidden" name="id" value='<?php echo $id;?>'>
+											<input type="hidden" name="id" value='<?php echo $about[0]['ID']; ?>'>
 											<div class="input-group mb-3">
 								<div class="input-group-prepend">	<span class="input-group-text" id="basic-addon1">Title</span>
 								</div>
-							<input type="text" class="form-control" name="titlesection" value='<?php echo $service[0]['Section_title']; ?>' aria-label="Username" aria-describedby="basic-addon1">
+							<input type="text" class="form-control" name="titlesection" value='<?php echo $about[0]['Section']; ?>' aria-label="Username" aria-describedby="basic-addon1">
 							</div>
 						<label for="basic-url">Long Description</label>
 							<div class="input-group mb-3">
 							<!-- 	<div class="input-group-prepend">
 									<span class="input-group-text">Paragraph</span>
 								</div> -->	
-								<textarea class="form-control" id="longdesc" name="longdesc" aria-label="With textarea"><?php echo $service[0]['Long_Description']; ?></textarea>	<script>
+								<textarea class="form-control" id="longdesc" name="longdesc" aria-label="With textarea"><?php echo $about[0]['Paragraph']; ?></textarea>	<script>
 							CKEDITOR.replace( 'longdesc' );
 							</script>
 							</div>

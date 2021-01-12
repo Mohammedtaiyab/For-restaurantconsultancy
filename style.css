@@ -434,15 +434,33 @@ h1.heading {
   font-weight:600;
   text-transform: uppercase
 }
+@media (max-width: 360px)
+{
 
-.ptext {
+ .ptext {
    overflow: hidden;
    text-overflow: ellipsis;
    display: -webkit-box;
    -webkit-line-clamp: 2; /* number of lines to show */
    -webkit-box-orient: vertical;
+   padding-bottom: 5px;
+} 
 }
-
+.ptext {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 4; /* number of lines to show */
+   -webkit-box-orient: vertical;
+   padding-bottom: 5px;
+}
+.ptext4 {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 4; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
 .about-card{
 box-shadow: none;
 border-radius: 0;

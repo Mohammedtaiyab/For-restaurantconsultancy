@@ -8,7 +8,7 @@ class Sections
 		$this->db=$db;
 	}
 	public function getData($section){
-		$result =$this->db->con->query("SELECT Paragraph FROM sections WHERE Section='".$section."'");
+		$result =$this->db->con->query("SELECT * FROM sections WHERE Page='".$section."'");
 		$resultArray=array();
 		while ($item=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
 			$resultArray[]=$item;
@@ -37,8 +37,8 @@ class Sections
 		return $resultArray;
 	
 	}
-	public function update($paragraph,$id){
-		$result =$this->db->con->query("UPDATE sections SET Paragraph='".$paragraph."' WHERE ID=".$id);
+	public function update($section,$paragraph,$id){
+		$result =$this->db->con->query("UPDATE sections SET Section='".$section."', Paragraph='".$paragraph."' WHERE ID=".$id);
 		return $result;
 	
 	}

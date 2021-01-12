@@ -10,102 +10,60 @@ $indexhead=$header->getData($x['filename']);
 <div class="et_pb_text_inner" style="text-align: -webkit-center;"><h2><?php echo $indexhead[0]['Title']; ?></h2></div>
 </div> <div class="et_pb_module et_pb_text et_pb_text_18  et_pb_text_align_center et_pb_bg_layout_light">
 <div class="et_pb_text_inner"><?php echo $indexhead[0]['Paragraph']; ?></div>
-</div> <div class="et_pb_button_module_wrapper et_pb_button_7_wrapper et_pb_button_alignment_center et_pb_module ">
-<a class="et_pb_button et_pb_button_7 et_pb_bg_layout_light" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Explore How</a>
+</div> <!-- <div class="et_pb_button_module_wrapper et_pb_button_7_wrapper et_pb_button_alignment_center et_pb_module ">
+<a class="et_pb_button et_pb_button_7 et_pb_bg_layout_light" href='<?php// echo $indexhead[0]['Button_link'].".php"; ?>'>Explore How</a>
+</div> -->
+</div> 
+</div> 
 </div>
-</div> 
-</div> 
-</div> 
+<?php 
+$about=$sections->getData($x['filename']);
+?>
 <div class="et_pb_section et_pb_section_1 et_section_regular">
 <div class="et_pb_row et_pb_row_0">
 <div class="et_pb_column et_pb_column_1_3 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough">
 <div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
-<div class="et_pb_text_inner"><h2>Our Game</h2></div>
+<div class="et_pb_text_inner"><h2><?php echo $about[0]['Section']; ?></h2></div>
 </div> 
-</div> <div class="et_pb_column et_pb_column_2_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+</div>
+<div class="et_pb_column et_pb_column_2_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
 <div class="et_pb_module et_pb_text et_pb_text_1 et_animated  et_pb_text_align_left et_pb_bg_layout_light">
-<div class="et_pb_text_inner"><p><span style="font-weight: 400;">Playground Hospitality creates successful new dining concepts, improves existing operations and extends the life span of established restaurants.</span></p>
-<p><span style="font-weight: 400;">Our collaborative approach was shaped over decades developing and operating highly successful dining concepts. We pair top creative talent to your project through our extensive network of industry leaders.</span></p></div>
+<div class="et_pb_text_inner">
+<?php echo $about[0]['Paragraph']; ?>
+</div>
 </div> 
 </div> 
-</div> 
-
-
-
-
-
-
-
-
-
+</div>
+</div>
 <section class="wrapper">
     <div class="container-fostrap">
         <div class="content">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-4">
+<?php                    
+$blog=$blogs->search($x['filename']);
+foreach ($blog as $page) {?>
+<div class="col-xs-12 col-sm-4">
                         <div class="card">
                             <a class="img-card" href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
-                            <img src="https://1.bp.blogspot.com/-Bii3S69BdjQ/VtdOpIi4aoI/AAAAAAAABlk/F0z23Yr59f0/s640/cover.jpg" />
+                            <img src='assets/img/pages/<?php  echo $page['Image']?>' />
                           </a>
-                            <div class="card-content">
+                            <div class="card-content ptext">
                                 <h4 class="card-title">
-                                    <a href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html"> Bootstrap 3 Carousel FadeIn Out Effect
+                                   
+<a  href='blog.php?id=<?php  echo $page['ID'];?>'><?php echo $page['Title'];?></a>
                                   </a>
                                 </h4>
-                                <p class="">
-                                    Tutorial to make a carousel bootstrap by adding more wonderful effect fadein ...
-                                </p>
+                               <?php echo $page['Blog'];?>
                             </div>
                             <div class="card-read-more">
-                                <a href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html" class="btn btn-link btn-block">
-                                    Read More
-                                </a>
+                                <a class="btn btn-link btn-block" href='blog.php?id=<?php  echo $page['ID'];?>'>Read More</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="card">
-                            <a class="img-card" href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html">
-                            <img src="https://3.bp.blogspot.com/-bAsTyYC8U80/VtLZRKN6OlI/AAAAAAAABjY/kAoljiMALkQ/s400/material%2Bnavbar.jpg" />
-                          </a>
-                            <div class="card-content">
-                                <h4 class="card-title">
-                                    <a href="http://www.fostrap.com/2016/02/awesome-material-design-responsive-menu.html"> Material Design Responsive Menu
-                                  </a>
-                                </h4>
-                                <p class="">
-                                    Material Design is a visual programming language made by Google. Language programming...
-                                </p>
-                            </div>
-                            <div class="card-read-more">
-                                <a href="" class="btn btn-link btn-block">
-                                    Read More
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="card">
-                            <a class="img-card" href="http://www.fostrap.com/2016/03/5-button-hover-animation-effects-css3.html">
-                            <img src="https://4.bp.blogspot.com/-TDIJ17DfCco/Vtneyc-0t4I/AAAAAAAABmk/aa4AjmCvRck/s1600/cover.jpg" />
-                          </a>
-                            <div class="card-content">
-                                <h4 class="card-title">
-                                    <a href="">5  Button Hover Animation Effects
-                                  </a>
-                                </h4>
-                                <p class="">
-                                    tutorials button hover animation, although very much a hover button is very beauti...
-                                </p>
-                            </div>
-                            <div class="card-read-more">
-                                <a href="" class="btn btn-link btn-block">
-                                    Read More
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+<?php 
+}
+?>
                 </div>
             </div>
         </div>
@@ -118,7 +76,7 @@ $i=1;
 foreach ($section as $sec) {
     if($i%2==0){?>
 
-        <div class="et_pb_section et_pb_section_4 et_section_regular">
+<div class="et_pb_section et_pb_section_4 et_section_regular">
 <div class="et_pb_row et_pb_row_4">
 <div class="et_pb_column et_pb_column_1_2 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough">
 <div class="et_pb_module et_pb_image et_pb_image_1">
@@ -152,17 +110,10 @@ foreach ($section as $sec) {
 </div> 
 </div> 
 </div> 
-
 <?php } 
 $i++;
 }
 ?>
-
-
-
-
-
 <?php
 require ('include/footer.php');
 ?>
-

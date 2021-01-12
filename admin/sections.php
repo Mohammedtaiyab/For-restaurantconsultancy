@@ -16,7 +16,7 @@ require ('include/sidebar.php');
 								<ol class="breadcrumb mb-0 p-0">
 									<li class="breadcrumb-item"><a href="javascript:;"><i class='bx bx-home-alt'></i></a>
 									</li>
-									<li class="breadcrumb-item active" aria-current="page">Header</li>
+									<li class="breadcrumb-item active" aria-current="page">Sections</li>
 								</ol>
 							</nav>
 						</div>
@@ -33,6 +33,7 @@ require ('include/sidebar.php');
 									<thead>
 										<tr>
 											<th>SNo:</th>
+											<th>Page</th>
 											<th>Section</th>
 											<th>Paragaph</th>
 											<th>Action</th>
@@ -45,6 +46,8 @@ require ('include/sidebar.php');
 										foreach ($section as $page) {
 												echo "<tr>
 												<td>".$i."</td>
+
+											<td>".$page['Page']."</td>
 											<td>".$page['Section']."</td>
 											<td>";?>
 												<a href="#paragraph" class="paragraph" data-toggle='modal' data-id='<?php echo $page['Paragraph'];?>'>View</a>
@@ -60,6 +63,7 @@ require ('include/sidebar.php');
 									<tfoot>
 										<tr>
 											<th>SNo:</th>
+											<th>Page</th>
 											<th>Section</th>
 											<th>Paragaph</th>
 											<th>Action</th>

@@ -58,10 +58,19 @@ require ('include/sidebar.php');
                         <a href="#image" class="image" data-toggle='modal' data-id='<?php echo $page['Image'];?>'>View</a>
 
                         <?php echo"</td>
-                      <td>".$page['Category']."</td>
-                       <td>".$page['Tags']."</td>
-                      ";?>
-                      <td><a href='headeredit.php?page=<?php echo $page['Page'];?>' class="btn btn-primary">Edit</button></td>
+                      <td>".$page['Category']."</td>";?>
+                         <td style="
+             overflow: hidden;
+             display: inline-block;
+             white-space: word-wrap;
+             border: 0;">
+        <div style="white-space: normal; word-wrap: break-word; word-break: break-word;"><?php echo $page['Tags'];?></div>
+
+
+      </td>
+                
+                  
+                      <td><a href='blog_edit.php?id=<?php echo $page['ID'];?>' class="btn btn-primary">Edit</button></td>
                       <?php echo "
                         </tr>
                         ";
@@ -93,21 +102,7 @@ require ('include/sidebar.php');
 <?php
 require ('include/modals.php');
 ?>
-<script type="text/javascript">
-$(function(){
-  $(document).on('click', '.paragraph', function(){
-    $('#paragraph').modal('show');
-  var id = $(this).data('id');
-    // getRow(id);
-    $('#para').html(id);
-  });
-    $(document).on('click', '.image', function(){
-    $('#image').modal('show');
-  var link = $(this).data('id');
-   $("#img").attr("src","assets/images/bg-images/"+link);
-  });
-});
-</script>
+s
 <?php
 require ('include/footer.php');
 require ('include/script.php');

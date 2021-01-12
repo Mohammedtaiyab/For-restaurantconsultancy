@@ -31,7 +31,24 @@ class Blogs
 		}
 		return $resultArray;
 	}
+		public function getDatabyid($id){
+		$result =$this->db->con->query("SELECT * FROM blog WHERE ID=".$id);
+		$resultArray=array();
+		while ($item=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+			$resultArray[]=$item;
+			# code...
+		}
+		return $resultArray;
+	}
+		public function updateblog($id,$title,$paragraph,$new_filename,$category,$tags){
+		if(!$new_filename==null){
+
+		$result =$this->db->con->query("UPDATE blog SET Title='".$title."',Blog='".$paragraph."',Category='".$category."',Image='".$new_filename."',Tags='".$tags."' WHERE ID=".$id);
+	}else {
+//echo "UPDATE blog SET Title='".$title."',Blog='".$paragraph."',Category='".$category."',Tags='".$tags."' WHERE ID=".$id;
+		$result =$this->db->con->query("UPDATE blog SET Title='".$title."',Blog='".$paragraph."',Category='".$category."',Tags='".$tags."' WHERE ID=".$id);
+	}
+		return $resultArray;
+	}
 }
-
-
 ?>

@@ -36,10 +36,15 @@ require ('include/sidebar.php');
                 
               
               <div class="input-group mb-3">
-                <div class="input-group-prepend"> <span class="input-group-text" id="basic-addon1">Section</span>
+                <div class="input-group-prepend"> <span class="input-group-text" id="basic-addon1">Page</span>
                 </div>
                 <input type="hidden" name="id" value='<?php echo $section[0]['ID']; ?>'>
-                <input type="text" class="form-control" value='<?php echo $section[0]['Section']; ?>' aria-label="Username" aria-describedby="basic-addon1" disabled>
+                <input type="text" class="form-control" value='<?php echo $section[0]['Page']; ?>' aria-label="Page" name="page" aria-describedby="basic-addon1" disabled>
+              </div>
+               <div class="input-group mb-3">
+                <div class="input-group-prepend"> <span class="input-group-text" id="basic-addon1">Section</span>
+                </div>
+                <input type="text" class="form-control" value='<?php echo $section[0]['Section']; ?>' name="section" aria-label="Section" aria-describedby="basic-addon1">
               </div>
             <label for="basic-url">Paragraph</label>
               <div class="input-group mb-3"> 
@@ -47,7 +52,7 @@ require ('include/sidebar.php');
     CKEDITOR.replace( 'paragraph' );
   </script>
               </div>
-                <button class="btn btn-primary"  type="submit" name="section">Update</button>
+                <button class="btn btn-primary"  type="submit" name="sectionupdate">Update</button>
               </form>
             </div>
           </div>

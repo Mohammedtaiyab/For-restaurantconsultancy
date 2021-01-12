@@ -8,7 +8,7 @@ class Blogs
 		$this->db=$db;
 	}
 	public function getallData(){
-		$result =$this->db->con->query("SELECT * FROM blog");
+		$result =$this->db->con->query("SELECT * FROM blog ORDER BY ID DESC");
 		$resultArray=array();
 		while ($item=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
 			$resultArray[]=$item;
@@ -16,8 +16,28 @@ class Blogs
 		}
 		return $resultArray;
 	}
+		public function getAllDatabydec(){
+		$result =$this->db->con->query("SELECT * FROM blog ");
+		$resultArray=array();
+		while ($item=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+			$resultArray[]=$item;
+			# code...
+		}
+		return $resultArray;
+	}
+
 	public function getDatabyid($id){
 		$result =$this->db->con->query("SELECT * FROM blog WHERE ID=".$id);
+		$resultArray=array();
+		while ($item=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+			$resultArray[]=$item;
+			# code...
+		}
+		return $resultArray;
+	}
+
+	public function getbycat($cat){
+		$result =$this->db->con->query("SELECT * FROM blog WHERE Category='".$cat."'");
 		$resultArray=array();
 		while ($item=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
 			$resultArray[]=$item;
@@ -40,7 +60,23 @@ class Blogs
 		}
 		return $resultArray;
 	}
+		public function searchblog($key){
+		$result =$this->db->con->query("SELECT * FROM blog WHERE Title LIKE '%".$key."%' OR Blog LIKE '%".$key."%' OR  Category LIKE '%".$key."%' OR Tags LIKE '%".$key."%'");
+		$resultArray=array();
+		while ($item=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+			$resultArray[]=$item;
+			# code...
+		}
+		return $resultArray;
+	}
+		public function search($key){
+		$result =$this->db->con->query("SELECT * FROM blog WHERE Title LIKE '%".$key."%' OR Blog LIKE '%".$key."%' OR  Category LIKE '%".$key."%' OR Tags LIKE '%".$key."%' LIMIT 3");
+		$resultArray=array();
+		while ($item=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+			$resultArray[]=$item;
+			# code...
+		}
+		return $resultArray;
+	}
 }
-
-
 ?>

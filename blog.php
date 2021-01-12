@@ -50,15 +50,15 @@ echo date("d-M-Y", strtotime($page['Addon']));?></span> | <a href="" rel="catego
 </div>
   		<div class="col-md-3">
 <div class="pagination clearfix">
-<div class="alignleft"><a href="">&laquo; Older Entries</a></div>
+<div class="alignleft"><a href="blogs.php?old=1">&laquo; Older Entries</a></div>
 <div class="alignright"></div>
 </div>
 <div id="sidebar" style="width: 100%">
 <div id="search-2" class="et_pb_widget widget_search">
-<form role="search" method="get" id="searchform" class="searchform" action="">
+<form role="search" method="GET" id="searchform" class="searchform" action="blogs.php">
 <div>
 <label class="screen-reader-text" for="s">Search for:</label>
-<input type="text" value="" name="s" id="s" />
+<input type="text" value="" name="search" id="s" />
 <input type="submit" id="searchsubmit" value="Search" />
 </div>
 </form>

@@ -283,23 +283,7 @@ require ('include/sidebar.php');
 <?php
 require ('include/modals.php');
 ?>
-<script type="text/javascript">
-$(function(){
-  $(document).on('click', '.paragraph', function(){
-    $('#paragraph').modal('show');
-  var id = $(this).data('id');
-    // getRow(id);
-    $('#para').html(id);
-  });
-    $(document).on('click', '.image', function(){
-    $('#image').modal('show');
-  var link = $(this).data('id');
-   $("#img").attr("src","assets/images/bg-images/"+link);
-  });
 
-});
-
-</script>
 <?php
 require ('include/footer.php');
 require ('include/script.php');

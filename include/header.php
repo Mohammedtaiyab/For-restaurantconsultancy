@@ -90,6 +90,18 @@ var et_core_api_spam_recaptcha = {"site_key":"6LepqboZAAAAACV8dkpDQdb8p3RyJNJUDB
    -webkit-line-clamp: 2; /* number of lines to show */
    -webkit-box-orient: vertical;
 }
+@media (max-width: 360px)
+{
+
+ .ptext {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+   -webkit-box-orient: vertical;
+   padding-bottom: 5px;
+} 
+}
 </style>
 
 <link rel="stylesheet" type="text/css" href="style.css">

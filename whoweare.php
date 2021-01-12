@@ -36,9 +36,9 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-->
 <div class="et_pb_row et_pb_row_0">
 <div class="et_pb_column et_pb_column_1_2 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough">
 <div class="et_pb_module et_pb_image et_pb_image_0">
-	<?php
- $head=$employee->aboutus();
- ?>
+<?php
+$head=$employee->aboutus();
+?>
 <span class="et_pb_image_wrap "><img loading="lazy" src='assets/img/<?php echo $head[0]['Image']; ?>' sizes="(max-width: 337px) 100vw, 337px" class="wp-image-829" /></span>
 </div>
 </div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
@@ -53,19 +53,19 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-->
 </div> 
 </div> 
 </div>
-
+<?php 
+$about=$sections->getData($x['filename']);
+?>
 <div class="et_pb_section et_pb_section_1 et_section_regular">
 <div class="et_pb_row et_pb_row_0">
 <div class="et_pb_column et_pb_column_1_3 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough">
 <div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
-<div class="et_pb_text_inner"><h2>Our Partners</h2></div>
+<div class="et_pb_text_inner"><h2><?php echo $about[0]['Section']; ?></h2></div>
 </div> 
 </div> <div class="et_pb_column et_pb_column_2_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
 <div class="et_pb_module et_pb_text et_pb_text_1 et_animated  et_pb_text_align_left et_pb_bg_layout_light">
 <div class="et_pb_text_inner">
-<?php 
-$about=$sections->getData('About');
-echo $about[0]['Paragraph']; ?>
+<?php echo $about[0]['Paragraph']; ?>
 </div>
 </div> 
 </div> 
@@ -115,15 +115,12 @@ echo $about[0]['Paragraph']; ?>
 <div class="et_pb_row et_pb_row_0">
 <div class="et_pb_column et_pb_column_1_3 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough">
 <div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
-<div class="et_pb_text_inner"><h2>Our Qualifications</h2></div>
+<div class="et_pb_text_inner"><h2><?php echo $about[1]['Section']; ?></h2></div>
 </div> 
 </div> <div class="et_pb_column et_pb_column_2_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
 <div class="et_pb_module et_pb_text et_pb_text_1 et_animated  et_pb_text_align_left et_pb_bg_layout_light">
 <div class="et_pb_text_inner">
-<?php 
-$about=$sections->getData('About');
-?>
-<?php echo $about[0]['Paragraph']; ?>
+<?php echo $about[1]['Paragraph']; ?>
 
 
 </div>
