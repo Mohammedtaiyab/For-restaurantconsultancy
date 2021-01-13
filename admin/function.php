@@ -182,4 +182,15 @@ if(isset($_POST['head'])){
 	$updatehead=$header->updatehead($id,$title,$description,$keywords,$robots,$script);
 	header('Location: head.php');
 }
+
+if(isset($_POST['login'])){
+$user=$header->login($_POST['password']);
+if($user==true){
+	 $_SESSION['login'] = true;
+	header('Location: index.php');
+}else{
+	header('Location: login.php?login=false');
+
+}
+}
 ?>

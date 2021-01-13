@@ -59,6 +59,17 @@ public function update($page,$title,$paragraph,$url,$new_filename){
 		return $result;
 	}
 	/////////////////////////////////////////////head////////////////////////////////////////
+	/////////////////////////////////////////////Login///////////////////////////////////////
+	public function login($password){
+			$result =$this->db->con->query("SELECT * FROM admin WHERE Username='Administrator' AND Password='".$password."'");
+			
+		if (mysqli_num_rows($result) == 0) {
+    	return false;
+		}else{
+				return true;
+		}
+
+	}
 }
 
 

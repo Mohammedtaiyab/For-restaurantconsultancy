@@ -468,3 +468,10 @@ border-radius: 0;
 .card-content p{
   text-align: justify;
 }
+
+.footer-section{
+  height: 250px;
+}
+.para{
+  text-align: center;color: white;font-size: 20px;
+}

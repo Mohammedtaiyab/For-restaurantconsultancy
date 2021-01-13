@@ -1,5 +1,9 @@
 <?php
 require('functions.php');
+if(!isset($_SESSION['login']) || trim($_SESSION['login']) == ''){
+		header('location: ../admin/login.php');
+		exit();
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
