@@ -85,9 +85,7 @@ $about=$sections->getData('index');
   <img class="card-img-top" src='assets/img/pages/<?php echo $howwework[0]['Bg_image'];?>' alt="Card image cap">
   <div class="card-body p-text">
     <h5 class="card-title"><div class="text-center"><?php echo $howwework[0]['Title']; ?></div> </h5>
-    <div class="ptext">
  <?php echo $howwework[0]['Paragraph']; ?>
- </div>
 <a class="et_pb_button et_pb_more_button et_pb_button_one" href="howwework.php">Explore How</a>
           </div>
 

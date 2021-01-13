@@ -21,7 +21,7 @@ $head=$header->gethead();
 <meta name="description" content="<?php echo $head[0]['Description'];?>" />
 <meta name="keywords" content="<?php echo $head[0]['keywords'];?>" />
 <meta name="robots" content="<?php echo $head[0]['Robots'];?>" />
-
+<link rel="icon" href="assets/img/redicon.png" type="image/png" />
 <link rel="canonical" href="index.html" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
@@ -132,7 +132,7 @@ var et_core_api_spam_recaptcha = {"site_key":"6LepqboZAAAAACV8dkpDQdb8p3RyJNJUDB
 <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="howwework.php">HOW WE WORK?
 </a></li>
 <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="blogs.php">BLOGS</a></li>
-<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13"><a data-toggle="modal" id="contact" href="#bd-example-modal-lg" >CONTACT</a></li>
+<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13"><a href="contact.php" >CONTACT</a></li>
 </ul> </nav>
 <div id="et_mobile_nav_menu">
 <div class="mobile_nav closed">
