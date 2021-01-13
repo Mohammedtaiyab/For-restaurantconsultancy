@@ -80,7 +80,7 @@ require ('include/sidebar.php');
                 </span>
             </span>
         </div>
-        <img id='img-upload' src='assets/images/aboutus/<?php echo $head[0]['Image']; ?>' style="width: 100%;">
+        <img id='img-upload' src='..assets/img/pages/<?php echo $head[0]['Image']; ?>' style="width: 100%;">
     </div>
 									</div>
 									</form>
@@ -237,7 +237,7 @@ require ('include/sidebar.php');
 												<a href="#image" class="image" data-toggle='modal' data-id='<?php echo $page['Image'];?>'>View</a>
 
 												</td>
-											<td><a href=''class="btn btn-primary">Edit</button></td>
+											<td><a href='edit_about.php?id=<?php echo $page['ID'];?>'class="btn btn-primary">Edit</button></td>
 											<?php echo "
 												</tr>
 												";

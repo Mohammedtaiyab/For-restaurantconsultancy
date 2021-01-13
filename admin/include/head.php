@@ -11,15 +11,12 @@ if(!isset($_SESSION['login']) || trim($_SESSION['login']) == ''){
 	<!-- Required meta tags -->
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<title></title>
+	<title>For-Restaurant</title>
 	<!--favicon-->
-	<link rel="icon" href="assets/images/redicon.png" type="image/png" />
+	<link rel="icon" href="../assets/img/redicon.png" type="image/png" />
 	<!-- Vector CSS -->
-	
 	<link href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
 	<!--plugins-->
-
-
 	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
 	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
 	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />

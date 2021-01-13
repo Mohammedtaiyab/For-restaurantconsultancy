@@ -1,4 +1,4 @@
-<?php
+<?php ///updatesection
 require ('include/functions.php');
 if(isset($_POST['header'])){
 	$page=$_POST['page'];
@@ -46,11 +46,12 @@ if(isset($_POST['updatedesc'])){
 
 
 if(isset($_POST['updatesection'])){
+	$serviceid=$_POST['servieid'];
 	$id=$_POST['id'];
 	$section=$_POST['section'];
 	$paragraph=$_POST['paragraph'];
 	$updatesection=$sections->update($section,$paragraph,$id);
-	header('Location: sections.php');
+	header('Location: services.php?id='.$serviceid);
 }
 
 
@@ -193,4 +194,26 @@ if($user==true){
 
 }
 }
+
+
+
+if(isset($_POST['updateabout'])){
+	$id=$_POST['id'];
+	$title=$_POST['title'];
+	$paragraph=$_POST['paragraph'];
+	$filename = $_FILES['blogimage']['name'];
+	if(!empty($filename)){
+				$ext = pathinfo($filename, PATHINFO_EXTENSION);
+				$new_filename = rand(10,10000)."_emply".'.'.$ext;
+				move_uploaded_file($_FILES['blogimage']['tmp_name'], '../assets/img/pages/'.$new_filename);	
+			}
+			else{
+				$new_filename = '';
+			}
+
+	$updateservice=$employee->updateabout($id,$title,$paragraph,$new_filename);
+	header('Location: aboutus.php');
+}
+
+
 ?>

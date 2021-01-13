@@ -21,7 +21,7 @@ if(isset($_GET['id'])){
 								<ol class="breadcrumb mb-0 p-0">
 									<li class="breadcrumb-item"><a href="javascript:;"><i class='bx bx-home-alt'></i></a>
 									</li>
-									<li class="breadcrumb-item active" aria-current="page">Header</li>
+									<li class="breadcrumb-item active" aria-current="page">Services</li>
 								</ol>
 							</nav>
 						</div>
@@ -46,7 +46,7 @@ if(isset($_GET['id'])){
 					<div class="card">
 						<div class="card-body">
 							<div class="card-title">
-								<h4 class="mb-0">Service</h4>
+								<h4 class="mb-0">Short Description</h4>
 							</div>
 							<hr/>
 							<div class="row">
@@ -111,18 +111,19 @@ if(isset($_GET['id'])){
 $about=$sections->getData($currentpage);
 ?>
 						<form action="function.php" method="POST" enctype="multipart/form-data">
+											<input type="hidden" name="servieid" value='<?php echo $_GET['id'];?>'>
 											<input type="hidden" name="id" value='<?php echo $about[0]['ID']; ?>'>
 											<div class="input-group mb-3">
 								<div class="input-group-prepend">	<span class="input-group-text" id="basic-addon1">Title</span>
 								</div>
-							<input type="text" class="form-control" name="titlesection" value='<?php echo $about[0]['Section']; ?>' aria-label="Username" aria-describedby="basic-addon1">
+							<input type="text" class="form-control" name="section" value='<?php echo $about[0]['Section']; ?>' aria-label="Username" aria-describedby="basic-addon1">
 							</div>
 						<label for="basic-url">Long Description</label>
 							<div class="input-group mb-3">
 							<!-- 	<div class="input-group-prepend">
 									<span class="input-group-text">Paragraph</span>
 								</div> -->	
-								<textarea class="form-control" id="longdesc" name="longdesc" aria-label="With textarea"><?php echo $about[0]['Paragraph']; ?></textarea>	<script>
+								<textarea class="form-control" id="longdesc" name="paragraph" aria-label="With textarea"><?php echo $about[0]['Paragraph']; ?></textarea>	<script>
 							CKEDITOR.replace( 'longdesc' );
 							</script>
 							</div>

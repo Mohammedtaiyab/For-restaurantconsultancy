@@ -17,8 +17,13 @@ class Employee
 		return $resultArray;
 	}
 		public function aboutupdate($id,$title,$paragraph,$new_filename){
+				if(!$new_filename==''|| !$new_filename==null){
 		$result =$this->db->con->query("UPDATE aboutus SET Title='".$title."',Paragraph='".$paragraph."',Image='".$new_filename."' WHERE ID=".$id);
+	}else{
+	$result =$this->db->con->query("UPDATE aboutus SET Title='".$title."',Paragraph='".$paragraph."' WHERE ID=".$id);
+	}
 		return $result;
+	
 	}
 		public function inserteply($title,$paragraph,$new_filename){
 		$sql="INSERT INTO employee(Image,Title,Paragraph) VALUES ('$new_filename','$title','$paragraph')";
@@ -33,6 +38,24 @@ class Employee
 			# code...
 		}
 		return $resultArray;
+	}
+	public function employeedatabyid($id){
+		$result =$this->db->con->query("SELECT * FROM employee WHERE ID=".$id);
+		$resultArray=array();
+		while ($item=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+			$resultArray[]=$item;
+			# code...
+		}
+		return $resultArray;
+	}
+	public function updateabout($id,$title,$paragraph,$new_filename){
+		if(!$new_filename==''|| !$new_filename==null){
+		$result =$this->db->con->query("UPDATE employee SET Image='".$new_filename."',Title='".$title."',Paragraph='".$paragraph."' WHERE ID=".$id);
+	}else{	
+		$result =$this->db->con->query("UPDATE employee SET Title='".$title."',Paragraph='".$paragraph."' WHERE ID=".$id);
+		}
+		return $result;
+	
 	}
 }
 

@@ -1,4 +1,4 @@
-<footer class="footer-section" style="height: 320px;">
+<footer class="footer-section" style="">
         <div class="container" style="padding-top: 0px;">
      
             <div class="footer-content pt-5 pb-5">
@@ -10,7 +10,7 @@
                     <div class="footer-logo" style="margin-bottom: 2px;">
                             <a href="index.html"><img src="assets/img/fullredicon.png" class="img-fluid" alt="logo" style=""></a>
                     </div>
-                     <div class="footer-text" style="font-size: 20px" > 
+                     <div class="footer-text" style="" > 
                               <a href="#" style="margin-right: 8px;"> <i class="fas fa-phone"></i> <span>+91 91052 10529</span></a>
                               <a href="#">  <i class="far fa-envelope-open"></i>   <span>Hello@for-restaurantconsultancy.com</span></a>
                     </div> 

@@ -26,7 +26,11 @@ class Services
 		return $resultArray;
 	}
 		public function update($id,$title,$short_desc,$link,$image){
-		$result =$this->db->con->query("UPDATE services SET Title='".$title."',Short_Description='".$short_desc."',Button_link='".$link."',Image='".$image."' WHERE ID=".$id);
+			if(!$image==''|| !$image==null){
+		$result =$this->db->con->query("UPDATE services SET Title='".$title."',Short_Description='".$short_desc."',Button_link='".$link."',Image='".$image."' WHERE ID=".$id);}
+		else{
+			$result =$this->db->con->query("UPDATE services SET Title='".$title."',Short_Description='".$short_desc."',Button_link='".$link."' WHERE ID=".$id);
+		}
 		return $result;
 	}
 		public function updatesect($id,$title,$long_desc){
@@ -58,10 +62,14 @@ class Services
 		}
 		return $resultArray;
 	}
-		public function updatesersec($id,$title,$paragraph,$new_filename){
-	
-		$sql="UPDATE `services_section` SET Title='".$title."',Description='".$paragraph."',Image='".$new_filename."' WHERE ID=".$id;
-		echo $id;
+		public function updatesersec($id,$title,$paragraph,$image){
+		if(!$image==''|| !$image==null){
+		$sql="UPDATE `services_section` SET Title='".$title."',Description='".$paragraph."',Image='".$image."' WHERE ID=".$id;
+			}else{
+				$sql="UPDATE `services_section` SET Title='".$title."',Description='".$paragraph."' WHERE ID=".$id;
+		
+			}
+
 			$result = mysqli_query($this->db->con,$sql) or die(mysqli_connect_errno()."Data cannot inserted 2");
 		return $result;
 	}

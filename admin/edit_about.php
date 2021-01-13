@@ -30,7 +30,7 @@ require ('include/sidebar.php');
 							</div>
 							<hr/>
 							<?php
-						 $blog=$blogs->getDatabyid($_GET['id']);
+						 $blog=$employee->employeedatabyid($_GET['id']);
 						 ?>
 							<form action="function.php" method="POST" enctype="multipart/form-data" id="blogs">
 								
@@ -45,7 +45,7 @@ require ('include/sidebar.php');
 							<!-- 	<div class="input-group-prepend">
 									<span class="input-group-text">Paragraph</span>
 								</div> -->	
-								<textarea class="form-control" id="paragraph" name="paragraph" aria-label="With textarea">'<?php echo $blog[0]['Blog'];?>'</textarea>	<script>
+								<textarea class="form-control" id="paragraph" name="paragraph" aria-label="With textarea">'<?php echo $blog[0]['Paragraph'];?>'</textarea>	<script>
 		CKEDITOR.replace( 'paragraph' );
 	</script>
 							</div>
@@ -54,33 +54,8 @@ require ('include/sidebar.php');
 								<div class="input-group-append">	<span class="input-group-text" id="basic-addon2">Image</span>
 								</div>
 							</div>
-								<div class="input-group mb-3">
-								<div class="input-group-prepend">	<span class="input-group-text" id="basic-addon1">Tags</span>
-								</div>	
-								<input type="text" value='<?php echo $blog[0]['Tags'];?>' name="tags" data-role="tagsinput" class="form-control" />
-								</div>
-<div class="input-group mb-3">
-<div class="input-group-prepend">
-<span class="input-group-text" id="basic-addon1">Category</span></div>
-
-<select class="form-control" name="category" style="flex: inherit;
-    width: 22%;">
-
-  <?php 
-$category=$blogs->getcategory();
-foreach ($category as $item) {
-	if($blog[0]['Category']==$item['Category']){
-		echo " <option Selected>".$item['Category']."</option>";
-	}else{
-		echo " <option>".$item['Category']."</option>";
-	}
-
-}
-?>
-  <option>Add</option>
-</select>
-</div>
-								<button class="btn btn-primary"  type="submit" name="updateblog">Update</button>
+								
+								<button class="btn btn-primary"  type="submit" name="updateabout">Update</button>
 							</form>
 						</div>
 					</div>

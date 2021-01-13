@@ -41,7 +41,7 @@ class Blogs
 		return $resultArray;
 	}
 		public function updateblog($id,$title,$paragraph,$new_filename,$category,$tags){
-		if(!$new_filename==null){
+	if(!$new_filename==''|| !$new_filename==null){
 
 		$result =$this->db->con->query("UPDATE blog SET Title='".$title."',Blog='".$paragraph."',Category='".$category."',Image='".$new_filename."',Tags='".$tags."' WHERE ID=".$id);
 	}else {

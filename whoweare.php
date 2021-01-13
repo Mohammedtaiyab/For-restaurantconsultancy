@@ -39,7 +39,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-->
 <?php
 $head=$employee->aboutus();
 ?>
-<span class="et_pb_image_wrap "><img loading="lazy" src='assets/img/<?php echo $head[0]['Image']; ?>' sizes="(max-width: 337px) 100vw, 337px" class="wp-image-829" /></span>
+<span class="et_pb_image_wrap "><img loading="lazy" src='assets/img/pages/<?php echo $head[0]['Image']; ?>' sizes="(max-width: 337px) 100vw, 337px" class="wp-image-829" /></span>
 </div>
 </div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
 <div class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
@@ -86,7 +86,7 @@ $about=$sections->getData($x['filename']);
                     <div class="col-xs-12 col-sm-4">
                         <div class="card about-card">
                             <a class="img-card" href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
-                            <img src='assets/img/<?php echo $page['Image'];?>' />
+                            <img src='assets/img/pages/<?php echo $page['Image'];?>' />
                           </a>
                             <div class="card-content">
                                 <h4 class="card-title">

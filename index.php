@@ -55,7 +55,7 @@ $about=$sections->getData('index');
         <div class="card">
           <?php $whatwedo=$header->getData('whatwedo');?>
   <img class="card-img-top" src='assets/img/pages/<?php echo $whatwedo[0]['Bg_image'];?>' alt="Card image cap">
-  <div class="card-body ptext">
+  <div class="card-body p-text">
     <h5 class="card-title"><div class="text-center"><?php echo $whatwedo[0]['Title']; ?></div> </h5>
 <?php echo $whatwedo[0]['Paragraph']; ?>
    <a class="et_pb_button et_pb_more_button et_pb_button_one" href="whatwedo.php">Explore How</a>
@@ -69,7 +69,7 @@ $about=$sections->getData('index');
         <div class="card">
      <?php $whoweare=$header->getData('whoweare');?>
   <img class="card-img-top" src='assets/img/pages/<?php echo $whoweare[0]['Bg_image'];?>' alt="Card image cap">
-  <div class="card-body ptext">
+  <div class="card-body p-text">
     <h5 class="card-title"><div class="text-center"><?php echo $whoweare[0]['Title']; ?></div> </h5>
    <?php echo $whoweare[0]['Paragraph']; ?>
    <a class="et_pb_button et_pb_more_button et_pb_button_one" href="whoweare.php">Explore How</a>
@@ -83,7 +83,7 @@ $about=$sections->getData('index');
         <div class="card">
   <?php $howwework=$header->getData('howwework');?>
   <img class="card-img-top" src='assets/img/pages/<?php echo $howwework[0]['Bg_image'];?>' alt="Card image cap">
-  <div class="card-body ">
+  <div class="card-body p-text">
     <h5 class="card-title"><div class="text-center"><?php echo $howwework[0]['Title']; ?></div> </h5>
     <div class="ptext">
  <?php echo $howwework[0]['Paragraph']; ?>
@@ -98,9 +98,9 @@ $about=$sections->getData('index');
         <div class="card">
  <?php $blogs=$header->getData('blogs');?>
   <img class="card-img-top" src='assets/img/pages/<?php echo $blogs[0]['Bg_image'];?>' alt="Card image cap">
-  <div class="card-body ptext">
+  <div class="card-body p-text">
     <h5 class="card-title"><div class="text-center"><?php echo $blogs[0]['Title']; ?></div> </h5>
-  <?php echo $blogs[0]['blogs']; ?>
+  <?php echo $blogs[0]['Paragraph']; ?>
    <a class="et_pb_button et_pb_more_button et_pb_button_one" href="blogs.php">Explore How</a>
           </div>
 
