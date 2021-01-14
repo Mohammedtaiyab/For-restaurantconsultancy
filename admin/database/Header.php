@@ -73,6 +73,16 @@ $result =$this->db->con->query("UPDATE header SET Title='".$title."',Paragraph='
 		}
 
 	}
+		/////////////////////////////////////////////Conatct///////////////////////////////////////
+	public function getAllcontact(){
+		$result =$this->db->con->query("SELECT * FROM contact");
+		$resultArray=array();
+		while ($item=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+			$resultArray[]=$item;
+			# code...
+		}
+		return $resultArray;
+	}
 }
 
 

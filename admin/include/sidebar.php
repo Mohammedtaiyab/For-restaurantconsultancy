@@ -72,7 +72,13 @@
 						<div class="menu-title">AboutUs</div>
 					</a>
 				</li>
-				
+					<li>
+					<a href="contacts.php">
+						<div class="parent-icon icon-color-5"><i class="bx bx-phone"></i>
+						</div>
+						<div class="menu-title">Contact</div>
+					</a>
+				</li>
 			</ul>
 			<!--end navigation-->
 		</div>

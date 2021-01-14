@@ -1,4 +1,4 @@
-<?php ///updatesection
+<?php
 require ('include/functions.php');
 if(isset($_POST['header'])){
 	$page=$_POST['page'];

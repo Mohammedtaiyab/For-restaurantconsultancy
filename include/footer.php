@@ -7,7 +7,7 @@
                     <p style="text-align: center;color: white;font-size: 20px;">Interested in Working Together? <a href="contact.php"> Click Here </a>  to Connect</p>
                   </div>
                    <div class="col-xl-12 col-lg-12 ">
-                    <div class="footer-logo" style="margin-bottom: 2px;">
+                    <div class="footer-logo" style="">
                             <a href="index.html"><img src="assets/img/fullredicon.png" class="img-fluid" alt="logo" style=""></a>
                     </div>
                      <div class="footer-text" style="" > 
@@ -39,7 +39,7 @@
   <p>Lets Chat!</p>
 </div>
 <a href="" class="float" target="_blank" style="bottom: 70px;">
-<i class="fas fa-phone" aria-hidden="true"></i>
+<i class="fas fa-phone" aria-hidden="true" style="color: cornflowerblue;"></i>
 </a>
     </footer>
  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -54,33 +54,30 @@
             <h3 style="color:white;">Remote support is available. 
 How can we help you?</h3>
           </div>
-          <form class="">
+          <form class="" action="function.php" method="post">
               <div class="row">
                 <div class="col-sm-6">
-                    <p type="Name:"><input placeholder="First Name.."></input></p>
+                    <p type="Name:"><input class="pd0" name="fname" placeholder="First Name.."></input></p>
                 </div>
                   <div class="col-sm-6">
-                    <p type="Name:"><input placeholder="Last Name.."></input></p>
+                    <p type="Name:"><input  class="pd0" name="lname" placeholder="Last Name.."></input></p>
                 </div>
                    <div class="col-sm-12">
-                    <p type="Name:"><input placeholder="Email Id.."></input></p>
+                    <p type="email:"><input type="" class="pd0" name="email" placeholder="Email Id.." required></input></p>
                 </div>
                   <div class="col-sm-12">
-                    <p type="Name:"><input placeholder="Phone No.."></input></p>
+                    <p type="Name:"><input name="phone" class="pd0" placeholder="Phone No.." required></input></p>
                 </div>
                    <div class="col-sm-12">
-                    <p type="Message:"><input placeholder="What would you like to tell us.."></input></p>
+                    <p type="Message:"><input  name="msg" class="pd0" placeholder="What would you like to tell us.."></input></p>
                 </div>
                    <div class="col-sm-12">
-                    <p type="checkbox" class="mycheckbox"><input type="checkbox"></input>
+                    <p type="checkbox" class="mycheckbox"><input name="subscribe" type="checkbox"></input>
                      <label>Yes, I'd like to receive email communications</label> 
                     </p>
                 </div>
                    <div class="col-sm-12">
-                    <p type="checkbox" class="mycheckbox"><input type="checkbox"></input>
-                     <label>Accept privacy policy and terms of service</label> 
-                    </p>
-                     <button class="et_pb_button" style="color: white;border-color: white;">Send Message</button>
+                     <button type="submit" name="contactpop" class="et_pb_button" style="color: white;border-color: white;">Send Message</button>
                 </div>
 
 
@@ -124,7 +121,14 @@ var et_pb_sticky_elements = [];
      
 </script>
 
-
+<script type="text/javascript">
+  <?php 
+  if($x['filename']=="contact"){?>
+      $('.bd-example-modal-lg').modal('show');
+  <?php 
+}
+?>
+</script>
 
 
 

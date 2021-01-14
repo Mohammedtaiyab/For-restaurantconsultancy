@@ -50,9 +50,15 @@ require ('include/sidebar.php');
                     foreach ($blog as $page) {
                         echo "<tr>
                         <td>".$i."</td>
-                      <td>".$page['Addon']."</td>
-                      <td>".$page['Title']."</td>
-                      <td>";?>
+                      <td>".$page['Addon']."</td>";?>
+
+                       <td style="
+             overflow: hidden;
+             display: inline-block;
+             white-space: word-wrap;">
+        <div style="white-space: normal; word-wrap: break-word; word-break: break-word;">
+                      <?php echo $page['Title'];?></td></div>
+                      <?php echo "<td>";?>
                         <a href="#paragraph" class="paragraph" data-toggle='modal' data-id='<?php echo $page['Blog'];?>'>View</a>
                       </td><td>
                         <a href="#image" class="image" data-toggle='modal' data-id='<?php echo $page['Image'];?>'>View</a>
@@ -101,9 +107,6 @@ require ('include/sidebar.php');
 
 <?php
 require ('include/modals.php');
-?>
-s
-<?php
 require ('include/footer.php');
 require ('include/script.php');
 ?>
