@@ -54,7 +54,7 @@ foreach ($blog as $page) {?>
 <a  href='blog.php?id=<?php  echo $page['ID'];?>'><?php echo $page['Title'];?></a>
                                   </a>
                                 </h4>
-                               <?php echo $page['Blog'];?>
+                               <?php echo mb_strimwidth($page['Blog'], 0, 150, '...');?>
                             </div>
                             <div class="card-read-more">
                                 <a class="btn btn-link btn-block" href='blog.php?id=<?php  echo $page['ID'];?>'>Read More</a>
