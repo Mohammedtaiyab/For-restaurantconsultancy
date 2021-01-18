@@ -63,9 +63,15 @@ require ('include/sidebar.php');
 											<td>";?>
 												<a href="#paragraph" class="paragraph" data-toggle='modal' data-id='<?php echo $page['Message'];?>'>View</a>
 												<?php echo"</td>
-											<td>".$page['Subscribed']."</td>
-											";?>
-											<td><a href='?page=<?php echo $page['Page'];?>' class="btn btn-primary">Edit</button></td>
+											<td>";
+											    if($page['Subscribed']==0){?>
+											       <i class="lni lni-close"></i>
+											   <?php  }else{ ?>
+											    <i class="lni lni-checkmark-circle"></i>
+											  <?php  } ?>
+											</td>
+										
+											<td></td>
 											<?php echo "
 												</tr>
 												";

@@ -1,5 +1,7 @@
 <?php
 require ('functions.php');
+$y=pathinfo($_SERVER['REQUEST_URI']);
+$pagename=$y['filename'];
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
@@ -68,41 +70,7 @@ var et_core_api_spam_recaptcha = {"site_key":"6LepqboZAAAAACV8dkpDQdb8p3RyJNJUDB
 <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed2eb0.json?url=https%3A%2F%2Fplaygroundhospitality.com%2F" />
 <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed5710?url=https%3A%2F%2Fplaygroundhospitality.com%2F&amp;format=xml" />
 <link rel="shortcut icon" href="#" /> <link rel="stylesheet" id="et-core-unified-1157-cached-inline-styles" href="wp-content/et-cache/1157/et-core-unified-1157-1606242552.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" /><style type="text/css">
-     select {
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    -webkit-appearance: none;
-    background-color: #eee;
-    width: 100%;
-    border-width: 0;
-    border-radius: 0;
-    color: #999;
-    font-size: 14px;
-    padding: 16px;
-  }
-  .et_pb_text_inner p{
-  font-weight: 400;
-}
-.card-body p{
-   overflow: hidden;
-   text-overflow: ellipsis;
-   display:none;
-   -webkit-line-clamp: 2; /* number of lines to show */
-   -webkit-box-orient: vertical;
-}
-@media (max-width: 360px)
-{
-
- .ptext {
-   overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   -webkit-line-clamp: 2; /* number of lines to show */
-   -webkit-box-orient: vertical;
-   padding-bottom: 5px;
-} 
-}
-
+   
 </style>
 
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -124,16 +92,16 @@ var et_core_api_spam_recaptcha = {"site_key":"6LepqboZAAAAACV8dkpDQdb8p3RyJNJUDB
 <div id="et-top-navigation" data-height="66" data-fixed-height="40">
 <nav id="top-menu-nav">
 <ul id="top-menu" class="nav">
-<li id="menu-item-1196" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1196">
+<li id="menu-item-1196 " class="<?php if ($pagename=="whatwedo") {echo "active"; };?>">
   <a href="whatwedo.php">WHAT WE DO?</a>
 </li>
 
-<li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="whoweare.php">WHO WE ARE?
+<li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16 <?php if ($pagename=="whoweare") {echo "active"; };?>"><a href="whoweare.php">WHO WE ARE?
 </a></li>
-<li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17"><a href="howwework.php">HOW WE WORK?
+<li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17  <?php if ($pagename=="howwework") {echo "active"; };?>"><a href="howwework.php">HOW WE WORK?
 </a></li>
-<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="blogs.php">BLOGS</a></li>
-<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13"><a href="contact.php" >CONTACT</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20  <?php if ($pagename=="blogs") {echo "active"; };?>"><a href="blogs.php">BLOGS</a></li>
+<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13  <?php if ($pagename=="contact") {echo "active"; };?>"><a href="contact.php" >CONTACT</a></li>
 </ul> </nav>
 <div id="et_mobile_nav_menu">
 <div class="mobile_nav closed">

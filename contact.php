@@ -17,8 +17,6 @@ $indexhead=$header->getData($x['filename']);
 <div class="header-content-container center">
 <div class="header-content">
 <h1 class="et_pb_module_header"><?php echo $indexhead[0]['Title']; ?></h1>
-<div class="et_pb_header_content_wrapper"><p><span style="font-size: 20px;"><?php echo $indexhead[0]['Paragraph']; ?></span></p></div>
-<a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Explore How</a>
 </div>
 </div>
 </div>

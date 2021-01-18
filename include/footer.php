@@ -2,34 +2,25 @@
         <div class="container" style="padding-top: 0px;">
      
             <div class="footer-content pt-5 pb-5">
-                <div class="row">
-                  <div  class="col-xl-12 col-lg-12"> 
-                    <p style="text-align: center;color: white;font-size: 20px;">Interested in Working Together? <a href="contact.php"> Click Here </a>  to Connect</p>
-                  </div>
-                   <div class="col-xl-12 col-lg-12 ">
-                    <div class="footer-logo" style="">
+                <div class="footerhead">
+                <p>Interested in Working Together? <a href="contact.php"> Click Here </a>  to Connect</p>
+                </div>
+                <div class="footer-logo">
                             <a href="index.html"><img src="assets/img/fullredicon.png" class="img-fluid" alt="logo" style=""></a>
-                    </div>
-                     <div class="footer-text" style="" > 
-                              <a href="#" style="margin-right: 8px;"> <i class="fas fa-phone"></i> <span>+91 91052 10529</span></a>
-                              <a href="#">  <i class="far fa-envelope-open"></i>   <span>Hello@for-restaurantconsultancy.com</span></a>
+                </div>
+                <div class="footer-info" style="" > 
+                              <a href="#"> <i class="fas fa-phone"></i> <span>+91 91052 10529</span><img src="assets/img/whatsapp.png"></a>
+                              <a href="#"> <img src="assets/img/mail.png" alt=""> <span>Hello@for-restaurantconsultancy.com</span></a>
                     </div> 
-                      <div class="footer-social-icon" style="margin-top: 10px;margin-left: -12px;">
-                          <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                           <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                           <a href="#"><i class="fab fa-linkedin facebook-bg"></i></a>
+                    <div class="footer-social-icon"">
+                          <a href="#"><i class="fab fa-facebook-f "></i></a>
+                           <a href="#"><i class="fab fa-instagram"></i></a>
+                           <a href="#"><i class="fab fa-linkedin "></i></a>
                       </div>
-
-                   </div>
-        
-                   
-                        <div class="col-xl-12 col-lg-12 text-center text-lg-center">
-                        <div class="copyright-text">
+                      <div class="copyright-text">
                             <p>Copyright &copy; 2020, All Right Reserved By For-RestaurantConsultancy </p>
                             <p>Developed by <a href="http://www.softezi.in/">SoftEzi</a></p>
                         </div>
-                    </div>
-                </div>
             </div>
         </div>
 <a href="" class="float" target="_blank">
@@ -38,9 +29,6 @@
 <div class="divfloat">
   <p>Lets Chat!</p>
 </div>
-<a href="" class="float" target="_blank" style="bottom: 70px;">
-<i class="fas fa-phone" aria-hidden="true" style="color: cornflowerblue;"></i>
-</a>
     </footer>
  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">

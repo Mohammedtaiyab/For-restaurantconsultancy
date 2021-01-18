@@ -33,9 +33,9 @@ $newDate = date("d-M-Y", strtotime($originalDate));
 echo $newDate;?>
 </div> 
 <h3><?php echo $page['Title'];?></h3> 
-<div class="ptext">
-<?php echo $page['Blog'];?>
-</div>
+
+<?php echo  mb_strimwidth($page['Blog'], 0, 150, '...');?>
+
 <a class="read_more" href='blog.php?id=<?php  echo $page['ID'];?>'>Read More</a>
 </div>
 </article>

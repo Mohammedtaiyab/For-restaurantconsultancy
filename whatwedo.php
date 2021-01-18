@@ -38,7 +38,7 @@ if($i%2==0){?>
   <div class="et_pb_row et_pb_row_8">
 <div class="et_pb_column et_pb_column_1_2 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
 <div class="et_pb_module et_pb_image et_pb_image_3 et_animated et-waypoint">
-<span class="et_pb_image_wrap has-box-shadow-overlay">
+<span class="et_pb_image_wrap has-box-shadow-overlay span-img-t">
   <div class="box-shadow-overlay"></div>
   <img loading="lazy" src='assets/img/pages/<?php echo $page['Image'];?>' alt="" title="pablo-merchan-montes-MXovqM130UI-unsplash" height="auto" width="auto" /></span>
 </div>
@@ -77,7 +77,7 @@ if($i%2==0){?>
 </div>
 </div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
 <div class="et_pb_module et_pb_image et_pb_image_3 et_animated et-waypoint">
-<span class="et_pb_image_wrap has-box-shadow-overlay"><div class="box-shadow-overlay"></div><img loading="lazy" src='assets/img/pages/<?php echo $page['Image'];?>' alt="" title="pablo-merchan-montes-MXovqM130UI-unsplash" height="auto" width="auto" /></span>
+<span class="et_pb_image_wrap has-box-shadow-overlay span-img-b"><div class="box-shadow-overlay"></div><img loading="lazy" src='assets/img/pages/<?php echo $page['Image'];?>' alt="" title="pablo-merchan-montes-MXovqM130UI-unsplash" height="auto" width="auto" /></span>
 </div>
 </div> 
 </div> 
