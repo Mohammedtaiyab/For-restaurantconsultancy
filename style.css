@@ -982,3 +982,6 @@ text-align: center;
 .active a{
 border-bottom: 3px solid #c21630;
 }
+.et_pb_text_inner{
+  text-align: -webkit-center;
+}
