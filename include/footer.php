@@ -9,8 +9,8 @@
                             <a href="index.html"><img src="assets/img/fullredicon.png" class="img-fluid" alt="logo" style=""></a>
                 </div>
                 <div class="footer-info" style="" > 
-                              <a href="#"> <i class="fas fa-phone"></i> <span>+91 91052 10529</span><img src="assets/img/whatsapp.png"></a>
-                              <a href="#"> <img src="assets/img/mail.png" alt=""> <span>Hello@for-restaurantconsultancy.com</span></a>
+                              <a href="#"><img src="assets/img/whatsapp.png"><i class="fas fa-phone"></i> <span>+91 91052 10529</span></a>
+                              <a href="#"> <img src="assets/img/mail.png" alt=""> <span>hello@for-restaurantconsultancy.com</span></a>
                     </div> 
                     <div class="footer-social-icon"">
                           <a href="#"><i class="fab fa-facebook-f "></i></a>
