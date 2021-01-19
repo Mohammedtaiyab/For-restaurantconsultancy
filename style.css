@@ -835,6 +835,7 @@ textarea {
 input[type=checkbox] + label {
 color: #ccc;
 font-style: italic;
+padding-left: 8px;
 } 
 
 input[type=checkbox]:checked + label {
@@ -984,4 +985,7 @@ border-bottom: 3px solid #c21630;
 }
 .et_pb_text_inner{
   text-align: -webkit-center;
+}
+.modal {
+  top: 40px;
 }

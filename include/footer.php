@@ -3,7 +3,7 @@
      
             <div class="footer-content pt-5 pb-5">
                 <div class="footerhead">
-                <p>Interested in Working Together? <a href="contact.php"> Click Here </a>  to Connect</p>
+                <p>Interested in Working Together? <a href="#"  data-toggle="modal" data-target="#contactus"  id="contact" > Click Here </a>  to Connect</p>
                 </div>
                 <div class="footer-logo">
                             <a href="index.html"><img src="assets/img/fullredicon.png" class="img-fluid" alt="logo" style=""></a>
@@ -30,7 +30,7 @@
   <p>Lets Chat!</p>
 </div>
     </footer>
- <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+ <div class="modal fade bd-example-modal-lg contactus" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
  <div class="modal-content">
          <div class="modal-body"> 
@@ -111,10 +111,9 @@ var et_pb_sticky_elements = [];
 
 <script type="text/javascript">
   <?php 
-  if($x['filename']=="contact"){?>
-      $('.bd-example-modal-lg').modal('show');
+  // if($x['filename']=="contact"){?>
+  //     $('.bd-example-modal-lg').modal('show');
   <?php 
-}
 ?>
 </script>
 
