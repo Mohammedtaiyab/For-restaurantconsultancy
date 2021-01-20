@@ -82,7 +82,11 @@ var et_core_api_spam_recaptcha = {"site_key":"6LepqboZAAAAACV8dkpDQdb8p3RyJNJUDB
   text-decoration: none;
   color: #fff;
 }
-
+.mylabel{
+  padding: 3px 25px;
+  position: relative;
+ 
+}
 </style>
 
 <link rel="stylesheet" type="text/css" href="style.css">

@@ -7,7 +7,7 @@ $indexhead=$header->getData($x['filename']);
 <div class="et_pb_row et_pb_row_5">
 <div class="et_pb_column et_pb_column_4_4 et_pb_column_11  et_pb_css_mix_blend_mode_passthrough et-last-child">
 <div class="et_pb_module et_pb_text et_pb_text_17  et_pb_text_align_left et_pb_bg_layout_dark">
-<div class="et_pb_text_inner" style="text-align: -moz-center;"><h2><?php echo $indexhead[0]['Title']; ?></h2></div>
+<div class="et_pb_text_inner txt-center"><h2><?php echo $indexhead[0]['Title']; ?></h2></div>
 </div> <div class="et_pb_module et_pb_text et_pb_text_18  et_pb_text_align_center et_pb_bg_layout_light">
 <div class="et_pb_text_inner"><?php echo $indexhead[0]['Paragraph']; ?></div>
 </div> <!-- <div class="et_pb_button_module_wrapper et_pb_button_7_wrapper et_pb_button_alignment_center et_pb_module ">
