@@ -124,8 +124,8 @@ $indexhead=$header->getData('contact');
                       </div>
                       <div class="col-md-6">
                             <div class="form-group ">
-                
-                            <label style="background:#78788c;">Your information is safe with us. We will never spam you!</label>
+                            <input type="text" class="form-control effect-4" name="" value="Your information is safe with us. We will never spam you!" Disabled>
+                           
                  
                           </div>
                       </div>
