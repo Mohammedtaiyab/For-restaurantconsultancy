@@ -38,8 +38,7 @@ require ('include/sidebar.php');
 											<th>Phone</th>
 											<th>Company</th>
 											<th>Location</th>
-											<th>Budget</th>
-											<th>Category</th>
+									
 											<th>Message</th>
 											<th>Subscribed</th>
 											<th>Action</th>
@@ -57,8 +56,7 @@ require ('include/sidebar.php');
 													<td>".$page['Phone']."</td>
 													<td>".$page['Company']."</td>
 														<td>".$page['Location']."</td>
-													<td>".$page['Budget']."</td>
-														<td>".$page['Category']."</td>
+												
 													
 											<td>";?>
 												<a href="#paragraph" class="paragraph" data-toggle='modal' data-id='<?php echo $page['Message'];?>'>View</a>
@@ -87,8 +85,7 @@ require ('include/sidebar.php');
 											<th>Phone</th>
 											<th>Company</th>
 											<th>Location</th>
-											<th>Budget</th>
-											<th>Category</th>
+									
 											<th>Message</th>
 											<th>Subscribed</th>
 											<th>Action</th>

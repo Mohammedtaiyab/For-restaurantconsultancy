@@ -21,8 +21,8 @@ if(isset($_POST['contact'])){
 	$phone=$_POST['phone'];
 	$company=$_POST['company'];
 	$location=$_POST['location'];
-	$category=$_POST['category'];
-	$budget=$_POST['budget'];
+	$category='';
+	$budget='';
 	$service=$_POST['service'];
 	$subscribe=0;
 	if(isset($_POST['subscribe'])){
