@@ -30,7 +30,7 @@ $indexhead=$header->getData($x['filename']);
         
         <div class="row">
           <div class="col-md-4 col-md-offset-1">
-            <div class="et_pb_text_inner" style="text-align:left">
+            <div class="et_pb_text_inner back-text" style="text-align:left">
               <h2>Get In Touch</h2>
               <p>You can write to us on</p>  <!--// (mail icon) hello@for-restaurantconsultancy.com ,  -->
               <a href="mailto:hello@for-restaurantconsultancy.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>hello@for-restaurantconsultancy.com</span></a>
