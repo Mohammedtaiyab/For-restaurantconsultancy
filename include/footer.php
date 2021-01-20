@@ -44,7 +44,7 @@
           <form class="" action="" method="post">
               <div class="row">
                 <div class="col-sm-12">
-                    <p type="Name:"><input class="pd0" name="fname" placeholder="full Name.."></input></p>
+                    <p type="Name:"><input class="pd0" name="fname" placeholder="Full Name.." required></input></p>
                 </div>
               
                    <div class="col-sm-12">
@@ -54,7 +54,7 @@
                     <p type="Name:"><input name="phone" class="pd0" placeholder="Phone No.." required></input></p>
                 </div>
                    <div class="col-sm-12">
-                    <p type="Message:"><input  name="msg" class="pd0" placeholder="Tell us about yourself in a few words"></input></p>
+                    <p type="Message:"><input  name="msg" class="pd0" placeholder="Tell us about yourself in a few words" required></input></p>
                 </div>
                    <div class="col-sm-12">
                     <p type="checkbox" class="mycheckbox"><input name="subscribe" type="checkbox"></input>
@@ -92,7 +92,10 @@
 </svg>
             <h1 style="color:white;">Thank you for providing us your details.</h1>
             <p>Our team will reach out to you shortly!<br> Meanwhile, you can contacts us on <br><i class="fas fa-phone"></i><a href=""> +91 9 1052 1052 9 </a><br>to speed up the process.</p>
-          <a class="et_pb_button" href="index.php">Home</a>
+          <a class="et_pb_button" href="index.php" style="
+    border-color: #fff;
+    color: #fff;
+">Home</a>
           </div>
          
       </div>
