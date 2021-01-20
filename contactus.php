@@ -125,7 +125,7 @@ $indexhead=$header->getData('contact');
                       <div class="col-md-12">
                             <div class="form-group ">
                 
-                            <p style="white-space:normal:color:#000">Your information is safe with us. We will never spam you!</p>
+                            <p style="white-space:normal;color:#000">Your information is safe with us. We will never spam you!</p>
                  
                           </div>
                       </div>
