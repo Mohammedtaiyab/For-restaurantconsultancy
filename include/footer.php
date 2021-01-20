@@ -92,7 +92,7 @@
 </svg>
             <h1 style="color:white;">Thank you for providing us your details.</h1>
             <p>Our team will reach out to you shortly!<br> Meanwhile, you can contacts us on <br><i class="fas fa-phone"></i><a href=""> +91 9 1052 1052 9 </a><br>to speed up the process.</p>
-            <button  class="et_pb_button" style="color: white;border-color: white;"><a href="index.php">Home</a></button>
+          <a class="et_pb_button" href="index.php">Home</a>
           </div>
          
       </div>

@@ -132,7 +132,7 @@ $indexhead=$header->getData($x['filename']);
                       <div class="col-md-6">
                           <div class="">
                 
-           <p style="background:#78788c;color: #fff;">Yes, I'd like to receive email communications!</p>
+           <p style="background:#78788c;color: #fff;">Your information is safe with us. We will never spam you!</p>
                  
                           </div>
                       </div>
