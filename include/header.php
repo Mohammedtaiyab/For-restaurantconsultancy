@@ -78,9 +78,7 @@ var et_core_api_spam_recaptcha = {"site_key":"6LepqboZAAAAACV8dkpDQdb8p3RyJNJUDB
   text-align: center;
   color: #fff;
 }   
-.back-text h1,h2,p{
-  color:#000;
-}
+
 </style>
 
 <link rel="stylesheet" type="text/css" href="style.css">
