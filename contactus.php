@@ -123,7 +123,7 @@ $indexhead=$header->getData('contact');
                           </div>
                       </div>
                       <div class="col-md-12">
-                            <div class="form-group ">
+                            <div class="form-group "style="line-height: 1;">
                 
                             <p style="white-space:normal;color:#000">Your information is safe with us. We will never spam you!</p>
                  
