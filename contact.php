@@ -128,12 +128,18 @@ $indexhead=$header->getData($x['filename']);
                      
                       </div>
                   
-                      <div class="col-md-12">
+                      <div class="col-md-6">
                           <div class="form-group">
-                          <input type="submit" class="btn  btn-md  et_pb_button" name="contact" value="Send Message" style="width: auto;float: right;">
+                
                        <p type="checkbox" class="mycheckbox"><input name="subscribe" type="checkbox"></input>
                      <label>Yes, I'd like to receive email communications</label> 
                     </p>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                          <input type="submit" class="btn  btn-md  et_pb_button" name="contact" value="Send Message" style="width: auto;float: right;">
+                      
                           </div>
                       </div>
              </div>
