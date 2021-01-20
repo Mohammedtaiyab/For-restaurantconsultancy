@@ -6,10 +6,10 @@
                 <p>Interested in Working Together? <a href="#"  data-toggle="modal" data-target="#contactus"  id="contact" > Click Here </a>  to Connect</p>
                 </div>
                 <div class="footer-logo">
-                            <a href="index.html"><img src="assets/img/fullredicon.png" class="img-fluid" alt="logo" style=""></a>
+                            <a href="index.html"><img src="assets/img/logo-white.jpg" class="img-fluid" alt="logo" style=""></a>
                 </div>
                 <div class="footer-info" style="" > 
-                              <a href="#"><img src="assets/img/whatsapp.png"><i class="fas fa-phone"></i> <span>+91 91052 10529</span></a>
+                              <a href="#"><img src="assets/img/whatsapp.png"><i class="fas fa-phone"></i> <span>+91 9 1052 1052 9</span></a>
                               <a href="#"> <img src="assets/img/mail.png" alt=""> <span>hello@for-restaurantconsultancy.com</span></a>
                     </div> 
                     <div class="footer-social-icon"">
@@ -39,17 +39,14 @@
         </button>
   
           <div style="text-align: center;color: white"> 
-            <h3 style="color:white;">Remote support is available. 
-How can we help you?</h3>
+            <h3 style="color:white;">How can we help you?</h3>
           </div>
-          <form class="" action="function.php" method="post">
+          <form class="" action="" method="post">
               <div class="row">
-                <div class="col-sm-6">
-                    <p type="Name:"><input class="pd0" name="fname" placeholder="First Name.."></input></p>
+                <div class="col-sm-12">
+                    <p type="Name:"><input class="pd0" name="fname" placeholder="full Name.."></input></p>
                 </div>
-                  <div class="col-sm-6">
-                    <p type="Name:"><input  class="pd0" name="lname" placeholder="Last Name.."></input></p>
-                </div>
+              
                    <div class="col-sm-12">
                     <p type="email:"><input type="" class="pd0" name="email" placeholder="Email Id.." required></input></p>
                 </div>
@@ -57,7 +54,7 @@ How can we help you?</h3>
                     <p type="Name:"><input name="phone" class="pd0" placeholder="Phone No.." required></input></p>
                 </div>
                    <div class="col-sm-12">
-                    <p type="Message:"><input  name="msg" class="pd0" placeholder="What would you like to tell us.."></input></p>
+                    <p type="Message:"><input  name="msg" class="pd0" placeholder="Tell us about yourself in a few words"></input></p>
                 </div>
                    <div class="col-sm-12">
                     <p type="checkbox" class="mycheckbox"><input name="subscribe" type="checkbox"></input>
@@ -65,17 +62,68 @@ How can we help you?</h3>
                     </p>
                 </div>
                    <div class="col-sm-12">
-                     <button type="submit" name="contactpop" class="et_pb_button" style="color: white;border-color: white;">Send Message</button>
+                     <button type="submit" name="contactpop" class="et_pb_button" style="color: white;border-color: white;">Submit Now</button>
                 </div>
 
 
               </div>
-            
           </form>
       </div>
     </div>
   </div>
   </div>    
+
+
+
+
+
+
+
+
+
+  <div class="modal fade thankx" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="  margin-top: 80px;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+         <div class="modal-body thx"> 
+          <div class="thx-txt"> 
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2" style="width: 35px;">
+  <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+  <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+</svg>
+            <h1 style="color:white;">Thank you for providing us your details.</h1>
+            <p>Our team will reach out to you shortly!<br> Meanwhile, you can contacts us on <br><i class="fas fa-phone"></i><a href=""> +91 9 1052 1052 9 </a><br>to speed up the process.</p>
+            <button  class="et_pb_button" style="color: white;border-color: white;"><a href="index.php">Home</a></button>
+          </div>
+         
+      </div>
+    </div>
+  </div>
+  </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div> 
 </div>
 </div> 
@@ -116,7 +164,23 @@ var et_pb_sticky_elements = [];
   <?php 
 ?>
 </script>
-
+<?php
+if(isset($_POST['contactpop'])){
+	$fname=$_POST['fname'];
+	$lname='';
+	$email=$_POST['email'];
+	$phone=$_POST['phone'];
+	$msg=$_POST['msg'];
+	$subscribe=0;
+	if(isset($_POST['subscribe'])){
+		$subscribe=1;
+	}
+	$conatact=$header->contactpop($fname,$lname,$email,$phone,$msg,$subscribe);
+	echo "<script>
+	$('.thankx').modal('show');
+	</script>";
+}
+?>
 
 
 

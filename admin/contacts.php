@@ -38,7 +38,6 @@ require ('include/sidebar.php');
 											<th>Phone</th>
 											<th>Company</th>
 											<th>Location</th>
-									
 											<th>Message</th>
 											<th>Subscribed</th>
 											<th>Action</th>

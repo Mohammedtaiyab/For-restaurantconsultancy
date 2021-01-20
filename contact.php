@@ -34,37 +34,38 @@ $indexhead=$header->getData($x['filename']);
               <h2>Get In Touch</h2>
               <p>You can write to us on</p>  <!--// (mail icon) hello@for-restaurantconsultancy.com ,  -->
               <a href="mailto:hello@for-restaurantconsultancy.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>hello@for-restaurantconsultancy.com</span></a>
+              <p><img src="assets/img/whatsapp.png" style="width:6%;"><i class="fas fa-phone"style="animation: none;"></i> <span>+91 9 1052 1052 9</span></p>
               <?php echo $indexhead[0]['Paragraph']; ?>
              
             </div>
           </div>
           <div class="col-md-8 col-md-offset-1">
-          <form action="function.php" method="post">
+          <form action="contact.php" method="post">
           <div class="row">
           <div class="col-md-6">
                           <div class="form-group">
-                          <input type="text" class="form-control effect-4" name="fname" placeholder="Full Name">
+                          <input type="text" class="form-control effect-4" name="fname" placeholder="Full Name" required>
                         
                         </div>
                       </div>
                       <div class="col-md-6">
                           <div class="form-group">
-                          <input type="email" class="form-control effect-4" name="email" placeholder="Email">
+                          <input type="email" class="form-control effect-4" name="email" placeholder="Email" required>
                           </div>
                       </div>
                       <div class="col-md-6">
                           <div class="form-group">
-                          <input type="text" class="form-control effect-4" name="phone" placeholder="Phone Number">
+                          <input type="text" class="form-control effect-4" name="phone" placeholder="Phone Number" required>
                           </div>
                       </div>
                       <div class="col-md-6">
                           <div class="form-group">
-                          <input type="text" class="form-control effect-4" name="company" placeholder="Company Name">
+                          <input type="text" class="form-control effect-4" name="company" placeholder="Company Name" required>
                           </div>
                       </div>
                       <div class="col-md-6">
                           <div class="form-group">
-                          <input type="text" id="et_pb_contact_interested_in_0"  name="location" class="input form-control effect-4" placeholder="Location">
+                          <input type="text" id="et_pb_contact_interested_in_0"  name="location" class="input form-control effect-4" placeholder="Location" required>
                           </div>
                       </div>
                       <div class="col-md-6">
@@ -74,7 +75,7 @@ $indexhead=$header->getData($x['filename']);
                       </div>    <div class="col-md-6">
                           <div class="form-group">
                           <label for="et_pb_contact_message_0"  class="et_pb_contact_form_label effect-4">Message</label>
-                <textarea  name="msg" placeholder="Tell Us About Your Goals"></textarea>
+                <textarea  name="msg" placeholder="Tell Us About Your Goals" required></textarea>
                           </div>
                       </div>
                       <div class="col-md-6">
@@ -131,9 +132,8 @@ $indexhead=$header->getData($x['filename']);
                       <div class="col-md-6">
                           <div class="">
                 
-                       <p type="" class="mycheckbox"><input name="subscribe" type="checkbox" checked></input>
-                     <label>Yes, I'd like to receive email communications</label> 
-                    </p>
+           <p style="background:#78788c;color: #fff;">Yes, I'd like to receive email communications!</p>
+                 
                           </div>
                       </div>
                       <div class="col-md-6">
@@ -154,4 +154,29 @@ $indexhead=$header->getData($x['filename']);
 
 <?php
 require ('include/footer.php');
+if(isset($_POST['contact'])){
+
+	$fname=$_POST['fname'];
+	$lname='';
+	$email=$_POST['email'];
+	$phone=$_POST['phone'];
+	$company=$_POST['company'];
+	$location=$_POST['location'];
+	$category='';
+	$budget='';
+	$service=$_POST['service'];
+	$subscribe=0;
+	if(isset($_POST['subscribe'])){
+		$subscribe=1;
+	}
+	$msg=$_POST['msg']."<br>Interested into Services :-".implode(', ', $service);
+
+//echo $fname." ".$lname." ".$email." ".$phone." ".$msg." ".$budget."  ".$company." ".$location." ".$category;
+$conatact=$header->contact($fname,$lname,$email,$phone,$msg,$subscribe,$budget,$company,$location,$category);
+echo "<script>
+$('.thankx').modal('show');
+</script>";
+	// header('Location: contact.php');
+}
+
 ?>

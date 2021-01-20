@@ -143,7 +143,9 @@ img.emoji {
 #main-header, #main-header .nav li ul, .et-search-form, #main-header .et_mobile_menu {
     background-color: #151414;
 }
-
+.copyright-text p a {
+  color: #fff;
+}
 .dropdown-content {
   display: none;
   position: absolute;
@@ -956,7 +958,7 @@ width: 2%;
     font-size: 18px;
 }
 .footer-info a{
-  color: #c21630;
+  color: #fff;
   text-decoration: none;
   pointer-events: none;
   cursor: default;
@@ -1004,3 +1006,23 @@ border-bottom: 3px solid #c21630;
 
 /* .effect-4 ~ .focus-border{position: absolute; height: 0; bottom: 0; left: 0; width: 100%; transition: 0.4s; z-index: -1;}
 .effect-4:focus ~ .focus-border{transition: 0.4s; height: 36px; border: 2px solid #3399FF; z-index: 1;} */
+.thankx{
+  margin-top: 80px;
+}
+.thx{
+  padding: 2rem;
+}
+.thx-txt{
+  text-align: center;
+  color: #fff;
+}
+.thx-txt h1,h3,p{
+color: #fff; 
+}
+.thx-txt p a{
+  text-decoration: none;
+  color: #fff;
+}
+.et_pb_text_inner p{
+  color: #000;
+}
