@@ -82,6 +82,7 @@ var et_core_api_spam_recaptcha = {"site_key":"6LepqboZAAAAACV8dkpDQdb8p3RyJNJUDB
   text-decoration: none;
   color: #fff;
 }
+
 </style>
 
 <link rel="stylesheet" type="text/css" href="style.css">
