@@ -122,14 +122,14 @@ $indexhead=$header->getData('contact');
                 <textarea  name="msg" placeholder="Tell Us About Your Goals" required></textarea>
                           </div>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-12">
                             <div class="form-group ">
-                            <input type="text" class="form-control effect-4" name="" value="Your information is safe with us. We will never spam you!" Disabled>
-                           
+                
+                            <p style="white-space:normal">Your information is safe with us. We will never spam you!</p>
                  
                           </div>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-12">
                           <div class="form-group ">
                         
                           <input type="submit" class="btn  btn-md  et_pb_button" name="contact" value="Send Message" style="width: auto;float: right;">
