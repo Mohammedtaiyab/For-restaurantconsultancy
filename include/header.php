@@ -72,8 +72,12 @@ var et_core_api_spam_recaptcha = {"site_key":"6LepqboZAAAAACV8dkpDQdb8p3RyJNJUDB
 <link rel='shortlink' href='index.html' />
 <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed2eb0.json?url=https%3A%2F%2Fplaygroundhospitality.com%2F" />
 <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed5710?url=https%3A%2F%2Fplaygroundhospitality.com%2F&amp;format=xml" />
-<link rel="shortcut icon" href="#" /> <link rel="stylesheet" id="et-core-unified-1157-cached-inline-styles" href="wp-content/et-cache/1157/et-core-unified-1157-1606242552.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" /><style type="text/css">
-   
+<link rel="shortcut icon" href="#" /> <link rel="stylesheet" id="et-core-unified-1157-cached-inline-styles" href="wp-content/et-cache/1157/et-core-unified-1157-1606242552.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" />
+<style type="text/css">
+.thx-txt{
+  text-align: center;
+  color: #fff;
+}   
 </style>
 
 <link rel="stylesheet" type="text/css" href="style.css">
