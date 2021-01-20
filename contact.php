@@ -129,9 +129,9 @@ $indexhead=$header->getData($x['filename']);
                       </div>
                   
                       <div class="col-md-6">
-                          <div class="form-group">
+                          <div class="">
                 
-                       <p type="checkbox" class="mycheckbox"><input name="subscribe" type="checkbox"></input>
+                       <p type="" class="mycheckbox"><input name="subscribe" type="checkbox"></input>
                      <label>Yes, I'd like to receive email communications</label> 
                     </p>
                           </div>
