@@ -129,14 +129,14 @@ $indexhead=$header->getData($x['filename']);
                      
                       </div>
                   
-                      <div class="col-md-6">
+                      <div class="col-md-8">
                           <div class="">
                 
            <p style="background:#78788c;color: #fff;">Your information is safe with us. We will never spam you!</p>
                  
                           </div>
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-4">
                           <div class="form-group">
                           <input type="submit" class="btn  btn-md  et_pb_button" name="contact" value="Send Message" style="width: auto;float: right;">
                       
