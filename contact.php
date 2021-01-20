@@ -85,43 +85,43 @@ $indexhead=$header->getData($x['filename']);
                       <label class="form-check-label" for="inlineCheckbox1">Concept Design</label>
                   </div>
                   <div class="form-group">
-                    <input class="form-check-input" name="service[]" type="checkbox" id="inlineCheckbox1" value="Operation Strategy">
-                      <label class="form-check-label" for="inlineCheckbox1">Operation Strategy</label>
+                    <input class="form-check-input" name="service[]" type="checkbox" id="inlineCheckbox2" value="Operation Strategy">
+                      <label class="form-check-label" for="inlineCheckbox2">Operation Strategy</label>
                   </div>
                   <div class="form-group">
-                    <input class="form-check-input" name="service[]" type="checkbox" id="inlineCheckbox1" value="Training">
-                      <label class="form-check-label" for="inlineCheckbox1">Training</label>
+                    <input class="form-check-input" name="service[]" type="checkbox" id="inlineCheckbox3" value="Training">
+                      <label class="form-check-label" for="inlineCheckbox3">Training</label>
                   </div>
                   <div class="form-group">
-                  <input class="form-check-input" name="service[]" type="checkbox" id="inlineCheckbox1" value="Restaurant Assessment">
-                      <label class="form-check-label" for="inlineCheckbox1">Restaurant Assessment</label>
+                  <input class="form-check-input" name="service[]" type="checkbox" id="inlineCheckbox4" value="Restaurant Assessment">
+                      <label class="form-check-label" for="inlineCheckbox4">Restaurant Assessment</label>
                   </div>
                   <div class="form-group">
-                    <input class="form-check-input" name="service[]" type="checkbox" id="inlineCheckbox1" value="Menu Development Design">
-                      <label class="form-check-label" for="inlineCheckbox1">Menu Development Design</label>
+                    <input class="form-check-input" name="service[]" type="checkbox" id="inlineCheckbox5" value="Menu Development Design">
+                      <label class="form-check-label" for="inlineCheckbox5">Menu Development Design</label>
                   </div>
                       </div>
                       <div class="col-md-6">
 
                   <div class="form-group">
-                    <input class="form-check-input" name="service[]" type="checkbox" id="inlineCheckbox1" value="Licensing">
-                      <label class="form-check-label" for="inlineCheckbox1">Licensing</label>
+                    <input class="form-check-input" name="service[]" type="checkbox" id="inlineCheckbox6" value="Licensing">
+                      <label class="form-check-label" for="inlineCheckbox6">Licensing</label>
                   </div>
                   <div class="form-group">
-                    <input class="form-check-input" name="service[]" type="checkbox" id="inlineCheckbox1" value="Hiring">
-                      <label class="form-check-label" for="inlineCheckbox1">Hiring</label>
+                    <input class="form-check-input" name="service[]" type="checkbox" id="inlineCheckbox7" value="Hiring">
+                      <label class="form-check-label" for="inlineCheckbox7">Hiring</label>
                   </div>
                     <div class="form-group">
-                    <input class="form-check-input" name="service[]" type="checkbox" id="inlineCheckbox1" value="Digital Marketing">
-                      <label class="form-check-label" for="inlineCheckbox1">Digital Marketing</label>
+                    <input class="form-check-input" name="service[]" type="checkbox" id="inlineCheckbox8" value="Digital Marketing">
+                      <label class="form-check-label" for="inlineCheckbox8">Digital Marketing</label>
                   </div>
                     <div class="form-group">
-                  <input class="form-check-input" name="service[]" type="checkbox" id="inlineCheckbox1" value="Business Strategy">
-                <label class="form-check-label" for="inlineCheckbox1">Business Strategy</label>
+                  <input class="form-check-input" name="service[]" type="checkbox" id="inlineCheckbox9" value="Business Strategy">
+                <label class="form-check-label" for="inlineCheckbox9">Business Strategy</label>
                   </div>
                     <div class="form-group">
-                    <input class="form-check-input" name="service[]" type="checkbox" id="inlineCheckbox1" value="Bar Kitchen Organization">
-                      <label class="form-check-label" for="inlineCheckbox1">Bar Kitchen Organization</label>
+                    <input class="form-check-input" name="service[]" type="checkbox" id="inlineCheckbox10" value="Bar Kitchen Organization">
+                      <label class="form-check-label" for="inlineCheckbox10">Bar Kitchen Organization</label>
                   </div>
                 </div>
                       </div>
