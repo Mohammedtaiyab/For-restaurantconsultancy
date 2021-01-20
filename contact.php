@@ -34,7 +34,7 @@ $indexhead=$header->getData($x['filename']);
               <h2>Get In Touch</h2>
               <p style="color: #0b0a0a;">You can write to us on</p>  <!--// (mail icon) hello@for-restaurantconsultancy.com ,  -->
               <a href="mailto:hello@for-restaurantconsultancy.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>hello@for-restaurantconsultancy.com</span></a>
-              <p><img src="assets/img/whatsapp.png" style="width:6%;"><i class="fas fa-phone"style="animation: none;"></i> <span>+91 9 1052 1052 9</span></p>
+              <p  style="color: #0b0a0a;><img src="assets/img/whatsapp.png" style="width:6%;"><i class="fas fa-phone"style="animation: none;"></i> <span>+91 9 1052 1052 9</span></p>
               <?php echo $indexhead[0]['Paragraph']; ?>
              
             </div>
