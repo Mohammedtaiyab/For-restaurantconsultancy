@@ -32,7 +32,7 @@ $indexhead=$header->getData($x['filename']);
           <div class="col-md-4 col-md-offset-1">
             <div class="et_pb_text_inner back-text" style="text-align:left">
               <h2>Get In Touch</h2>
-              <p>You can write to us on</p>  <!--// (mail icon) hello@for-restaurantconsultancy.com ,  -->
+              <p style="color: #0b0a0a;">You can write to us on</p>  <!--// (mail icon) hello@for-restaurantconsultancy.com ,  -->
               <a href="mailto:hello@for-restaurantconsultancy.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>hello@for-restaurantconsultancy.com</span></a>
               <p><img src="assets/img/whatsapp.png" style="width:6%;"><i class="fas fa-phone"style="animation: none;"></i> <span>+91 9 1052 1052 9</span></p>
               <?php echo $indexhead[0]['Paragraph']; ?>
