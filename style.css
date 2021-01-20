@@ -842,8 +842,6 @@ padding-left: 18px;
 input[type=checkbox]:checked + label {
 color: #f00;
 font-style: normal;
-margin: 0px 3px;
-}
 }
 #fh5co-main {
   
@@ -1040,7 +1038,7 @@ color: #fff;
 .glass {
   position: relative;
   border-radius: 25px;
-  background: rgb(219, 198, 198);
+  background: rgb(255 255 255);
   backdrop-filter: blur(30px);
   border: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
