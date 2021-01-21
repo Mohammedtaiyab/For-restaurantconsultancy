@@ -1035,6 +1035,12 @@ color: #fff;
 }
 
 
+@media (min-width: 360px){
+.glass {
+  margin-top: 0px;
+}
+}
+
 .glass {
   position: relative;
   border-radius: 25px;
