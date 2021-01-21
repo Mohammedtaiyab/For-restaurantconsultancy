@@ -36,7 +36,13 @@ $indexhead=$header->getData('contact');
               <a href="mailto:hello@for-restaurantconsultancy.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>hello@for-restaurantconsultancy.com</span></a>
               <p  style="color: #0b0a0a;"><img src="assets/img/whatsapp.png" style="width:6%;"><i class="fas fa-phone"style="animation: none;"></i> <span>+91 9 1052 1052 9</span></p>
               <?php echo $indexhead[0]['Paragraph']; ?>
-             
+             <div class="ul-sec">
+             <ul class="ul-style">
+          <li class="ul-active">1. We'll Prepare a purposal</li>
+          <li class="ul-active">2. Together We Will Discuss</li>
+          <li class="ul-active">3. Let's Start Building</li>
+          </ul>  
+             </div>
             </div>
           </div>
           <div class="col-md-8 col-md-offset-1">
