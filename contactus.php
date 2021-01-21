@@ -37,6 +37,7 @@ $indexhead=$header->getData('contact');
               <p  style="color: #0b0a0a;"><img src="assets/img/whatsapp.png" style="width:6%;"><i class="fas fa-phone"style="animation: none;"></i> <span>+91 9 1052 1052 9</span></p>
               <?php echo $indexhead[0]['Paragraph']; ?>
              <div class="ul-sec">
+             <h1 style="    color: #40409e;">What Will be next Step?</h1>
              <ul class="ul-style">
           <li class="ul-active">1. We'll Prepare a purposal</li>
           <li class="ul-active">2. Together We Will Discuss</li>
