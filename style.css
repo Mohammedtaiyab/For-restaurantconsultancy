@@ -1035,11 +1035,6 @@ color: #fff;
 }
 
 
-@media (min-width: 360px){
-.glass {
-  margin-top: 0px;
-}
-}
 
 .glass {
   position: relative;
@@ -1061,3 +1056,14 @@ color: #fff;
   padding: 3px 25px;
   position: relative;
 }
+@media (min-width: 360px){
+  .glass {
+    margin-top: 0px;
+  }
+  }
+  
+  @media (max-width: 780px){
+  .glass {
+      margin-top: 0px;
+  }
+  }
