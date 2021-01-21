@@ -1045,7 +1045,8 @@ color: #fff;
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   padding: 35px;
-  margin-top: -300px;
+  margin-top: -280px;
+  margin-bottom: -60px;
   z-index: 100;
 
 }
@@ -1057,3 +1058,9 @@ color: #fff;
   position: relative;
 }
 
+@media (max-width: 720px){
+.glass{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+}
