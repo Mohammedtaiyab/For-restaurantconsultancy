@@ -87,6 +87,82 @@ var et_core_api_spam_recaptcha = {"site_key":"6LepqboZAAAAACV8dkpDQdb8p3RyJNJUDB
   position: relative;
  
 }
+/* .popup img{
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10px;
+    border-top-left-radius: 0;
+    transform: skew(-5deg, -2deg);
+    margin: 2em 3em;
+    box-shadow: 8px 1px 12px rgba(0,0,0,.3)
+  }  */
+
+  .div-flex{
+    display: flex;
+    height: 283.5px;
+}
+.pop-text{
+  padding: 20px;
+    text-align: center;
+    color: #ffff;
+}
+.pop-text p{
+  margin-top: 20px;
+    color: #ffff;
+}
+#timer{
+  font-size: 31px;
+    font-family: fantasy;
+    color: #fff;
+    background: burlywood;
+    padding: 7px;
+    border-radius: 12px;
+}
+.popup{
+  width: 50%;
+  background-repeat: no-repeat;
+
+}
+.popup img{
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.clipping{
+  transform: rotate(
+270deg
+);
+    position: absolute;
+    height: 63px;
+    top: 111px;
+    left: 227px;
+
+}
+@media (max-width: 780px){
+
+  .clipping{
+    display: none;
+  }
+  /* .div-flex{
+  display: block;
+  } */
+  .mob-pop{
+    display: none;
+
+  }
+  .popup{
+    width: 100%;
+  }
+  .pop-text {
+    padding: 18px;
+  }
+}
+
+
+
+
+
+
+
+
 </style>
 
 <link rel="stylesheet" type="text/css" href="style.css">
