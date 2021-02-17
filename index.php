@@ -5,7 +5,80 @@ $indexhead=$header->getData('index');
 ?>
 <div id="et-main-area">
 <div id="main-content">
-<article id="post-1157" class="post-1157 page type-page status-publish hentry">
+
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <!--<li data-target="#bs-carousel" data-slide-to="2"></li>
+    <li data-target="#bs-carousel" data-slide-to="3"></li>
+    <li data-target="#bs-carousel" data-slide-to="4"></li> -->
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1" style="background-image: url(assets/img/pages/<?php echo $indexhead[0]['Bg_image']; ?>);"></div>
+      <div class="hero">
+        <hgroup>
+        <h2><?php echo $indexhead[0]['Title']; ?></h2>        
+            <h4><?php echo $indexhead[0]['Paragraph']; ?></h4>
+        </hgroup>
+       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Explore How</a>
+      </div>
+    </div>
+    <div class="item slides">
+    <div class="slide-1" style="background-image: url(assets/img/pages/<?php echo $indexhead[1]['Bg_image']; ?>);"></div>
+      <div class="hero">
+        <hgroup>
+            <h2><?php echo $indexhead[1]['Title']; ?></h2>        
+            <h4><?php echo $indexhead[1]['Paragraph']; ?></h4>
+        </hgroup>
+       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Explore How</a>
+      </div>
+    </div>
+    <div class="item slides">
+    <div class="slide-1" style="background-image: url(assets/img/pages/<?php echo $indexhead[2]['Bg_image']; ?>);"></div>
+      <div class="hero">
+        <hgroup>
+            <h2><?php echo $indexhead[2]['Title']; ?></h2>        
+            <h4><?php echo $indexhead[2]['Paragraph']; ?></h4>
+        </hgroup>
+       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Explore How</a>
+      </div>
+    </div>
+    <div class="item slides">
+    <div class="slide-1" style="background-image: url(assets/img/pages/<?php echo $indexhead[3]['Bg_image']; ?>);"></div>
+      <div class="hero">
+        <hgroup>
+            <h2><?php echo $indexhead[3]['Title']; ?></h2>        
+            <h4><?php echo $indexhead[3]['Paragraph']; ?></h4>
+        </hgroup>
+       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Explore How</a>
+      </div>
+    </div>
+    <div class="item slides">
+    <div class="slide-1" style="background-image: url(assets/img/pages/<?php echo $indexhead[4]['Bg_image']; ?>);"></div>
+      <div class="hero">
+        <hgroup>
+            <h2><?php echo $indexhead[4]['Title']; ?></h2>        
+            <h4><?php echo $indexhead[4]['Paragraph']; ?></h4>
+        </hgroup>
+       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Explore How</a>
+      </div>
+    </div>
+  </div> 
+</div>
+
+
+
+
+
+<!-- <article id="post-1157" class="post-1157 page type-page status-publish hentry">
 <div class="entry-content">
 <div id="et-boc" class="et-boc">
 <div class="et-l et-l--post">
@@ -24,7 +97,7 @@ $indexhead=$header->getData('index');
 </div>
 <div class="et_pb_fullwidth_header_overlay"></div>
 <div class="et_pb_fullwidth_header_scroll"></div>
-</section>
+</section> -->
 </div>
 </div>
 <?php 
@@ -47,6 +120,7 @@ $about=$sections->getData('index');
 </div> 
 </div> 
 </div> 
+
 </div> 
 <section id="cards-columns">
   <div class="container">
@@ -121,6 +195,7 @@ $about=$sections->getData('index');
 </div> 
 </div> 
 </div>
+<hr style="width: 50%;">
 <div class="et_pb_section et_pb_section_1 et_section_regular">
 <div class="et_pb_row et_pb_row_0">
 <div class="et_pb_column et_pb_column_1_3 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough">

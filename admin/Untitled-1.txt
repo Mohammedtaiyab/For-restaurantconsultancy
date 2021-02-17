@@ -1,0 +1,17 @@
+Changes in Restaurant Consultancy:
+
+1. 
+2. 
+3.
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10. 
+11. 
+12. Our clients on every page with 5 logos and if no. of lohos increases then it should show in slider manner
+13. https://www.fruitbowldigital.com/mobile-app-development/
+Every service should have structure like this link. Image at top and content below it.
+14. 

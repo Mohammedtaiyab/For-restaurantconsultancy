@@ -23,7 +23,7 @@ require ('include/sidebar.php');
 					</div>
 					<!--end breadcrumb-->
 					<?php 
-					$indexhead=$header->getData($_GET['page']);
+					$indexhead=$header->getDatabyId($_GET['page']);
 					
 					?>
 					<div class="card radius-15">

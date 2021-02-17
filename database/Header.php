@@ -27,12 +27,12 @@ public function getData($page){
 		return $resultArray;
 	}
 	public function contactpop($fname,$lname,$email,$phone,$msg,$subscribe){
-			$sql="INSERT INTO contact(Fname,Lname,Email,Phone,Message,Subscribed,Status) VALUES ('".$fname."','".$lname."','".$email."','".$phone."','".$msg."',".$subscribe.",0)";
+			$sql="INSERT INTO contact(Fname,Lname,Email,Phone,Message,Subscribed,Status,Type) VALUES ('".$fname."','".$lname."','".$email."','".$phone."','".$msg."',".$subscribe.",0,1)";
 			$result = mysqli_query($this->db->con,$sql) or die(mysqli_error($this->db->con));
 			return $result;
 	}
 	public function contact($fname,$lname,$email,$phone,$msg,$subscribe,$budget,$company,$location,$category){
-			$sql="INSERT INTO contact(Fname,Lname,Email,Phone,Message,Subscribed,Budget,Company,Location,Category,Status) VALUES ('".$fname."','".$lname."','".$email."','".$phone."','".$msg."',".$subscribe.",'".$budget."','".$company."','".$location."','".$category."',0)";
+			$sql="INSERT INTO contact(Fname,Lname,Email,Phone,Message,Subscribed,Budget,Company,Location,Category,Status,Type) VALUES ('".$fname."','".$lname."','".$email."','".$phone."','".$msg."',".$subscribe.",'".$budget."','".$company."','".$location."','".$category."',0,0)";
 			$result = mysqli_query($this->db->con,$sql) or die(mysqli_error($this->db->con));
 			return $result;
 	}

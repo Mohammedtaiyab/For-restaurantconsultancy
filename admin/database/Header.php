@@ -75,7 +75,16 @@ $result =$this->db->con->query("UPDATE header SET Title='".$title."',Paragraph='
 	}
 		/////////////////////////////////////////////Conatct///////////////////////////////////////
 	public function getAllcontact(){
-		$result =$this->db->con->query("SELECT * FROM contact");
+		$result =$this->db->con->query("SELECT * FROM contact where Type='0'");
+		$resultArray=array();
+		while ($item=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+			$resultArray[]=$item;
+			# code...
+		}
+		return $resultArray;
+	}
+	public function getcontact(){
+		$result =$this->db->con->query("SELECT * FROM contact where Type='1'");
 		$resultArray=array();
 		while ($item=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
 			$resultArray[]=$item;

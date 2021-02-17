@@ -9,13 +9,13 @@
                             <a href="index.html"><img src="assets/img/logo-white.jpg" class="img-fluid" alt="logo" style=""></a>
                 </div>
                 <div class="footer-info" style="" > 
-                              <a href="#"><img src="assets/img/whatsapp.png"><i class="fas fa-phone"></i> <span>+91 9 1052 1052 9</span></a>
+                              <a href="https://api.whatsapp.com/send?phone=919105210529"><img src="assets/img/whatsapp.png"><i class="fas fa-phone"></i> <span>+91 9 1052 1052 9</span></a>
                               <a href="#"> <img src="assets/img/mail.png" alt=""> <span>hello@for-restaurantconsultancy.com</span></a>
                     </div> 
                     <div class="footer-social-icon"">
                           <a href="#"><i class="fab fa-facebook-f "></i></a>
                            <a href="#"><i class="fab fa-instagram"></i></a>
-                           <a href="#"><i class="fab fa-linkedin "></i></a>
+                         
                       </div>
                       <div class="copyright-text">
                             <p>Copyright &copy; 2020, All Right Reserved By For-RestaurantConsultancy </p>
@@ -23,7 +23,7 @@
                         </div>
             </div>
         </div>
-<a href="" class="float" target="_blank">
+<a href="https://api.whatsapp.com/send?phone=919105210529" class="float" target="_blank">
 <img src="assets/img/whatsapp.png">
 </a>
 <div class="divfloat">
@@ -162,9 +162,10 @@ var et_pb_sticky_elements = [];
 
 <script type="text/javascript">
   <?php 
-  // if($x['filename']=="contact"){?>
-  //     $('.bd-example-modal-lg').modal('show');
+  if($x['filename']=="contact"){?>
+      $('.bd-example-modal-lg').modal('show');
   <?php 
+  }
 ?>
 
 document.getElementById('timer').innerHTML =
@@ -189,7 +190,32 @@ function checkSecond(sec) {
   if (sec < 0) {sec = "59"};
   return sec;
 }
+var options = {
+  accessibility: true,
+  prevNextButtons: true,
+  pageDots: true,
+  setGallerySize: false,
+  arrowShape: {
+    x0: 10,
+    x1: 60,
+    y1: 50,
+    x2: 60,
+    y2: 45,
+    x3: 15
+  }
+};
 
+var carousel = document.querySelector('[data-carousel]');
+var slides = document.getElementsByClassName('carousel-cell');
+var flkty = new Flickity(carousel, options);
+
+flkty.on('scroll', function () {
+  flkty.slides.forEach(function (slide, i) {
+    var image = slides[i];
+    var x = (slide.target + flkty.x) * -1/3;
+    image.style.backgroundPosition = x + 'px';
+  });
+});
 </script>
 <?php
 if(isset($_POST['contactpop'])){

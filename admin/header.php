@@ -45,6 +45,7 @@ require ('include/sidebar.php');
 										<?php
 										$i=1;
 										$header=$header->getAllData();
+									
 										foreach ($header as $page) {
 												echo "<tr>
 												<td>".$i."</td>
@@ -58,7 +59,7 @@ require ('include/sidebar.php');
 												<?php echo"</td>
 											<td>".$page['Button_link']."</td>
 											";?>
-											<td><a href='headeredit.php?page=<?php echo $page['Page'];?>' class="btn btn-primary">Edit</button></td>
+											<td><a href='headeredit.php?page=<?php echo $page['ID'];?>' class="btn btn-primary">Edit</button></td>
 											<?php echo "
 												</tr>
 												";

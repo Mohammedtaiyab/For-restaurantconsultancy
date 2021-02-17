@@ -72,7 +72,11 @@ var et_core_api_spam_recaptcha = {"site_key":"6LepqboZAAAAACV8dkpDQdb8p3RyJNJUDB
 <link rel='shortlink' href='index.html' />
 <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed2eb0.json?url=https%3A%2F%2Fplaygroundhospitality.com%2F" />
 <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed5710?url=https%3A%2F%2Fplaygroundhospitality.com%2F&amp;format=xml" />
-<link rel="shortcut icon" href="#" /> <link rel="stylesheet" id="et-core-unified-1157-cached-inline-styles" href="wp-content/et-cache/1157/et-core-unified-1157-1606242552.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" />
+<link rel="shortcut icon" href="#" /> 
+<link rel="stylesheet" id="et-core-unified-1157-cached-inline-styles" href="wp-content/et-cache/1157/et-core-unified-1157-1606242552.min.css" onerror="et_core_page_resource_fallback(this, true)" onload="et_core_page_resource_fallback(this)" />
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <style type="text/css">
 .thx-txt{
   text-align: center;
@@ -190,8 +194,8 @@ var et_core_api_spam_recaptcha = {"site_key":"6LepqboZAAAAACV8dkpDQdb8p3RyJNJUDB
 
 <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16 <?php if ($pagename=="whoweare") {echo "active"; };?>"><a href="whoweare.php">WHO WE ARE?
 </a></li>
-<li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17  <?php if ($pagename=="howwework") {echo "active"; };?>"><a href="howwework.php">HOW WE WORK?
-</a></li>
+<!-- <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17  <?php// if ($pagename=="howwework") {echo "active"; };?>"><a href="howwework.php">HOW WE WORK?
+</a></li> -->
 <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20  <?php if ($pagename=="blogs") {echo "active"; };?>"><a href="blogs.php">BLOGS</a></li>
 <li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13  <?php if ($pagename=="contact") {echo "active"; };?>"><a href="contact.php" >CONTACT</a></li>
 </ul> </nav>
