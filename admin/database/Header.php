@@ -35,9 +35,9 @@ public function getallData(){
 		}
 		return $resultArray;
 	}
-public function update($page,$title,$paragraph,$url,$new_filename){
+public function update($id,$title,$paragraph,$url,$new_filename){
 		if($new_filename==''||$new_filename==null){
-$result =$this->db->con->query("UPDATE header SET Title='".$title."',Paragraph='".$paragraph."',Button_link='".$url."' WHERE Page='".$page."'");
+$result =$this->db->con->query("UPDATE header SET Title='".$title."',Paragraph='".$paragraph."',Button_link='".$url."' WHERE ID='".$id."'");
 		}else{
 		$result =$this->db->con->query("UPDATE header SET Title='".$title."',Paragraph='".$paragraph."',Button_link='".$url."',Bg_image='".$new_filename."' WHERE Page='".$page."'");
 	}

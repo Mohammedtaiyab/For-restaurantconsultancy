@@ -38,7 +38,7 @@ require ('include/sidebar.php');
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">	<span class="input-group-text" id="basic-addon1">Page</span>
 								</div>
-								<input type="hidden" name="page" value='<?php echo $indexhead[0]['Page']; ?>'>
+								<input type="hidden" name="page" value='<?php echo $indexhead[0]['ID']; ?>'>
 								<input type="text" class="form-control" value='<?php echo $indexhead[0]['Page']; ?>' aria-label="Username" aria-describedby="basic-addon1" disabled>
 							</div>
 
