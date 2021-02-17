@@ -45,6 +45,7 @@ if(!isset($_SESSION['login']) || trim($_SESSION['login']) == ''){
     border: 1px solid #ced4da;
     padding: 2px;
 }
+
 </style>
 </head>
 
