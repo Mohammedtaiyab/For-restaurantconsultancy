@@ -721,7 +721,18 @@ font-weight: 400;
  -webkit-line-clamp: 2; /* number of lines to show */
  -webkit-box-orient: vertical;
  padding-bottom: 5px;
-} 
+} }
+@media (max-width: 360px)
+{
+article.sei_post_excerpt {
+  display: flex;
+  flex-direction: column;
+}
+}
+@media (max-width: 780px){
+article.sei_post_excerpt {
+    flex-direction: column;
+}
 }
 .footer-text a{
     color: #c21630;
@@ -1014,9 +1025,12 @@ border-bottom: 3px solid #c21630;
   text-align: center;
   color: #fff;
 }
-.thx-txt h1, h3{
+.thx-txt h1{
 color: #fff; 
 }
+.thx-txt h3{
+  color: #fff; 
+  }
 .thx-txt p {
   color: #fff;
 }
@@ -1030,11 +1044,12 @@ color: #fff;
 .p-white p{
   color: #fff;
 }
-.p-white h1,h3{
+.p-white h1{
   color: white;
 }
-
-
+.p-white h3{
+  color: white;
+}
 
 .glass {
   position: relative;
@@ -1103,3 +1118,4 @@ display: none;
   text-decoration: none;
   color:#000;
 }
+/* ////////////////////////////////////////////////// */

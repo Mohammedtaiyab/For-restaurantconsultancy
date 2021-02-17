@@ -35,40 +35,7 @@ $about=$sections->getData($x['filename']);
 </div> 
 </div>
 </div>
-<section class="wrapper">
-    <div class="container-fostrap">
-        <div class="content">
-            <div class="container">
-                <div class="row">
-<?php                    
-$blog=$blogs->search($x['filename']);
-foreach ($blog as $page) {?>
-<div class="col-xs-12 col-sm-4">
-                        <div class="card">
-                            <a class="img-card" href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
-                            <img src='assets/img/pages/<?php  echo $page['Image']?>' />
-                          </a>
-                            <div class="card-content ptext">
-                                <h4 class="card-title">
-                                   
-<a  href='blog.php?id=<?php  echo $page['ID'];?>'><?php echo $page['Title'];?></a>
-                                  </a>
-                                </h4>
-                               <?php echo mb_strimwidth($page['Blog'], 0, 150, '...');?>
-                            </div>
-                            <div class="card-read-more">
-                                <a class="btn btn-link btn-block" href='blog.php?id=<?php  echo $page['ID'];?>'>Read More</a>
-                            </div>
-                        </div>
-                    </div>
-<?php 
-}
-?>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <?php
 $section=$servicesection->servicepage($x['filename']);
@@ -114,6 +81,41 @@ foreach ($section as $sec) {
 $i++;
 }
 ?>
+<section class="wrapper">
+    <div class="container-fostrap">
+        <div class="content">
+            <div class="container">
+                <div class="row">
+<?php                    
+$blog=$blogs->search($x['filename']);
+foreach ($blog as $page) {?>
+<div class="col-xs-12 col-sm-4">
+                        <div class="card">
+                            <a class="img-card" href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
+                            <img src='assets/img/pages/<?php  echo $page['Image']?>' />
+                          </a>
+                            <div class="card-content ptext">
+                                <h4 class="card-title">
+                                   
+<a  href='blog.php?id=<?php  echo $page['ID'];?>'><?php echo $page['Title'];?></a>
+                                  </a>
+                                </h4>
+                               <?php echo mb_strimwidth($page['Blog'], 0, 150, '...');?>
+                            </div>
+                            <div class="card-read-more">
+                                <a class="btn btn-link btn-block" href='blog.php?id=<?php  echo $page['ID'];?>'>Read More</a>
+                            </div>
+                        </div>
+                    </div>
+<?php 
+}
+?>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php
 require ('include/footer.php');
 ?>

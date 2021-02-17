@@ -211,6 +211,8 @@ $about=$sections->getData('index');
 </div> 
 </div> 
 </div> 
+
+
 <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button> -->
 
 <!-- <div class="modal fade popmsg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
