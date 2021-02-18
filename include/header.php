@@ -77,6 +77,8 @@ var et_core_api_spam_recaptcha = {"site_key":"6LepqboZAAAAACV8dkpDQdb8p3RyJNJUDB
 
 <?php 
 $x=pathinfo($_SERVER['REQUEST_URI']);
+echo $x['filename'];
+
   if($x['filename']=="index" || $x['filename']=="for-Restaurant"){?>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
