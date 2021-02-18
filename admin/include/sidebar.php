@@ -79,6 +79,13 @@
 						<div class="menu-title">Contact</div>
 					</a>
 				</li>
+				<li>
+					<a href="clients.php">
+						<div class="parent-icon icon-color-5"><i class="bx bx-group"></i>
+						</div>
+						<div class="menu-title">Clients</div>
+					</a>
+				</li>
 			</ul>
 			<!--end navigation-->
 		</div>

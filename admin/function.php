@@ -216,4 +216,23 @@ if(isset($_POST['updateabout'])){
 }
 
 
+
+
+if(isset($_POST['client'])){
+	$name=$_POST['name'];
+	$filename = $_FILES['image']['name'];
+	if(!empty($filename)){
+				$ext = pathinfo($filename, PATHINFO_EXTENSION);
+				$new_filename = rand(10,10000)."_client".'.'.$ext;
+				move_uploaded_file($_FILES['image']['tmp_name'], '../assets/img/clients/'.$new_filename);	
+			}
+			else{
+				$new_filename = '';
+			}
+
+	$clients=$sections->addclients($name,$new_filename);
+	header('Location: clients.php');
+}
+
+
 ?>

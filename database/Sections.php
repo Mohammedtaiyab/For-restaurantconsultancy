@@ -17,6 +17,17 @@ class Sections
 		return $resultArray;
 	
 	}
+	
+	public function getClients(){
+		$result =$this->db->con->query("SELECT * FROM clients WHERE Status=1");
+		$resultArray=array();
+		while ($item=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+			$resultArray[]=$item;
+			# code...
+		}
+		return $resultArray;
+	
+	}
 }
 
 

@@ -302,6 +302,13 @@ background-image: url(https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199
 .hero h2 {
 margin: 0 auto;
 width: fit-content;
+color: #fff;
+}
+.hero h4{
+  font-family: inherit;
+    font-size: 20px;
+    line-height: 1.8em;
+    text-transform: capitalize;
 }
 
 

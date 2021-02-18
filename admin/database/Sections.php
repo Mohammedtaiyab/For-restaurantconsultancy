@@ -43,6 +43,32 @@ class Sections
 	
 	}
 	
+
+	public function getClients(){
+		$result =$this->db->con->query("SELECT * FROM clients");
+		$resultArray=array();
+		while ($item=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+			$resultArray[]=$item;
+			# code...
+		}
+		return $resultArray;
+	
+	}
+
+	public function addclients($name,$new_filename){
+		$result =$this->db->con->query("INSERT INTO clients(Name,Status,ClientLogo) VALUES ('$name',1,'$new_filename')");
+		return $result;
+
+	}
+
+	public function changestatus($id,$status){
+		$result =$this->db->con->query("UPDATE clients SET Status='".$status."' WHERE Id=".$id);
+		return $result;
+	
+	}
+
+
+
 }
 
 

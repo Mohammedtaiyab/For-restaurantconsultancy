@@ -23,7 +23,7 @@ $indexhead=$header->getData('index');
   <div class="carousel-inner">
     <div class="item slides active">
       <div class="slide-1" style="background-image: url(assets/img/pages/<?php echo $indexhead[0]['Bg_image']; ?>);"></div>
-      <div class="hero">
+      <div class="hero et_pb_text_inner">
         <hgroup>
         <h2><?php echo $indexhead[0]['Title']; ?></h2>        
             <h4><?php echo $indexhead[0]['Paragraph']; ?></h4>

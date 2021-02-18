@@ -1,3 +1,30 @@
+<div class="et_pb_section et_pb_section_10 et_section_regular">
+<div class="et_pb_row et_pb_row_10">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_19  et_pb_css_mix_blend_mode_passthrough et-last-child">
+<div class="et_pb_module et_pb_text et_pb_text_26  et_pb_text_align_center et_pb_bg_layout_light">
+<div class="et_pb_text_inner"style="display: inline-block;"><h2>Our Clients</h2></div>
+</div> 
+</div> 
+</div> 
+
+<div class="et_pb_row et_pb_row_11 company_logos_with_hover_container">
+
+<?php 
+$clients=$sections->getClients();
+foreach ($clients as $logo) {
+?>
+
+<div class="et_pb_column et_pb_column_1_4 et_pb_column_20  et_pb_css_mix_blend_mode_passthrough">
+<div class="et_pb_module et_pb_image et_pb_image_4">
+<a href=""><span class="et_pb_image_wrap "><img loading="lazy" src='<?php echo "assets/img/clients/".$logo['ClientLogo'];?>' height="auto" width="auto" class="wp-image-308" style="width: 300px;" /></span></a></div>
+</div> 
+<?php } ?>
+
+
+</div> 
+</div> 
+
+
 <footer class="footer-section" style="">
         <div class="container" style="padding-top: 0px;">
      
