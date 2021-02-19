@@ -190,7 +190,7 @@ var et_pb_sticky_elements = [];
 <script type="text/javascript">
   <?php 
   if($x['filename']=="contact"){?>
-      $('.bd-example-modal-lg').modal('show');
+     // $('.bd-example-modal-lg').modal('show');
   <?php 
   }
 ?>

@@ -18,7 +18,7 @@ $indexhead=$header->getData($x['filename']);
 <div class="header-content">
 <h1 class="et_pb_module_header"><?php echo $indexhead[0]['Title']; ?></h1>
 <div class="et_pb_header_content_wrapper"><p><span style="font-size: 20px;"><?php echo $indexhead[0]['Paragraph']; ?></span></p></div>
-<a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Explore How</a>
+<a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Know More</a>
 </div>
 </div>
 </div>
@@ -56,7 +56,7 @@ if($i%2==0){?>
 </div>
 </div>
 <div class="et_pb_button_module_wrapper et_pb_button_10_wrapper  et_pb_module ">
- <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $page['Button_link'].".php"; ?>' style="color: white;">Explore With Us</a>
+ <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $page['Button_link'].".php"; ?>' style="color: white;">Know More</a>
 </div>
 </div>
 </div> 
@@ -73,7 +73,7 @@ if($i%2==0){?>
   <?php echo $page['Short_Description']; ?>
 </div>
 </div> <div class="et_pb_button_module_wrapper et_pb_button_10_wrapper  et_pb_module ">
-<a class="et_pb_button et_pb_button_10 et_hover_enabled et_pb_bg_layout_light" href='<?php echo $page['Button_link'].".php"; ?>' style="color: white;">Explore With Us</a>
+<a class="et_pb_button et_pb_button_10 et_hover_enabled et_pb_bg_layout_light" href='<?php echo $page['Button_link'].".php"; ?>' style="color: white;">Know More</a>
 </div>
 </div> <div class="et_pb_column et_pb_column_1_2 et_pb_column_17  et_pb_css_mix_blend_mode_passthrough et-last-child">
 <div class="et_pb_module et_pb_image et_pb_image_3 et_animated et-waypoint">

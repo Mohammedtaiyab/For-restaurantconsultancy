@@ -28,7 +28,7 @@ $indexhead=$header->getData('index');
         <h1 class="et_pb_module_header"><?php echo $indexhead[0]['Title']; ?></h1>
             <h4><?php echo $indexhead[0]['Paragraph']; ?></h4>
         </hgroup>
-       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Explore How</a>
+       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Know More</a>
       </div>
     </div>
     <div class="item slides">
@@ -38,7 +38,7 @@ $indexhead=$header->getData('index');
             <h2><?php echo $indexhead[1]['Title']; ?></h2>        
             <h4><?php echo $indexhead[1]['Paragraph']; ?></h4>
         </hgroup>
-       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Explore How</a>
+       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Know More</a>
       </div>
     </div>
     <div class="item slides">
@@ -48,7 +48,7 @@ $indexhead=$header->getData('index');
             <h2><?php echo $indexhead[2]['Title']; ?></h2>        
             <h4><?php echo $indexhead[2]['Paragraph']; ?></h4>
         </hgroup>
-       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Explore How</a>
+       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Know More</a>
       </div>
     </div>
     <div class="item slides">
@@ -58,7 +58,7 @@ $indexhead=$header->getData('index');
             <h2><?php echo $indexhead[3]['Title']; ?></h2>        
             <h4><?php echo $indexhead[3]['Paragraph']; ?></h4>
         </hgroup>
-       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Explore How</a>
+       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Know More</a>
       </div>
     </div>
     <div class="item slides">
@@ -68,7 +68,7 @@ $indexhead=$header->getData('index');
             <h2><?php echo $indexhead[4]['Title']; ?></h2>        
             <h4><?php echo $indexhead[4]['Paragraph']; ?></h4>
         </hgroup>
-       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Explore How</a>
+       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Know More</a>
       </div>
     </div>
   </div> 
@@ -91,7 +91,7 @@ $indexhead=$header->getData('index');
 <div class="header-content">
 <h1 class="et_pb_module_header"><?php echo $indexhead[0]['Title']; ?></h1>
 <div class="et_pb_header_content_wrapper"><p><span style="font-size: 20px;"><?php echo $indexhead[0]['Paragraph']; ?></span></p></div>
-<a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Explore How</a>
+<a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Know More</a>
 </div>
 </div>
 </div>
@@ -125,55 +125,41 @@ $about=$sections->getData('index');
 <section id="cards-columns">
   <div class="container">
     <div class="row">
-       <div class="col-lg-3 col-md-6 col-sm-6 my-2">
+       <div class="col-lg-4 col-md-6 col-sm-6 my-2">
         <div class="card">
           <?php $whatwedo=$header->getData('whatwedo');?>
   <img class="card-img-top" src='assets/img/pages/<?php echo $whatwedo[0]['Bg_image'];?>' alt="Card image cap">
   <div class="card-body p-text">
     <h5 class="card-title"><div class="text-center"><?php echo $whatwedo[0]['Title']; ?></div> </h5>
 <?php echo $whatwedo[0]['Paragraph']; ?>
-   <a class="et_pb_button et_pb_more_button et_pb_button_one" href="whatwedo.php">Explore How</a>
+   <a class="et_pb_button et_pb_more_button et_pb_button_one" href="whatwedo.php">Know More</a>
           </div>
-
-
       </div>
     </div>
 
-      <div class="col-lg-3 col-md-6 col-sm-6 my-2">
+      <div class="col-lg-4 col-md-6 col-sm-6 my-2">
         <div class="card">
      <?php $whoweare=$header->getData('whoweare');?>
   <img class="card-img-top" src='assets/img/pages/<?php echo $whoweare[0]['Bg_image'];?>' alt="Card image cap">
   <div class="card-body p-text">
     <h5 class="card-title"><div class="text-center"><?php echo $whoweare[0]['Title']; ?></div> </h5>
    <?php echo $whoweare[0]['Paragraph']; ?>
-   <a class="et_pb_button et_pb_more_button et_pb_button_one" href="whoweare.php">Explore How</a>
+   <a class="et_pb_button et_pb_more_button et_pb_button_one" href="whoweare.php">Know More</a>
           </div>
 
 
       </div>
     </div>
 
-      <div class="col-lg-3 col-md-6 col-sm-6 my-2">
-        <div class="card">
-  <?php $howwework=$header->getData('howwework');?>
-  <img class="card-img-top" src='assets/img/pages/<?php echo $howwework[0]['Bg_image'];?>' alt="Card image cap">
-  <div class="card-body p-text">
-    <h5 class="card-title"><div class="text-center"><?php echo $howwework[0]['Title']; ?></div> </h5>
- <?php echo $howwework[0]['Paragraph']; ?>
-<a class="et_pb_button et_pb_more_button et_pb_button_one" href="howwework.php">Explore How</a>
-          </div>
-
-
-      </div>
-    </div>
-          <div class="col-lg-3 col-md-6 col-sm-6 my-2">
+     
+          <div class="col-lg-4 col-md-6 col-sm-6 my-2">
         <div class="card">
  <?php $blogs=$header->getData('blogs');?>
   <img class="card-img-top" src='assets/img/pages/<?php echo $blogs[0]['Bg_image'];?>' alt="Card image cap">
   <div class="card-body p-text">
     <h5 class="card-title"><div class="text-center"><?php echo $blogs[0]['Title']; ?></div> </h5>
   <?php echo $blogs[0]['Paragraph']; ?>
-   <a class="et_pb_button et_pb_more_button et_pb_button_one" href="blogs.php">Explore How</a>
+   <a class="et_pb_button et_pb_more_button et_pb_button_one" href="blogs.php">Know More</a>
           </div>
 
 
