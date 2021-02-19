@@ -220,8 +220,10 @@ opacity: 1;
             transform: translate3d(-50%,-50%,0);
 }
 .hero h1 {
-  font-size: 6em;    
-  font-weight: bold;
+  font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 60px;
+    line-height: 1.2em;  
+  font-weight: 600;
   margin: 0;
   padding: 0;
 }
@@ -311,7 +313,9 @@ color: #fff;
     text-transform: capitalize;
 }
 
-
+.hero{
+  text-align: left;
+}
 
 
 

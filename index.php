@@ -25,7 +25,7 @@ $indexhead=$header->getData('index');
       <div class="slide-1" style="background-image: url(assets/img/pages/<?php echo $indexhead[0]['Bg_image']; ?>);"></div>
       <div class="hero et_pb_text_inner">
         <hgroup>
-        <h2><?php echo $indexhead[0]['Title']; ?></h2>        
+        <h1 class="et_pb_module_header"><?php echo $indexhead[0]['Title']; ?></h1>
             <h4><?php echo $indexhead[0]['Paragraph']; ?></h4>
         </hgroup>
        <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Explore How</a>
@@ -213,34 +213,7 @@ $about=$sections->getData('index');
 </div> 
 
 
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button> -->
 
-<!-- <div class="modal fade popmsg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-  <div class="div-flex">
-  <div class="popup mob-pop" style="background-image: url('assets/img/restpop.jpg');">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="clipping">
-  <path fill="#003b4d" fill-opacity="1" d="M0,256L48,234.7C96,213,192,171,288,170.7C384,171,480,213,576,208C672,203,768,149,864,154.7C960,160,1056,224,1152,218.7C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-</svg>
-  </div>
-  <div class="popup">
-  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-  <div class="pop-text">
-    <h3>You’ve arrived in time!</h3>
-    <div><span id="timer"></span></div>
-    <p>Want to give your Business an Online Presence?<br>
-Top-Notch Agency Work @Freelancer’s rate</p>
-<a class="et_pb_button et_pb_more_button et_pb_button_one" href="contact.php">Get a Quote</a>
-
-  </div>
-  </div>
-  </div>
-    </div>
-  </div>
-</div> -->
 </div>
 <?php
 require ('include/footer.php');
