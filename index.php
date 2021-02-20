@@ -21,56 +21,30 @@ $indexhead=$header->getData('index');
   
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
-    <div class="item slides active">
-      <div class="slide-1" style="background-image: url(assets/img/pages/<?php echo $indexhead[0]['Bg_image']; ?>);"></div>
-      <div class="hero et_pb_text_inner">
-        <hgroup>
-        <h1 class="et_pb_module_header"><?php echo $indexhead[0]['Title']; ?></h1>
-            <h4><?php echo $indexhead[0]['Paragraph']; ?></h4>
-        </hgroup>
-       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Know More</a>
+ 
+
+    <?php
+     $i=0;
+      foreach ($indexhead as $key) {
+          if($i==0){
+              echo  "<div class='item slides active'>";
+          }else{
+            echo  "<div class='item slides'>";
+          } ?>
+       
+        <div class="slide-1" style="background-image: url(assets/img/pages/<?php echo $key['Bg_image']; ?>);"></div>
+        <div class="hero et_pb_text_inner">
+          <hgroup>
+          <h1 class="et_pb_module_header"><?php echo $key['Title']; ?></h1>
+              <h4><?php echo $key['Paragraph']; ?></h4>
+          </hgroup>
+         <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $key['Button_link'].".php"; ?>'>Know More</a>
+        </div>
       </div>
-    </div>
-    <div class="item slides">
-    <div class="slide-1" style="background-image: url(assets/img/pages/<?php echo $indexhead[1]['Bg_image']; ?>);"></div>
-      <div class="hero">
-        <hgroup>
-            <h2><?php echo $indexhead[1]['Title']; ?></h2>        
-            <h4><?php echo $indexhead[1]['Paragraph']; ?></h4>
-        </hgroup>
-       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Know More</a>
-      </div>
-    </div>
-    <div class="item slides">
-    <div class="slide-1" style="background-image: url(assets/img/pages/<?php echo $indexhead[2]['Bg_image']; ?>);"></div>
-      <div class="hero">
-        <hgroup>
-            <h2><?php echo $indexhead[2]['Title']; ?></h2>        
-            <h4><?php echo $indexhead[2]['Paragraph']; ?></h4>
-        </hgroup>
-       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Know More</a>
-      </div>
-    </div>
-    <div class="item slides">
-    <div class="slide-1" style="background-image: url(assets/img/pages/<?php echo $indexhead[3]['Bg_image']; ?>);"></div>
-      <div class="hero">
-        <hgroup>
-            <h2><?php echo $indexhead[3]['Title']; ?></h2>        
-            <h4><?php echo $indexhead[3]['Paragraph']; ?></h4>
-        </hgroup>
-       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Know More</a>
-      </div>
-    </div>
-    <div class="item slides">
-    <div class="slide-1" style="background-image: url(assets/img/pages/<?php echo $indexhead[4]['Bg_image']; ?>);"></div>
-      <div class="hero">
-        <hgroup>
-            <h2><?php echo $indexhead[4]['Title']; ?></h2>        
-            <h4><?php echo $indexhead[4]['Paragraph']; ?></h4>
-        </hgroup>
-       <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $indexhead[0]['Button_link'].".php"; ?>'>Know More</a>
-      </div>
-    </div>
+    <?php $i++;
+     }
+    ?>
+    
   </div> 
 </div>
 
