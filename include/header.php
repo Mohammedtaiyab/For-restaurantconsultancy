@@ -33,7 +33,13 @@ $head=$header->gethead();
 <meta property="article:modified_time" content="2020-11-24T18:29:07+00:00" />
 <meta name="twitter:card" content="summary_large_image" />
 
-
+<?php 
+$x=pathinfo($_SERVER['REQUEST_URI']);
+  if($x['filename']=="index" || $x['filename']=="for-Restaurant" || $x['filename']=="" || !isset($x['filename'])){?>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <?php 
+  }
+  ?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
@@ -46,15 +52,10 @@ $head=$header->gethead();
 <link rel='stylesheet' id='divi-style-css' href='wp-content/themes/Divi-Child-Theme--Playground-Hospitality/style00ca.css?ver=1596568919' type='text/css' media='all' />
 <link rel='stylesheet' id='divi-fonts-css' href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,latin-ext&amp;display=swap' type='text/css' media='all' />
 <link rel="stylesheet" type="text/css" href="">
-<?php 
-$x=pathinfo($_SERVER['REQUEST_URI']);
-  if($x['filename']=="index" || $x['filename']=="for-Restaurant" || $x['filename']=="" || !isset($x['filename'])){?>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <?php 
-  }
-  ?>
+
 <link rel='stylesheet' id='et-builder-googlefonts-cached-css' href='https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic|Nunito:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic|Oswald:200,300,regular,500,600,700|Cormorant+Garamond:300,300italic,regular,italic,500,500italic,600,600italic,700,700italic&amp;subset=latin,latin-ext&amp;display=swap' type='text/css' media='all' />
 <link rel='stylesheet' id='dashicons-css' href='wp-includes/css/dashicons.min5697.css?ver=5.5.3' type='text/css' media='all' />
+
 <script type='text/javascript' src='wp-includes/js/jquery/jquery4a5f.js?ver=1.12.4-wp' id='jquery-core-js'></script>
 <script type='text/javascript' src='../www.google.com/recaptcha/api80c3.js?render=6LepqboZAAAAACV8dkpDQdb8p3RyJNJUDBqgy1NM&amp;ver=5.5.3' id='recaptcha-v3-js'></script>
 <script type='text/javascript' src='wp-content/themes/Divi/core/admin/js/es6-promise.auto.min5697.js?ver=5.5.3' id='es6-promise-js'></script>
@@ -362,6 +363,9 @@ color: #fff;
   line-height: 1.8em;
     text-transform: capitalize;
     font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
+}
+.herotext h1 {
+    color: #fff;
 }
 </style>
 
