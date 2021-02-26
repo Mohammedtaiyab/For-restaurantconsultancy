@@ -214,6 +214,7 @@ opacity: 1;
 /*          Hero Headers        */
 /********************************/
 .hero {
+  width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -355,13 +356,12 @@ color: #fff;
 }
 .herotext p {
   font-size: 20px;
- 
-   
 }
 }
 .herotext p {
-  line-height: 1.2em;
+  line-height: 1.8em;
     text-transform: capitalize;
+    font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif;
 }
 </style>
 
