@@ -54,6 +54,11 @@ if(isset($_GET['id'])){
 										<form action="function.php" method="POST" enctype="multipart/form-data">
 											<input type="hidden" name="id" value='<?php echo $id;?>'>
 											<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								<span class="input-group-text" id="basic-addon1">Page</span></div>
+<input type="text" class="form-control" value='<?php echo $service[0]['Page']; ?>' aria-label="Username" aria-describedby="basic-addon1" disabled>
+							</div>
+											<div class="input-group mb-3">
 								<div class="input-group-prepend">	<span class="input-group-text" id="basic-addon1">Title</span>
 								</div>
 <input type="text" class="form-control" name="title" value='<?php echo $service[0]['Title']; ?>' aria-label="Username" aria-describedby="basic-addon1">
@@ -74,6 +79,11 @@ if(isset($_GET['id'])){
 								<div class="input-group-prepend">	<span class="input-group-text" id="basic-addon3">https://www.for-Restaurant.com/</span>
 								</div>
 								<input type="text" class="form-control" name="url" value='<?php echo $service[0]['Button_link']; ?>' id="basic-url" aria-describedby="basic-addon3">
+							</div>
+							<div class="input-group mb-3">
+								<div class="input-group-prepend">
+								<span class="input-group-text" id="basic-addon1">Page Sequence No:</span></div>
+<input type="number" class="form-control" name="sqno" value='<?php echo $service[0]['Code']; ?>' aria-label="Username" aria-describedby="basic-addon1">
 							</div>
 								<button class="btn btn-primary"  type="submit" name="updatedesc">Update</button>
 										

@@ -8,7 +8,7 @@ class Services
 		$this->db=$db;
 	}
 		public function getallData(){
-		$result =$this->db->con->query("SELECT * FROM services");
+		$result =$this->db->con->query("SELECT * FROM services ORDER BY Code");
 		$resultArray=array();
 		while ($item=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
 			$resultArray[]=$item;

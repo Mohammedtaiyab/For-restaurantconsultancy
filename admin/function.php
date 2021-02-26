@@ -29,6 +29,7 @@ if(isset($_POST['sectionupdate'])){
 if(isset($_POST['updatedesc'])){
 	$id=$_POST['id'];
 	$title=$_POST['title'];
+	$no=$_POST['sqno'];
 	$paragraph=$_POST['paragraph'];
 	$url=$_POST['url'];
 	$filename = $_FILES['image']['name'];
@@ -40,7 +41,7 @@ if(isset($_POST['updatedesc'])){
 			else{
 				$new_filename = '';
 			}
-	$updateservice=$services->update($id,$title,$paragraph,$url,$new_filename);
+	$updateservice=$services->update($id,$title,$paragraph,$url,$new_filename,$no);
 	header('Location: services.php?id='.$id);
 }
 

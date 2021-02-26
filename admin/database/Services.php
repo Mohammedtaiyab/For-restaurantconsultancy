@@ -8,7 +8,7 @@ class Services
 		$this->db=$db;
 	}
 	public function getallData(){
-		$result =$this->db->con->query("SELECT * FROM services");
+		$result =$this->db->con->query("SELECT * FROM services ORDER BY Code");
 		$resultArray=array();
 		while ($item=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
 			$resultArray[]=$item;
@@ -25,11 +25,11 @@ class Services
 		}
 		return $resultArray;
 	}
-		public function update($id,$title,$short_desc,$link,$image){
+		public function update($id,$title,$short_desc,$link,$image,$no){
 			if(!$image==''|| !$image==null){
-		$result =$this->db->con->query("UPDATE services SET Title='".$title."',Short_Description='".$short_desc."',Button_link='".$link."',Image='".$image."' WHERE ID=".$id);}
+		$result =$this->db->con->query("UPDATE services SET Title='".$title."',Short_Description='".$short_desc."',Button_link='".$link."',Code='".$no."',Image='".$image."' WHERE ID=".$id);}
 		else{
-			$result =$this->db->con->query("UPDATE services SET Title='".$title."',Short_Description='".$short_desc."',Button_link='".$link."' WHERE ID=".$id);
+			$result =$this->db->con->query("UPDATE services SET Title='".$title."',Short_Description='".$short_desc."',Code='".$no."',Button_link='".$link."' WHERE ID=".$id);
 		}
 		return $result;
 	}
