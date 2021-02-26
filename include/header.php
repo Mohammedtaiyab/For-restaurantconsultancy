@@ -5,18 +5,17 @@ $pagename=$y['filename'];
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="pingback" href="xmlrpc.php" />
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- <link rel="pingback" href="xmlrpc.php" />
 <script type="text/javascript">
     document.documentElement.className = 'js';
-  </script>
+  </script> -->
 <?php 
 $head=$header->gethead();
 ?>
 <title><?php echo $head[0]['Title'];?></title>
+
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +32,11 @@ $head=$header->gethead();
 <meta property="og:site_name" content="" />
 <meta property="article:modified_time" content="2020-11-24T18:29:07+00:00" />
 <meta name="twitter:card" content="summary_large_image" />
+
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
 <link rel='dns-prefetch' href='http://www.google.com/' />
 <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
 <link rel='dns-prefetch' href='http://s.w.org/' />
@@ -43,6 +46,13 @@ $head=$header->gethead();
 <link rel='stylesheet' id='divi-style-css' href='wp-content/themes/Divi-Child-Theme--Playground-Hospitality/style00ca.css?ver=1596568919' type='text/css' media='all' />
 <link rel='stylesheet' id='divi-fonts-css' href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,latin-ext&amp;display=swap' type='text/css' media='all' />
 <link rel="stylesheet" type="text/css" href="">
+<?php 
+$x=pathinfo($_SERVER['REQUEST_URI']);
+  if($x['filename']=="index" || $x['filename']=="for-Restaurant" || $x['filename']=="" || !isset($x['filename'])){?>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <?php 
+  }
+  ?>
 <link rel='stylesheet' id='et-builder-googlefonts-cached-css' href='https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic|Nunito:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic|Oswald:200,300,regular,500,600,700|Cormorant+Garamond:300,300italic,regular,italic,500,500italic,600,600italic,700,700italic&amp;subset=latin,latin-ext&amp;display=swap' type='text/css' media='all' />
 <link rel='stylesheet' id='dashicons-css' href='wp-includes/css/dashicons.min5697.css?ver=5.5.3' type='text/css' media='all' />
 <script type='text/javascript' src='wp-includes/js/jquery/jquery4a5f.js?ver=1.12.4-wp' id='jquery-core-js'></script>
@@ -78,7 +88,7 @@ var et_core_api_spam_recaptcha = {"site_key":"6LepqboZAAAAACV8dkpDQdb8p3RyJNJUDB
 <?php 
 $x=pathinfo($_SERVER['REQUEST_URI']);
   if($x['filename']=="index" || $x['filename']=="for-Restaurant" || $x['filename']=="" || !isset($x['filename'])){?>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <?php 
@@ -170,7 +180,6 @@ $x=pathinfo($_SERVER['REQUEST_URI']);
     padding: 18px;
   }
 }
-
 
 
 /*
@@ -316,9 +325,44 @@ color: #fff;
 .hero{
   text-align: left;
 }
-
-
-
+@media only screen and (max-width: 768px){
+    html,
+    body{
+    width:100%;
+    overflow-x:hidden;
+    }
+}
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 14px;
+    height: 9px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -996px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 5px solid transparent;
+    border-bottom: 1px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+@media screen and (max-width: 640px){
+.herotext h1 {
+    font-size: 2em;
+}
+.herotext p {
+  font-size: 20px;
+ 
+   
+}
+}
+.herotext p {
+  line-height: 1.2em;
+    text-transform: capitalize;
+}
 </style>
 
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -329,7 +373,7 @@ color: #fff;
 </head>
 <body data-rsssl=1 class="home page-template-default page page-id-1157 et_pb_button_helper_class et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_smooth_scroll et_no_sidebar et_divi_theme et-db et_minified_js et_minified_css">
 <div id="page-container">
-<header id="main-header" data-height-onload="66">
+<header id="main-header" data-height-onload="66" style="position:fixed;">
 <div class="container clearfix et_menu_container">
 <div class="logo_container">
 <span class="logo_helper"></span>
