@@ -15,8 +15,8 @@ foreach ($clients as $logo) {
 ?>
 
 <div class="et_pb_column et_pb_column_1_4 et_pb_column_20  et_pb_css_mix_blend_mode_passthrough">
-<div class="et_pb_module et_pb_image et_pb_image_4">
-<a href=""><span class="et_pb_image_wrap "><img loading="lazy" src='<?php echo "assets/img/clients/".$logo['ClientLogo'];?>' height="auto" width="auto" class="wp-image-308" style="width: 300px;" /></span></a></div>
+<div class="et_pb_module et_pb_image et_pb_image_4 ">
+<a href=""><span class="et_pb_image_wrap clientimg"><img loading="lazy" src='<?php echo "assets/img/clients/".$logo['ClientLogo'];?>' height="auto" width="auto" class="wp-image-308" /></span></a></div>
 </div> 
 <?php } ?>
 

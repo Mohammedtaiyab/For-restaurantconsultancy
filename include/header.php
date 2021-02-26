@@ -358,6 +358,9 @@ color: #fff;
 .herotext p {
   font-size: 20px;
 }
+.clientimg img{
+  width: 40%;
+}
 }
 .herotext p {
   line-height: 1.8em;
@@ -367,6 +370,7 @@ color: #fff;
 .herotext h1 {
     color: #fff;
 }
+
 </style>
 
 <link rel="stylesheet" type="text/css" href="style.css">
