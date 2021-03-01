@@ -56,19 +56,9 @@ echo $newDate;?>
 </div>
 </form>
 </div> 
-<div id="recent-posts-2" class="et_pb_widget widget_recent_entries">
-<h4 class="widgettitle">Recent Posts</h4>
-<ul>
-<?php
-$i=1;
-$blog=$blogs->getAllData();
-foreach ($blog as $page) { ?>
-<li>
-<a  href='blog.php?id=<?php  echo $page['ID'];?>'><?php echo $page['Title'];?></a>
-</li>
-<?php } ?>
-</ul>
-</div> <div id="categories-4" class="et_pb_widget widget_categories"><h4 class="widgettitle">Categories</h4>
+
+
+<div id="categories-4" class="et_pb_widget widget_categories"><h4 class="widgettitle">Categories</h4>
 <ul>
   <?php 
 $category=$blogs->getcategory();

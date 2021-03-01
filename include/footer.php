@@ -39,7 +39,7 @@ foreach ($clients as $logo) {
                               <a href="https://api.whatsapp.com/send?phone=919105210529"><img src="assets/img/whatsapp.png"><i class="fas fa-phone"></i> <span>+91 9 1052 1052 9</span></a>
                               <a href="#"> <img src="assets/img/mail.png" alt=""> <span>hello@for-restaurantconsultancy.com</span></a>
                     </div> 
-                    <div class="footer-social-icon"">
+                    <div class="footer-social-icon">
                           <a href="#"><i class="fab fa-facebook-f "></i></a>
                            <a href="#"><i class="fab fa-instagram"></i></a>
                          
