@@ -370,7 +370,14 @@ color: #fff;
 .herotext h1 {
     color: #fff;
 }
-
+@media (max-width: 980px){
+.et_pb_column .et_pb_module {
+    margin-bottom: 30px;
+}
+.et_pb_module:last-child{
+    margin-bottom: 30px;
+}
+}
 </style>
 
 <link rel="stylesheet" type="text/css" href="style.css">
