@@ -12,7 +12,12 @@ $pagename=$y['filename'];
     document.documentElement.className = 'js';
   </script> -->
 <?php 
-$head=$header->gethead();
+if($pagename=="index" || $pagename=="for-Restaurant" || $pagename=="" || !isset($pagename)){
+  $indexinf="index";
+$head=$header->getheadpage($indexinf);
+}else{
+  $head=$header->getheadpage($pagename);
+}
 ?>
 <title><?php echo $head[0]['Title'];?></title>
 
@@ -90,8 +95,12 @@ var et_core_api_spam_recaptcha = {"site_key":"6LepqboZAAAAACV8dkpDQdb8p3RyJNJUDB
 $x=pathinfo($_SERVER['REQUEST_URI']);
   if($x['filename']=="index" || $x['filename']=="for-Restaurant" || $x['filename']=="" || !isset($x['filename'])){?>
     <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <?php 
   }
   ?>
@@ -378,9 +387,88 @@ color: #fff;
     margin-bottom: 30px;
 }
 }
+
+#carousel .carousel-item.boat {
+  background-image: url("https://picsum.photos/1200/600/?image=1083");
+}
+
+#carousel .carousel-item.sea {
+  background-image: url("https://picsum.photos/1200/600/?image=1050");
+}
+
+#carousel .carousel-item.river {
+  background-image: url("https://picsum.photos/1200/600/?image=1015");
+}
+
+#carousel .carousel-item {
+  height: 100vh;
+  width: 100%;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+
+#carousel .carousel-inner .carousel-item {
+  transition: -webkit-transform 2s ease;
+  transition: transform 2s ease;
+  transition: transform 2s ease, -webkit-transform 2s ease;
+}
+
+#carousel .carousel-item .caption {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  padding: 40px;
+  color: white;
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+
+#carousel .caption h2 {
+  animation-duration: 1s;
+  animation-delay: 2s;
+  color: #fff;
+    width: auto;
+}
+
+#carousel .caption p {
+  animation-duration: 1s;
+  animation-delay: 2.2s;
+}
+
+#carousel .caption a {
+  animation-duration: 1s;
+  animation-delay: 2.4s;
+}
+
+/* Button */
+.delicious-btn {
+  display: inline-block;
+  min-width: 160px;
+  height: 60px;
+  color: #ffffff;
+  border: none;
+  border-left: 3px solid #1c8314;
+  border-radius: 0;
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 58px;
+  font-weight: 600;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  text-transform: capitalize;
+  background-color: #40ba37;
+}
+
+.delicious-btn.active, .delicious-btn:hover, .delicious-btn:focus {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #1c8314;
+  border-color: #40ba37;
+}
 </style>
 
 <link rel="stylesheet" type="text/css" href="style.css">
+<!-- <link rel="stylesheet" type="text/css" href="heroslider.css"> -->
 <script type="text/javascript">
   
   <?php echo $head[0]['Script'];?>

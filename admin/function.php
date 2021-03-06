@@ -173,6 +173,7 @@ if(isset($_POST['updateblog'])){
 if(isset($_POST['head'])){
 	$id=$_POST['id'];
 	$title=$_POST['title'];
+	$page=$_POST['page'];
 	$description=$_POST['description'];
 	$script=$_POST['script'];
 	$robots=$_POST['robots'];
@@ -182,7 +183,7 @@ if(isset($_POST['head'])){
 				move_uploaded_file($_FILES['file']['tmp_name'], '../assets/img/pages/'.$filename);	
 			}
 	$updatehead=$header->updatehead($id,$title,$description,$keywords,$robots,$script);
-	header('Location: head.php');
+	header('Location: head.php?page='.$page);
 }
 
 if(isset($_POST['login'])){
@@ -192,12 +193,8 @@ if($user==true){
 	header('Location: index.php');
 }else{
 	header('Location: login.php?login=false');
-
 }
 }
-
-
-
 if(isset($_POST['updateabout'])){
 	$id=$_POST['id'];
 	$title=$_POST['title'];

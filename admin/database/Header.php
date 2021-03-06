@@ -54,7 +54,15 @@ $result =$this->db->con->query("UPDATE header SET Title='".$title."',Paragraph='
 		return $resultArray;
 	}
 
-
+	public function getheadpage($page){
+		$result =$this->db->con->query("SELECT * FROM head WHERE Page='".$page."'");
+		$resultArray=array();
+		while ($item=mysqli_fetch_array($result,MYSQLI_ASSOC)) {
+			$resultArray[]=$item;
+			# code...
+		}
+		return $resultArray;
+	}
 
 	public function updatehead($id,$title,$description,$keywords,$robots,$script){
 		$result =$this->db->con->query("UPDATE head SET Title='".$title."',Description='".$description."',keywords='".$keywords."',Robots='".$robots."',Script='".$script."' WHERE ID='".$id."'");

@@ -2,6 +2,7 @@
 require ('include/head.php');
 require ('include/header.php');
 require ('include/sidebar.php');
+
 ?>
 
 <div class="page-wrapper">
@@ -28,25 +29,34 @@ require ('include/sidebar.php');
 								<h4 class="mb-0">Head</h4>
 							</div>
 							<hr/>
-							<?php $header=$header->getallhead(); ?>
+							<?php 
+							if(isset($_GET['page'])){
+								$header=$header->getheadpage($_GET['page']); 
+							}else{
+								$header=$header->getallhead();
+							}
+							 ?>
 								<div class="row">
 								<div class="col-md-8">
-							<form action="function.php" method="POST" enctype="multipart/form-data" id="head">
-											<input type="hidden" name="id" value='<?php echo $header[0]['ID'];?>'>
+								<form action="function.php" method="POST" enctype="multipart/form-data" id="head">
+								<input type="hidden" name="id" value='<?php  echo $header[0]['ID'];?>'>
+								<input type="hidden" name="page" value='<?php  echo $header[0]['Page'];?>'>
 								<div class="input-group mb-3">
-								<div class="input-group-prepend">	<span class="input-group-text" id="basic-addon1">Title</span>
+								<div class="input-group-prepend">
+								<span class="input-group-text" id="basic-addon1">Title</span>
 								</div>
-							<input type="text" class="form-control" name="title" value='<?php echo $header[0]['Title'];?>' aria-label="Username" aria-describedby="basic-addon1">
-							</div>
+								<input type="text" class="form-control" name="title" value='<?php  echo $header[0]['Title'];?>' aria-label="Username" aria-describedby="basic-addon1">
+								</div>
 								<div class="input-group mb-3">
 								<div class="input-group-prepend"><span class="input-group-text" id="basic-addon1">keywords</span>
 								</div>	
 								<input type="text" value='<?php echo $header[0]['keywords'];?>' name="keywords" data-role="tagsinput" class="form-control" />
 								</div>
 								<div class="input-group mb-3">
-								<div class="input-group-prepend">	<span class="input-group-text" id="basic-addon1">Description</span>
+								<div class="input-group-prepend">
+								<span class="input-group-text" id="basic-addon1">Description</span>
 								</div>
-							 <textarea type="text" class="form-control" name="description" value='' aria-label="Description" aria-describedby="basic-addon1"><?php echo $header[0]['Description'];?></textarea>
+							 	<textarea type="text" class="form-control" name="description" value='' aria-label="Description" aria-describedby="basic-addon1"><?php echo $header[0]['Description'];?></textarea>
 								</div>
 								<div class="input-group mb-3">
 								<div class="input-group-prepend"><span class="input-group-text" id="basic-addon1">Robots</span>
@@ -60,9 +70,10 @@ require ('include/sidebar.php');
 								<div class="input-group-prepend">	<span class="input-group-text" id="basic-addon1">&lt;/script&gt;</span>
 								</div>
 								</div>
-									<div class="input-group mb-3">
+								<div class="input-group mb-3">
 								<input type="file" class="form-control" name="file" aria-label="file" aria-describedby="basic-addon2">
-								<div class="input-group-append">	<span class="input-group-text" id="basic-addon2">Upload File</span>
+								<div class="input-group-append">
+								<span class="input-group-text" id="basic-addon2">Upload File</span>
 
 								</div>
 	<span style="position: absolute;padding-top: 30px;"><small>Add File to the File Manager</small></span>

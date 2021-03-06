@@ -25,7 +25,7 @@ foreach ($clients as $logo) {
 </div> 
 
 
-<footer class="footer-section" style="">
+<footer class="footer-section">
         <div class="container" style="padding-top: 0px;">
      
             <div class="footer-content pt-5 pb-5">
@@ -171,6 +171,18 @@ var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
 var et_pb_sticky_elements = [];
 /* ]]> */
 </script>
+
+<?php 
+$x=pathinfo($_SERVER['REQUEST_URI']);
+  if($x['filename']=="index" || $x['filename']=="for-Restaurant" || $x['filename']=="" || !isset($x['filename'])){?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.min.js"></script>
+
+<?php } ?>
+
+
+
 <script type='text/javascript' src='wp-content/themes/Divi/js/custom.unified1dc6.js?ver=4.6.5' id='divi-custom-script-js'></script>
 <script type='text/javascript' src='wp-content/themes/Divi/core/admin/js/common1dc6.js?ver=4.6.5' id='et-core-common-js'></script>
 <script type='text/javascript' src='wp-includes/js/wp-embed.min5697.js?ver=5.5.3' id='wp-embed-js'></script>
@@ -184,7 +196,10 @@ var et_pb_sticky_elements = [];
     $('#contact').on('click',function(){
         $('.bd-example-modal-lg').modal('show');
     });
-     
+//     $('.carousel').carousel({
+//   interval: 2000
+// })
+$('.carousel').carousel()
 </script>
 
 <script type="text/javascript">

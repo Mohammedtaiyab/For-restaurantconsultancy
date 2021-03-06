@@ -6,46 +6,52 @@ $indexhead=$header->getData('index');
 <div id="et-main-area">
 <div id="main-content">
 
-<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-  <!-- Overlay -->
-  <div class="overlay"></div>
 
-  <!-- Indicators -->
+<div id="carousel" class="carousel slide hero-slides" data-ride="carousel">
   <ol class="carousel-indicators">
-    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#bs-carousel" data-slide-to="1"></li>
-    <li data-target="#bs-carousel" data-slide-to="2"></li>
-    <li data-target="#bs-carousel" data-slide-to="3"></li>
-    <li data-target="#bs-carousel" data-slide-to="4"></li>
+    <li class="active" data-target="#carousel" data-slide-to="0"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
   </ol>
-  
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
- 
+  <div class="carousel-inner" role="listbox">
 
-    <?php
+  <?php
      $i=0;
       foreach ($indexhead as $key) {
           if($i==0){
-              echo  "<div class='item slides active'>";
+              echo  "<div class='carousel-item active' style='background-image: url(assets/img/pages/".$key['Bg_image'].");'>";
           }else{
-            echo  "<div class='item slides'>";
+            echo  "<div class='carousel-item' style='background-image: url(assets/img/pages/".$key['Bg_image'].");'>";
           } ?>
-       
-        <div class="slide-1" style="background-image: url(assets/img/pages/<?php echo $key['Bg_image']; ?>);"></div>
-        <div class="hero et_pb_text_inner herotext">
-          <hgroup>
-          <h1 class="et_pb_module_header"><?php echo $key['Title']; ?></h1>
-             <?php echo $key['Paragraph']; ?>
-          </hgroup>
-         <a class="et_pb_button et_pb_more_button et_pb_button_one" href='<?php echo $key['Button_link'].".php"; ?>'>Know More</a>
+      <div class="container h-100  d-md-block">
+        <div class="row align-items-center h-100">
+          <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+            <div class="caption">
+              <h2 class="animated fadeInLeft"><?php echo $key['Title']; ?></h2>
+              <?php echo $key['Paragraph']; ?>
+              <a class="et_pb_button et_pb_more_button et_pb_button_one animated fadeInUp btn " href='<?php echo $key['Button_link'].".php"; ?>'>Know More</a>
+            </div>
+          </div>
         </div>
       </div>
-    <?php $i++;
-     }
-    ?>
-    
-  </div> 
+    </div>
+
+<?php $i++; } ?>
+
+  </div>
+  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+
 </div>
 
 
@@ -84,7 +90,7 @@ $about=$sections->getData('index');
 <div class="et_pb_text_inner"><h2><?php echo $about[0]['Section']; ?></h2></div>
 </div> 
 </div> <div class="et_pb_column et_pb_column_2_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
-<div class="et_pb_module et_pb_text et_pb_text_1 et_animated  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_module et_pb_text et_pb_text_1   et_pb_text_align_left et_pb_bg_layout_light">
 <div class="et_pb_text_inner">
 
 <?php echo $about[0]['Paragraph']; ?>
@@ -147,7 +153,7 @@ $about=$sections->getData('index');
 <div class="et_pb_text_inner"><h2><?php echo $about[1]['Section']; ?></h2></div>
 </div> 
 </div> <div class="et_pb_column et_pb_column_2_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
-<div class="et_pb_module et_pb_text et_pb_text_1 et_animated  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_module et_pb_text et_pb_text_1   et_pb_text_align_left et_pb_bg_layout_light">
 <div class="et_pb_text_inner">
 <?php echo $about[1]['Paragraph']; ?>
 </div>
@@ -163,7 +169,7 @@ $about=$sections->getData('index');
 <div class="et_pb_text_inner"><h2><?php echo $about[2]['Section']; ?></h2></div>
 </div> 
 </div> <div class="et_pb_column et_pb_column_2_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
-<div class="et_pb_module et_pb_text et_pb_text_1 et_animated  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="et_pb_module et_pb_text et_pb_text_1   et_pb_text_align_left et_pb_bg_layout_light">
 <div class="et_pb_text_inner">
 <?php echo $about[2]['Paragraph']; ?>
 </div>

@@ -59,7 +59,8 @@ require ('include/sidebar.php');
 												<?php echo"</td>
 											<td>".$page['Button_link']."</td>
 											";?>
-											<td><a href='headeredit.php?page=<?php echo $page['ID'];?>' class="btn btn-primary">Edit</button></td>
+											<td><a href='headeredit.php?page=<?php echo $page['ID'];?>' class="btn btn-primary">Edit</button>
+											<a href='head.php?page=<?php echo $page['Page'];?>' class="btn btn-info">Tags</button></td>
 											<?php echo "
 												</tr>
 												";
