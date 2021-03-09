@@ -470,13 +470,14 @@ color: #fff;
 <link rel="stylesheet" type="text/css" href="style.css">
 <!-- <link rel="stylesheet" type="text/css" href="heroslider.css"> -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T7J5DFV5KL"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RKSMJ0V857"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-T7J5DFV5KL');
+  gtag('config', 'G-RKSMJ0V857');
 </script>
 <script type="text/javascript">
   
