@@ -469,6 +469,15 @@ color: #fff;
 
 <link rel="stylesheet" type="text/css" href="style.css">
 <!-- <link rel="stylesheet" type="text/css" href="heroslider.css"> -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T7J5DFV5KL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T7J5DFV5KL');
+</script>
 <script type="text/javascript">
   
   <?php echo $head[0]['Script'];?>
