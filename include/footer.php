@@ -40,8 +40,8 @@ foreach ($clients as $logo) {
                               <a href="#"> <img src="assets/img/mail.png" alt=""> <span>hello@for-restaurantconsultancy.com</span></a>
                     </div> 
                     <div class="footer-social-icon">
-                          <a href="#"><i class="fab fa-facebook-f "></i></a>
-                           <a href="#"><i class="fab fa-instagram"></i></a>
+                          <a href="https://www.facebook.com/for.restaurantconsultancy/"><i class="fab fa-facebook-f "></i></a>
+                           <a href="https://instagram.com/for_restaurantconsultancy?igshid=2ykbozbgbw9q"><i class="fab fa-instagram"></i></a>
                          
                       </div>
                       <div class="copyright-text">
@@ -175,7 +175,8 @@ var et_pb_sticky_elements = [];
 <?php 
 $x=pathinfo($_SERVER['REQUEST_URI']);
   if($x['filename']=="index" || $x['filename']=="for-Restaurant" || $x['filename']=="" || !isset($x['filename'])){?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<!-- <script src="assets/js/custom.js"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animateCSS/1.2.2/jquery.animatecss.min.js"></script>
 
