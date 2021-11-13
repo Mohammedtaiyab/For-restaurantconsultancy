@@ -63,7 +63,7 @@ $about=$sections->getData($x['filename']);
 <div class="et_pb_text_inner"><h2><?php echo $about[0]['Section']; ?></h2></div>
 </div> 
 </div> <div class="et_pb_column et_pb_column_2_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
-<div class="et_pb_module et_pb_text et_pb_text_1 et_animated  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="  et_pb_text_align_left et_pb_bg_layout_light">
 <div class="et_pb_text_inner">
 <?php echo $about[0]['Paragraph']; ?>
 </div>
@@ -118,7 +118,7 @@ $about=$sections->getData($x['filename']);
 <div class="et_pb_text_inner"><h2><?php ///echo $about[1]['Section']; ?></h2></div>
 </div> 
 </div> <div class="et_pb_column et_pb_column_2_3 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
-<div class="et_pb_module et_pb_text et_pb_text_1 et_animated  et_pb_text_align_left et_pb_bg_layout_light">
+<div class="  et_pb_text_align_left et_pb_bg_layout_light">
 <div class="et_pb_text_inner">
 <?php//echo $about[1]['Paragraph']; ?>
 

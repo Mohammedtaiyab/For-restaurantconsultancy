@@ -50,7 +50,7 @@ if($i%2==0){?>
   <h2><?php echo $page['Title']; ?></h2>
 </div>
 </div> 
-<div class="et_pb_module et_pb_text et_pb_text_24 et_animated  et_pb_text_align_left et_pb_bg_layout_dark">
+<div class="  et_pb_text_align_left et_pb_bg_layout_dark">
 <div class="et_pb_text_inner">
   <?php echo $page['Short_Description']; ?>
 </div>
@@ -67,7 +67,7 @@ if($i%2==0){?>
 <div class="et_pb_column et_pb_column_1_2 et_pb_column_16  et_pb_css_mix_blend_mode_passthrough">
 <div class="et_pb_module et_pb_text et_pb_text_23  et_pb_text_align_left et_pb_bg_layout_dark">
 <div class="et_pb_text_inner"><h2><?php echo $page['Title']; ?></h2></div>
-</div> <div class="et_pb_module et_pb_text et_pb_text_24 et_animated  et_pb_text_align_left et_pb_bg_layout_dark">
+</div> <div class="  et_pb_text_align_left et_pb_bg_layout_dark">
 <div class="et_pb_text_inner">
   
   <?php echo $page['Short_Description']; ?>

@@ -71,8 +71,8 @@ $result =$this->db->con->query("UPDATE header SET Title='".$title."',Paragraph='
 	}
 	/////////////////////////////////////////////head////////////////////////////////////////
 	/////////////////////////////////////////////Login///////////////////////////////////////
-	public function login($password){
-			$result =$this->db->con->query("SELECT * FROM admin WHERE Username='Administrator' AND Password='".$password."'");
+	public function login($username,$password){
+			$result =$this->db->con->query("SELECT * FROM admin WHERE Username='" . $username . "' AND Password='".$password."'");
 			
 		if (mysqli_num_rows($result) == 0) {
     	return false;

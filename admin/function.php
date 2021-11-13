@@ -187,7 +187,9 @@ if(isset($_POST['head'])){
 }
 
 if(isset($_POST['login'])){
-$user=$header->login($_POST['password']);
+	$username= $_POST['username'];
+	$password= md5($_POST['password']);
+$user=$header->login($username, $password);
 if($user==true){
 	 $_SESSION['login'] = true;
 	header('Location: index.php');
