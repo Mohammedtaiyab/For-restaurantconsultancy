@@ -10,6 +10,10 @@ class DBcontroller
 	protected $user='u511712962_Forrestaurant';
 	protected $password="Forrestaurant@123";
 	protected $database="u511712962_Forrestaurant";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1f28d4187baf702cce340db5611a8dcc765882dc
 	public $con=null;
 public function __construct(){
  	$this->con =mysqli_connect($this->host,$this->user,$this->password,$this->database);
